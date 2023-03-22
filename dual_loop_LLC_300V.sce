@@ -23,12 +23,12 @@ Gif= syslin('c', num,den); // Gid small-signal model
 
 // ---- Set PI controller Gi
 Kp1 = -10 * 1/Gif_Kdc;
-Kp1 = 1E-6;
-T1= 1/(0.5*Weq*Kp1);
+Kp1 = 1E-4;
+T1= 1/(1*Weq*Kp1);
 printf('Gi T1=%f \n',T1);
 //T1= 1/(Gif_Wz1*Kp1);
 Gi= syslin('c', Kp1 * T1 *s +1,  T1*s);
-Gif = Gif * 83E3 *30;
+Gif = Gif * 83E3;
 //bode([Gif; Gif*Gc1] ,1E-3, 1E8, ["Gif", "open loop"]); // Gid bode plot
 T2= 1/(2*3.14*10E3);
 //T2=Rload*Co;
@@ -42,11 +42,22 @@ T2 =1/Wp2;
 G_current_sense = syslin('c', 1, 1+ s * T2);  // LPF for current sense 1kHz Wp1
 //--------------------------------
 
-Gopen = Gi * Gif * G_current_sense;
+Giopen = Gi * Gif * G_current_sense;
 //Gi= syslin('c', 1+s/(2*3.14*50), s*(1+s/(2*3.14*50E3)));
 clf;
-bode(Gopen,1E-3, 1E8); // Gid bode plot
+//bode(Gopen,1E-3, 1E8); // Gid bode plot
+Giclose = Giopen/(1+Giopen);
+bode(Giclose, 1E-3, 1E8);//
 
+
+//------------  Voltage loop Control----
+Fz2=1E3;
+Wz2=2*3.14*Fz2;
+Kp2=0.01;
+T2=1/(Wz2*Kp2);
+Gv= syslin('c', Kp2 * T2 *s +1,  T2*s);
+clf;
+bode([Gv*Giclose], 1E-3, 1E8);
 //---------Get the value from Analog control card 1900-7920 opamp N4B
 //----------current controller
 R53=47E3; R64=1E6; C42=2.2E-9; C45=2.2E-9;
