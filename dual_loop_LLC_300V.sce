@@ -9,7 +9,9 @@ Np=10;
 Ns=11;
 n=Np/Ns;
 Kf= -8*Vin*Lm/(3.14159*n*Lr*fr);
-
+Rac=(8/%pi^2)*(Np^2/Ns^2)*Rload;
+Q=sqrt(Lr/(Cr * Rac));
+printf('Q= %f',Q);
 
 Leq=Lr*(3.14159^2/4);
 Weq=n/(Leq*Co)^0.5;
