@@ -693,7 +693,7 @@ Property name="MODEL" value="R" autopos=1 normal=Left rotated=Left visible=0 fon
 Property name="REF" value="R2" autopos=1 normal=Right rotated=Bottom font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="value" value="0" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="value" value="2m" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="21" pin2="0"
 .EndInstance
 .Instance
@@ -767,7 +767,7 @@ Property name="MODEL" value="V" autopos=1 normal=Left rotated=Left visible=0 fon
 Property name="ref" value="V6" autopos=1 normal=Right rotated=Bottom font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="Value" value="2.45" autopos=1 normal=Right rotated=Top font=Default order=1
+Property name="Value" value="2" autopos=1 normal=Right rotated=Top font=Default order=1
 Netnames pin1="8" pin2="22"
 .EndInstance
 .Instance
@@ -893,9 +893,11 @@ Property name="NetName" value="0" autopos=1 normal=Left rotated=Left visible=0 f
 Property name="StyleNormal" value="DefaultWire" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 .EndWire
-Wire x1=-240 y1=1200 x2=6120 y2=1200 net="" branch=""
+Wire x1=-240 y1=1200 x2=6120 y2=1200 net="9" branch="+:H1#CN+:C2#P+:R1#P"
 .Wire
 Attributes x1=-240 y1=1200 x2=6120 y2=1200 
+Property name="BranchFormula" value="+:H1#CN+:C2#P+:R1#P" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="NetName" value="9" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultWire" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 .EndWire
@@ -1267,13 +1269,13 @@ Property name="NetName" value="0" autopos=1 normal=Left rotated=Left visible=0 f
 Property name="StyleNormal" value="DefaultWire" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 .EndWire
-Text value=".simulator SIMPLIS\n*.ac DEC 50 1m 100k\n.options\n+ PSP_START=0\n+ PSP_NPT=100001\n+ POP_ITRMAX=20\n+ POP_OUTPUT_CYCLES=5\n+ SNAPSHOT_INTVL=0\n+ SNAPSHOT_NPT=11\n+ MIN_AVG_TOPOLOGY_DUR=1a\n+ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128\n.pop\n+ TRIG_GATE={TRIG_GATE}\n+ TRIG_COND=0_TO_1\n+ MAX_PERIOD=10u\n+ CONVERGENCE=1p\n+ CYCLES_BEFORE_LAUNCH=20\n+ TD_RUN_AFTER_POP_FAILS=-1\n.tran 1m 980u\n\n.simulator DEFAULT\n"
+Text value=".simulator SIMPLIS\n.ac DEC 50 1m 1Meg\n.options\n+ PSP_START=0\n+ PSP_NPT=100001\n+ POP_ITRMAX=20\n+ POP_OUTPUT_CYCLES=5\n+ SNAPSHOT_INTVL=0\n+ SNAPSHOT_NPT=11\n+ MIN_AVG_TOPOLOGY_DUR=1a\n+ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128\n.pop\n+ TRIG_GATE={TRIG_GATE}\n+ TRIG_COND=0_TO_1\n+ MAX_PERIOD=10u\n+ CONVERGENCE=1p\n+ CYCLES_BEFORE_LAUNCH=20\n+ TD_RUN_AFTER_POP_FAILS=-1\n*.tran 1m 980u\n\n.simulator DEFAULT\n"
 LicenseInfo version="8.50i" feats=Basic|Micron|Schematic|Advanced|Multistep|Monte|Sim|Plugindevices|Demo|Rtn|SIMPLIS_IF|beta serial=unknown user="unknown" code=unknown product="Elements" binarch=x64 system="WINNT/10.0/x64/16794439680/14/1/20/418336162"
 SimulatorMode value="Simplis"
 View x=-2460 y=-1967 zoomlevel=33 zoom=10 snapgrid=120 offsetX=2460 offsetY=1856
 Property name="CreateProduct" value="SIMetrix/SIMPLIS Elite with DVM and Verilog for SIMPLIS" type=value
 Property name="GUID" value="{478495bc-1d73-4e40-aef8-4a3b12d9dcb0}" type=value
-Property name="UserVersion" value="39" type=value
-Property name="WriteLog" value="39/14/54397/48884" type=value
+Property name="UserVersion" value="41" type=value
+Property name="WriteLog" value="41/16/56535/51022" type=value
 .EndSchematic
 .EndComponent
