@@ -1,4 +1,5 @@
-Vin=600;
+Vin=600; // full bridge
+Vin=300; // half bridge
 Rload=18;
 Lr=30E-6;
 Cr=300E-9;
