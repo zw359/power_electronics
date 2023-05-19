@@ -1,4 +1,5 @@
-Vin=600;
+Vin=600; // full bridge
+Vin=300; // half bridge
 Rload=3;
 Lr=30E-6;
 Cr=300E-9;
@@ -8,8 +9,10 @@ Co = 14*1200E-6;
 Np=10;
 Ns=2;
 n=Np/Ns;
-Kf= -8*Vin*Lm/(3.14159*n*Lr*fr);
-
+Kf= -8*Vin*Lm/(%pi*n*Lr*fr);
+Rac=(8/%pi^2)*(n^2)*Rload;
+Q=sqrt(Lr/(Cr * Rac));
+printf('Q= %f',Q);
 
 Leq=Lr*(3.14159^2/4);
 Weq=n/(Leq*Co)^0.5;

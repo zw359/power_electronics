@@ -789,7 +789,7 @@ SimulatorMode value="SIMetrix"
 View x=-872 y=0 zoomlevel=31 zoom=8 snapgrid=120 offsetX=867 offsetY=0
 Property name="CreateProduct" value="Elements" type=value
 Property name="GUID" value="{3b529e51-8cca-45d2-90f0-6fc610f2c868}" type=value
-Property name="UserVersion" value="6" type=value
-Property name="WriteLog" value="6/6/1194/1194" type=value
+Property name="UserVersion" value="7" type=value
+Property name="WriteLog" value="7/7/67851/67851" type=value
 .EndSchematic
 .EndComponent
