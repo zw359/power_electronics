@@ -1,5 +1,5 @@
 Vin=600; // full bridge
-Vin=300; // half bridge
+//Vin=300; // half bridge
 Rload=18;
 Lr=30E-6;
 Cr=300E-9;
@@ -23,7 +23,8 @@ s=%s;
 num = -Kf*(1/Rload + s*Co); // use positive Kf here
 den = 1 + s* Leq/(n^2*Rload) + s*s*Leq*Co/n^2;
 Gif= syslin('c', num,den); // Gid small-signal model
-
+num = -Kf;
+Gvf= syslin('c', num,den);
 // ---- Set PI controller Gi
 Kp1 = -10 * 1/Gif_Kdc;
 Kp1 = 1E-4;
@@ -32,6 +33,7 @@ printf('Gi T1=%f \n',T1);
 //T1= 1/(Gif_Wz1*Kp1);
 Gi= syslin('c', Kp1 * T1 *s +1,  T1*s);
 Gif = Gif * 83E3;
+Gvf = Gvf * 83E3;
 //bode([Gif; Gif*Gc1] ,1E-3, 1E8, ["Gif", "open loop"]); // Gid bode plot
 T2= 1/(2*3.14*10E3);
 //T2=Rload*Co;
