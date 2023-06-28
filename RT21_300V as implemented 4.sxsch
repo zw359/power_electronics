@@ -2926,7 +2926,7 @@ SimulatorMode value="Simplis"
 View x=-4023 y=-4810 zoomlevel=32 zoom=9 snapgrid=120 offsetX=3283 offsetY=4810
 Property name="CreateProduct" value="SIMetrix/SIMPLIS Elite with DVM and Verilog for SIMPLIS" type=value
 Property name="GUID" value="{c4932eab-1dfc-4805-98ce-0980c668e211}" type=value
-Property name="UserVersion" value="98" type=value
-Property name="WriteLog" value="98/29/87950/63189" type=value
+Property name="UserVersion" value="100" type=value
+Property name="WriteLog" value="100/29/88730/63189" type=value
 .EndSchematic
 .EndComponent
