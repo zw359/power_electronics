@@ -18,8 +18,11 @@ namespace ex3
 			nsmgr.AddNamespace("dt","uuid:C2F41010-65B3-11d1-A29F-00AA00C14882");
 			nsmgr.AddNamespace("ss","urn:schemas-microsoft-com:office:spreadsheet");
 			nsmgr.AddNamespace("html","http://www.w3.org/TR/REC-html40");
-			XmlNode node = doc.SelectSingleNode("/df:Workbook/df:Worksheet", nsmgr);
-			Console.WriteLine(node.Attributes[0].InnerText);
+			//XmlNode node = doc.SelectSingleNode("/df:Workbook/df:Worksheet", nsmgr);
+			XmlNode node = doc.SelectSingleNode("/df:Workbook/df:Worksheet[@ss:Name='Input Products']", nsmgr);
+			XmlNode node = doc.SelectSingleNode("/df:Workbook/df:Worksheet[@ss:Name='Input Products']", nsmgr);
+			Console.WriteLine(node.Attributes[1].InnerText);
+			Console.WriteLine(node.Name);
 			//Console.WriteLine(doc.DocumentElement.ChildNodes[0].ChildNodes[0].Name);
 		
 			
