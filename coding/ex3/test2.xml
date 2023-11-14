@@ -1,0 +1,2262 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Title>PROD_BILL_OF_MAT</Title>
+  <Author>SAP</Author>
+  <LastAuthor>Wei Zhao</LastAuthor>
+  <Created>2007-09-05T00:00:00Z</Created>
+  <LastSaved>2023-11-06T01:33:56Z</LastSaved>
+  <Company>SAP</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <APPLICATION dt:dt="string">A1S</APPLICATION>
+  <OBJECT_NAME dt:dt="string">PROD_BILL_OF_MAT</OBJECT_NAME>
+  <VERSION dt:dt="string">SAP_BYD 833  - 2023.11.04</VERSION>
+  <SYSTEM dt:dt="string">J05 /082</SYSTEM>
+  <LANGUAGE dt:dt="string">E</LANGUAGE>
+  <PARTIAL_USE dt:dt="string"></PARTIAL_USE>
+  <ACTION_CODE dt:dt="string"></ACTION_CODE>
+  <IS_ROUNDTRIP dt:dt="string"></IS_ROUNDTRIP>
+  <BUSINESS_SYSTEM dt:dt="string"></BUSINESS_SYSTEM>
+ </CustomDocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <Colors>
+   <Color>
+    <Index>1</Index>
+    <RGB>#EDEDED</RGB>
+   </Color>
+   <Color>
+    <Index>14</Index>
+    <RGB>#FFFFFF</RGB>
+   </Color>
+   <Color>
+    <Index>15</Index>
+    <RGB>#CCCCCC</RGB>
+   </Color>
+   <Color>
+    <Index>43</Index>
+    <RGB>#F0AB00</RGB>
+   </Color>
+   <Color>
+    <Index>48</Index>
+    <RGB>#44697D</RGB>
+   </Color>
+   <Color>
+    <Index>55</Index>
+    <RGB>#666666</RGB>
+   </Color>
+  </Colors>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>17310</WindowHeight>
+  <WindowWidth>32767</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ActiveSheet>6</ActiveSheet>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763097132">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763096716">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763095676">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763095696">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763105868">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763105452">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763105472">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763106492">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763106512">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763094844">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763094864">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763097756">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763097776">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763097796">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763116684">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763116704">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763108364">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763108384">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763112108">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763118496">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763118596">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763111008">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#C0C0C0" ss:Bold="1"/>
+   <Interior ss:Color="#44697D" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763111088">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763115584">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#C0C0C0" ss:Bold="1"/>
+   <Interior ss:Color="#44697D" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763115644">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763109176">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763111464">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2594763111524">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="20" ss:Color="#333333"
+    ss:Bold="1" ss:Italic="1"/>
+   <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="20" ss:Color="#000000"
+    ss:Bold="1" ss:Italic="1"/>
+   <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="8" ss:Color="#333333"/>
+   <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s67">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="@"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s73">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="20" ss:Color="#000000"
+    ss:Bold="1" ss:Italic="1"/>
+   <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s78">
+   <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s80">
+   <Alignment ss:Vertical="Top"/>
+   <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s81">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s83">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s89">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#EDEDED"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="8" ss:Color="#000000"/>
+   <Interior ss:Color="#98ADB7" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s91">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="0.00000"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s95">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0.00000"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s96">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="20" ss:Color="#333333"
+    ss:Bold="1" ss:Italic="1"/>
+   <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s97">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="8" ss:Color="#333333"/>
+   <Interior ss:Color="#F0AB00" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s98">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#CCCCCC" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s107">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="3"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Interior/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s111">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="3"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="3"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s112">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="3"
+     ss:Color="#CCCCCC"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#CCCCCC"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Names>
+  <NamedRange ss:Name="Documentation" ss:RefersTo="=Documentation!R1C1"/>
+  <NamedRange ss:Name="Fields" ss:RefersTo="='Field List'!R1C1"/>
+  <NamedRange ss:Name="Instructions" ss:RefersTo="=Introduction!R1C1"/>
+ </Names>
+ <Worksheet ss:Name="Introduction" ss:Protected="1">
+  <Table ss:ExpandedColumnCount="26" ss:ExpandedRowCount="3" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultRowHeight="14.25">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="14.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="109" ss:Span="24"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s63">
+    <Cell ss:MergeAcross="9" ss:StyleID="s65"><Data ss:Type="String">Introduction to Data Migration Templates Bills of Material</Data><NamedCell
+      ss:Name="Instructions"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s66">
+    <Cell ss:MergeAcross="9" ss:StyleID="s67"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:Index="2" ss:MergeAcross="4"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <FitToPage/>
+   <Print>
+    <FitHeight>99</FitHeight>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>9</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>3</SplitHorizontal>
+   <TopRowBottomPane>3</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveRow>2</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>True</ProtectObjects>
+   <ProtectScenarios>True</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="BoM General" ss:Protected="1" ss:TabID="BOM_GENERAL_0001">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="8" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s70" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s71" ss:Width="120" ss:Span="1"/>
+   <Column ss:Index="3" ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="170.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s73">
+    <Cell ss:MergeAcross="14" ss:StyleID="s65"><Data ss:Type="String">Source Data for Migration Object:  Bills of Material</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s67">
+    <Cell ss:MergeAcross="14" ss:StyleID="s76"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12" ss:StyleID="s78">
+    <Cell ss:MergeAcross="14" ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14" ss:Hidden="0">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_GENERAL_0001</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Hidden="0">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">LANGUAGE</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_DESCRIPTION</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m2594763097132"><Data ss:Type="String">Main Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Bill of Material ID*&#10;&#10;A structured list of all the components, and their quantities that make up a parent product or order.&#10;&#10;&#10;Enter a unique, numeric or alphanumeric key to identify the bill of material.&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Language&#10;&#10;Enter the language of the description.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">BoM Description&#10;&#10;A textual explanation.&#10;&#10;&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">150-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">E</Data></Cell>
+    <Cell><Data ss:Type="String">RT21 300V 10kW WC 690Vac (CEA)</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>51</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>7</SplitHorizontal>
+   <TopRowBottomPane>7</TopRowBottomPane>
+   <SplitVertical>1</SplitVertical>
+   <LeftColumnRightPane>1</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveRow>13</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="BoM Other Languages" ss:Protected="1" ss:TabID="OTHERLANGUAGES_0007">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="7" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s70" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s71" ss:Width="120" ss:Span="2"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s73">
+    <Cell ss:MergeAcross="14" ss:StyleID="s65"><Data ss:Type="String">Source Data for Migration Object:  Bills of Material</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s67">
+    <Cell ss:MergeAcross="14" ss:StyleID="s76"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12" ss:StyleID="s78">
+    <Cell ss:MergeAcross="14" ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">OTHERLANGUAGES_0007</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">LANGUAGE</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_DESCRIPTION</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="1" ss:StyleID="m2594763096716"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Other Languages</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s89"><Data ss:Type="String">BoM ID*&#10;&#10;A structured list of all the components, and their quantities that make up a parent product or order.&#10;&#10;&#10;Enter a unique, numeric or alphanumeric key to identify the bill of material.&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Language*&#10;&#10;Enter the language of the description.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">BoM Description*&#10;&#10;A textual explanation.&#10;&#10;&#10;Use the language that you specified in the Language field.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Visible>SheetHidden</Visible>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>23</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>7</SplitHorizontal>
+   <TopRowBottomPane>7</TopRowBottomPane>
+   <SplitVertical>2</SplitVertical>
+   <LeftColumnRightPane>2</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveCol>0</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="BoM Item Groups" ss:Protected="1" ss:TabID="BOM_ITEM_GROUPS_0004">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="13" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s70" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s71" ss:Width="120" ss:Span="3"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s73">
+    <Cell ss:MergeAcross="14" ss:StyleID="s65"><Data ss:Type="String">Source Data for Migration Object:  Bills of Material</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s67">
+    <Cell ss:MergeAcross="14" ss:StyleID="s76"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12" ss:StyleID="s78">
+    <Cell ss:MergeAcross="14" ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ITEM_GROUPS_0004</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ITEM_GROUP</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">MULTIPLE_SELECTION_ALLOWED</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">SELECTION_REQUIRED</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="1" ss:StyleID="m2594763095676"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m2594763095696"><Data ss:Type="String">Item Group Data</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s89"><Data ss:Type="String">BoM ID*&#10;&#10;A structured list of all the components, and their quantities that make up a parent product or order.&#10;&#10;&#10;Enter a unique, numeric or alphanumeric key to identify the bill of material.&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Line Item Group ID*&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Multiple Selections Allowed&#10;&#10;If multiple selections are allowed, enter 'X' in this indicator field. If not, leave it empty. If you leave the field empty, you can only select one item from the item group.&#10;&#10;Type: Text&#10;Length: 1</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Selection Required&#10;&#10;If a selection is required, enter 'X' in this indicator field. If not, leave it empty. If the indicator is set, at least one item must be selected from the item group.&#10;&#10;Type: Text&#10;Length: 1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">130-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">130-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">2</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">130-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">3</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">130-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">4</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">130-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">5</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">130-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">6</Data></Cell>
+    <Cell><Data ss:Type="String">X</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>51</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>7</SplitHorizontal>
+   <TopRowBottomPane>7</TopRowBottomPane>
+   <SplitVertical>2</SplitVertical>
+   <LeftColumnRightPane>2</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveRow>23</ActiveRow>
+     <ActiveCol>7</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Item Group Descriptions" ss:Protected="1" ss:TabID="ITEM_GROUP_TEXT_0010">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="7" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s70" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s71" ss:Width="120" ss:Span="3"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s73">
+    <Cell ss:MergeAcross="14" ss:StyleID="s65"><Data ss:Type="String">Source Data for Migration Object:  Bills of Material</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s67">
+    <Cell ss:MergeAcross="14" ss:StyleID="s76"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12" ss:StyleID="s78">
+    <Cell ss:MergeAcross="14" ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ITEM_GROUP_TEXT_0010</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ITEM_GROUP</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">LANGUAGE</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ITEM_GROUP_DESCRIPTION</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="2" ss:StyleID="m2594763105868"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s89"><Data ss:Type="String">BoM ID*&#10;&#10;A structured list of all the components, and their quantities that make up a parent product or order.&#10;&#10;&#10;Enter a unique, numeric or alphanumeric key to identify the bill of material.&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Line Item Group ID*&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Language*&#10;&#10;Enter the language of the description.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Line Item Group Description*&#10;&#10;A textual explanation.&#10;&#10;&#10;Use the language that you specified in the Language field.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>56</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>7</SplitHorizontal>
+   <TopRowBottomPane>7</TopRowBottomPane>
+   <SplitVertical>3</SplitVertical>
+   <LeftColumnRightPane>3</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveCol>0</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="BoM Variants" ss:Protected="1" ss:TabID="BOM_VARIANTS_0002">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="8" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s70" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s71" ss:Width="120" ss:Span="3"/>
+   <Column ss:Index="5" ss:StyleID="s91" ss:Width="120"/>
+   <Column ss:StyleID="s71" ss:Width="120"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s73">
+    <Cell ss:MergeAcross="14" ss:StyleID="s65"><Data ss:Type="String">Source Data for Migration Object:  Bills of Material</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s67">
+    <Cell ss:MergeAcross="14" ss:StyleID="s76"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12" ss:StyleID="s78">
+    <Cell ss:MergeAcross="14" ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_VARIANTS_0002</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s81"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">VARIANT_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">PRODUCT_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">PRODUCT_SPECIFICATION_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">QUANTITY</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">QUANTITY_UNIT</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="3" ss:StyleID="m2594763105452"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m2594763105472"><Data ss:Type="String">Quantity</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s89"><Data ss:Type="String">BoM ID*&#10;&#10;A structured list of all the components, and their quantities that make up a parent product or order.&#10;&#10;&#10;Enter a unique, numeric or alphanumeric key to identify the bill of material.&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Variant ID*&#10;&#10;A structured subset of the specific input products that are used to manufacture an output product.&#10;&#10;Only variants can be used in a production model and later in manufacturing. In a production BoM, the same input product can be used in more than one variant.&#10;&#10;Variants can be defined for different output products, but usually the output products are similar. For example, a production BoM can be defined for all engines fora particular model of car. The variants can be defined for individual engine types, for example, a variant can be defined for a1.&#10;6 liter engine, and another variant for a 2.&#10;0 liter engine. By using variants in this way, the maintenance of all the input products for similar output products is reduced.&#10;&#10;&#10;&#10;Type: Text&#10;Length: 8(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Product ID in BoM variant*&#10;&#10;Unique alphanumeric key assigned to a product within a bill of material variant.&#10;&#10;With this product ID you define the product that is manufactured with a BoM variant in a production process.&#10;&#10;&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Product Specification ID&#10;&#10;A document with a detailed description of the properties that characterize a product.&#10;&#10;&#10;Enter the unique, alphanumeric ID of the product specification document.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Quantity&#10;&#10;A definite amount or measure of an item, for example, a product.&#10;&#10;&#10;&#10;Type: Number&#10;Length: 31&#10;Decimal: 5</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Quantity UoM&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">150-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">150-1381-01-00</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">EA</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>51</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>7</SplitHorizontal>
+   <TopRowBottomPane>7</TopRowBottomPane>
+   <SplitVertical>4</SplitVertical>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveRow>44</ActiveRow>
+     <ActiveCol>9</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Variant Descriptions" ss:Protected="1" ss:TabID="VARIANT_TEXT_0008">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="7" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s70" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s71" ss:Width="120" ss:Span="4"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s73">
+    <Cell ss:MergeAcross="14" ss:StyleID="s65"><Data ss:Type="String">Source Data for Migration Object:  Bills of Material</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s67">
+    <Cell ss:MergeAcross="14" ss:StyleID="s76"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12" ss:StyleID="s78">
+    <Cell ss:MergeAcross="14" ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">VARIANT_TEXT_0008</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">VARIANT_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">LANGUAGE</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">VARIANT_DESCRIPTION</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">LONG_TEXT</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="2" ss:StyleID="m2594763106492"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m2594763106512"><Data ss:Type="String">Variant Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s89"><Data ss:Type="String">BoM ID*&#10;&#10;A structured list of all the components, and their quantities that make up a parent product or order.&#10;&#10;&#10;Enter a unique, numeric or alphanumeric key to identify the bill of material.&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Variant ID*&#10;&#10;A structured subset of the specific input products that are used to manufacture an output product.&#10;&#10;Only variants can be used in a production model and later in manufacturing. In a production BoM, the same input product can be used in more than one variant.&#10;&#10;Variants can be defined for different output products, but usually the output products are similar. For example, a production BoM can be defined for all engines fora particular model of car. The variants can be defined for individual engine types, for example, a variant can be defined for a1.&#10;6 liter engine, and another variant for a 2.&#10;0 liter engine. By using variants in this way, the maintenance of all the input products for similar output products is reduced.&#10;&#10;&#10;&#10;Type: Text&#10;Length: 8(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Language*&#10;&#10;Enter the language of the description.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Description&#10;&#10;Use the language that you specified in the Language field.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Long Text&#10;&#10;You can use this field for any text that exceeds the Description field.&#10;&#10;Type: Text&#10;Length: unrestricted</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>56</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>7</SplitHorizontal>
+   <TopRowBottomPane>7</TopRowBottomPane>
+   <SplitVertical>3</SplitVertical>
+   <LeftColumnRightPane>3</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveCol>0</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Variant Attachments" ss:Protected="1" ss:TabID="VARIANT_ATTACHM_0006">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="7" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s70" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s71" ss:Width="120" ss:Span="5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s73">
+    <Cell ss:MergeAcross="14" ss:StyleID="s65"><Data ss:Type="String">Source Data for Migration Object:  Bills of Material</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s67">
+    <Cell ss:MergeAcross="14" ss:StyleID="s76"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12" ss:StyleID="s78">
+    <Cell ss:MergeAcross="14" ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">VARIANT_ATTACHM_0006</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s81"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">VARIANT_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">URL_LINK</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">DOCUMENT_TITLE</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">DOCUMENT_TYPE</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">COMMENT</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="2" ss:StyleID="m2594763094844"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2594763094864"><Data ss:Type="String">Attachments</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s89"><Data ss:Type="String">BoM ID*&#10;&#10;A structured list of all the components, and their quantities that make up a parent product or order.&#10;&#10;&#10;Enter a unique, numeric or alphanumeric key to identify the bill of material.&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Variant ID*&#10;&#10;A structured subset of the specific input products that are used to manufacture an output product.&#10;&#10;Only variants can be used in a production model and later in manufacturing. In a production BoM, the same input product can be used in more than one variant.&#10;&#10;Variants can be defined for different output products, but usually the output products are similar. For example, a production BoM can be defined for all engines fora particular model of car. The variants can be defined for individual engine types, for example, a variant can be defined for a1.&#10;6 liter engine, and another variant for a 2.&#10;0 liter engine. By using variants in this way, the maintenance of all the input products for similar output products is reduced.&#10;&#10;&#10;&#10;Type: Text&#10;Length: 8(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">URL*&#10;&#10;Type: Text&#10;Length: unrestricted</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Document Title*&#10;&#10;If the text exceeds the field length, use the Comment field.&#10;&#10;Type: Text&#10;Length: 128</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Document Type&#10;&#10;Examples: Standard attachment, technical drawing, product image.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Comment&#10;&#10;A piece of text that provides supplementary information.&#10;&#10;&#10;&#10;Type: Text&#10;Length: unrestricted</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Visible>SheetHidden</Visible>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>23</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>7</SplitHorizontal>
+   <TopRowBottomPane>7</TopRowBottomPane>
+   <SplitVertical>3</SplitVertical>
+   <LeftColumnRightPane>3</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveCol>0</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Input Products" ss:Protected="1" ss:TabID="INPUT_PRODUCTS_0003">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="13" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s70" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s71" ss:Width="120" ss:Span="4"/>
+   <Column ss:Index="6" ss:StyleID="s91" ss:Width="120"/>
+   <Column ss:StyleID="s71" ss:Width="120" ss:Span="8"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s73">
+    <Cell ss:MergeAcross="14" ss:StyleID="s65"><Data ss:Type="String">Source Data for Migration Object:  Bills of Material</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s67">
+    <Cell ss:MergeAcross="14" ss:StyleID="s76"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12" ss:StyleID="s78">
+    <Cell ss:MergeAcross="14" ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">INPUT_PRODUCTS_0003</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s95"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">VARIANT_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ITEM_GROUP</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">LINE_ITEM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">PRODUCT_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">QUANTITY</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">QUANTITY_UOM</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">CHANGE_ORDER_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">FIXED</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">DELETED</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BYDA4EMVP0008176D39B49D2</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BYDA4EMVP000E7556C76D111</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BYDA4EMVP0005EC64B577CE8</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BYDA4EMVP00055ACFC1F3BAD</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BYDA4EMVP0008C00BAAD906C</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="3" ss:StyleID="m2594763097756"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:MergeAcross="5" ss:StyleID="m2594763097776"><Data ss:Type="String">Component</Data></Cell>
+    <Cell ss:MergeAcross="4" ss:StyleID="m2594763097796"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s89"><Data ss:Type="String">BoM ID*&#10;&#10;A structured list of all the components, and their quantities that make up a parent product or order.&#10;&#10;&#10;Enter a unique, numeric or alphanumeric key to identify the bill of material.&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Variant ID*&#10;&#10;A structured subset of the specific input products that are used to manufacture an output product.&#10;&#10;Only variants can be used in a production model and later in manufacturing. In a production BoM, the same input product can be used in more than one variant.&#10;&#10;Variants can be defined for different output products, but usually the output products are similar. For example, a production BoM can be defined for all engines fora particular model of car. The variants can be defined for individual engine types, for example, a variant can be defined for a1.&#10;6 liter engine, and another variant for a 2.&#10;0 liter engine. By using variants in this way, the maintenance of all the input products for similar output products is reduced.&#10;&#10;&#10;&#10;Type: Text&#10;Length: 8(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Line Item Group ID*&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Line Item BoM*&#10;&#10;A position in a production bill of material in which an input product and its quantity can be specified.&#10;&#10;Line items are independent of variants. The same line item ID can be used in more than one production bill of material variant.&#10;&#10;&#10;&#10;Type: Text&#10;Length: 8(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Input Product ID*&#10;&#10;Unique alphanumeric key assigned to an input product in a bill of material.&#10;&#10;With the input product ID you define the material of components that are used to produce the product of this BoM variant.&#10;&#10;&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Quantity*&#10;&#10;A definite amount or measure of an item, for example, a product.&#10;&#10;&#10;&#10;Type: Number&#10;Length: 31&#10;Decimal: 5</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Quantity UoM*&#10;&#10;Enter the same unit of measure as for the Supply Planning UoM in the material master data (Materials migration object).&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Engineering Change Order ID*&#10;&#10;A directive to change the product content of a production bill of material.&#10;&#10;Before the input products controlled by an engineeringchange order (ECO) can be used in the system:&#10;The validity date on which the system automatically implements changes must be reached&#10;The ECO must be at the status of Completed&#10;&#10;Within one bill of material, only one Engineering Change Order ID is allowed. The ECO must be at the status of Completed.&#10;&#10;Type: Text&#10;Length: 12(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Fixed Quantity Indicator&#10;&#10;A setting that ensures the quantity specified for an input product in a production BoM variant stays constant, regardless of how large the requirement is for the output product.&#10;&#10;&#10;This is an indicator field. To activate enter 'X'. If not, leave it empty.&#10;&#10;Type: Text&#10;Length: 1</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Deleted&#10;&#10;This indicator field enables you to set the line item inactive. To do so, enter 'X'. Otherwise, leave the field empty.&#10;&#10;Type: Text&#10;Length: 1</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Phantom Info&#10;&#10;Type: Text&#10;Length: 120(120) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Phatom Per&#10;&#10;Type: Text&#10;Length: 120(120) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Designators&#10;&#10;Type: Text&#10;Length: unrestricted</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Customer Approval?&#10;&#10;Type: Text&#10;Length: 1</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Listed On Safety Data File?&#10;&#10;Type: Text&#10;Length: 1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">150-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">181-1125-01-00</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">EA</Data></Cell>
+    <Cell><Data ss:Type="String">ECN-1927</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">150-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">2</Data></Cell>
+    <Cell><Data ss:Type="String">2</Data></Cell>
+    <Cell><Data ss:Type="String">181-1126-02-00</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">EA</Data></Cell>
+    <Cell><Data ss:Type="String">ECN-1927</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">150-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">3</Data></Cell>
+    <Cell><Data ss:Type="String">3</Data></Cell>
+    <Cell><Data ss:Type="String">181-1127-01-00</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">EA</Data></Cell>
+    <Cell><Data ss:Type="String">ECN-1927</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">150-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">4</Data></Cell>
+    <Cell><Data ss:Type="String">4</Data></Cell>
+    <Cell><Data ss:Type="String">181-1128-01-00</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">EA</Data></Cell>
+    <Cell><Data ss:Type="String">ECN-1927</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">150-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">5</Data></Cell>
+    <Cell><Data ss:Type="String">5</Data></Cell>
+    <Cell><Data ss:Type="String">190-7920-04-00</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">EA</Data></Cell>
+    <Cell><Data ss:Type="String">ECN-1927</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">150-1381-01-00</Data></Cell>
+    <Cell><Data ss:Type="String">1</Data></Cell>
+    <Cell><Data ss:Type="String">6</Data></Cell>
+    <Cell><Data ss:Type="String">6</Data></Cell>
+    <Cell><Data ss:Type="String">190-8210-02-00</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">EA</Data></Cell>
+    <Cell><Data ss:Type="String">ECN-1927</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>51</TabColorIndex>
+   <Selected/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>7</SplitHorizontal>
+   <TopRowBottomPane>7</TopRowBottomPane>
+   <SplitVertical>4</SplitVertical>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveRow>32</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Item Change Descriptions" ss:Protected="1" ss:TabID="ITEM_TEXT_0009">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="7" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s70" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s71" ss:Width="120" ss:Span="6"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s73">
+    <Cell ss:MergeAcross="14" ss:StyleID="s65"><Data ss:Type="String">Source Data for Migration Object:  Bills of Material</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s67">
+    <Cell ss:MergeAcross="14" ss:StyleID="s76"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12" ss:StyleID="s78">
+    <Cell ss:MergeAcross="14" ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ITEM_TEXT_0009</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ITEM_GROUP</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">LINE_ITEM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">CHANGE_ORDER_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">LANGUAGE</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">LINE_ITEM_DESCRIPTION</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">LONG_TEXT</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="4" ss:StyleID="m2594763116684"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m2594763116704"><Data ss:Type="String">Change Description</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s89"><Data ss:Type="String">BoM ID*&#10;&#10;A structured list of all the components, and their quantities that make up a parent product or order.&#10;&#10;&#10;Enter a unique, numeric or alphanumeric key to identify the bill of material.&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Line Item Group ID*&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Line Item*&#10;&#10;A row in adocument containing the details of an entry, business document, or transaction.&#10;&#10;For example, in a production bill of material, it is an individual entry that specifies an input product and its quantity.&#10;&#10;&#10;&#10;Type: Text&#10;Length: 8(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Engineering Change Order ID*&#10;&#10;A directive to change the product content of a production bill of material.&#10;&#10;Before the input products controlled by an engineeringchange order (ECO) can be used in the system:&#10;The validity date on which the system automatically implements changes must be reached&#10;The ECO must be at the status of Completed&#10;&#10;Within one bill of material, only one Engineering Change Order ID is allowed. The ECO must be at the status of Completed.&#10;&#10;Type: Text&#10;Length: 12(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Language*&#10;&#10;Enter the language of the description.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Line Item Change Description&#10;&#10;A textual explanation.&#10;&#10;&#10;Use the language that you specified in the Language field.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Line Item Details Text&#10;&#10;You can use this field for any text that exceeds the Description field.&#10;&#10;Type: Text&#10;Length: unrestricted</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Visible>SheetHidden</Visible>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>23</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>7</SplitHorizontal>
+   <TopRowBottomPane>7</TopRowBottomPane>
+   <SplitVertical>5</SplitVertical>
+   <LeftColumnRightPane>5</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveCol>0</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Item Attachments" ss:Protected="1" ss:TabID="ITEM_ATTACHMENT_0005">
+  <Table ss:ExpandedColumnCount="15" ss:ExpandedRowCount="7" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s70" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s71" ss:Width="120" ss:Span="7"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s73">
+    <Cell ss:MergeAcross="14" ss:StyleID="s65"><Data ss:Type="String">Source Data for Migration Object:  Bills of Material</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s67">
+    <Cell ss:MergeAcross="14" ss:StyleID="s76"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="12" ss:StyleID="s78">
+    <Cell ss:MergeAcross="14" ss:StyleID="s80"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">ITEM_ATTACHMENT_0005</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Hidden="1">
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">BOM_ITEM_GROUP</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">LINE_ITEM_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">CHANGE_ORDER_ID</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">URL_LINK</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">DOCUMENT_TITLE</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">DOCUMENT_TYPE</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">COMMENT</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeAcross="4" ss:StyleID="m2594763108364"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="m2594763108384"><Data ss:Type="String">Attachments</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s89"><Data ss:Type="String">BoM ID*&#10;&#10;A structured list of all the components, and their quantities that make up a parent product or order.&#10;&#10;&#10;Enter a unique, numeric or alphanumeric key to identify the bill of material.&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Line Item Group ID*&#10;&#10;Type: Text&#10;Length: 40(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Line Item*&#10;&#10;A row in adocument containing the details of an entry, business document, or transaction.&#10;&#10;For example, in a production bill of material, it is an individual entry that specifies an input product and its quantity.&#10;&#10;&#10;&#10;Type: Text&#10;Length: 8(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Engineering Change Order ID*&#10;&#10;A directive to change the product content of a production bill of material.&#10;&#10;Before the input products controlled by an engineeringchange order (ECO) can be used in the system:&#10;The validity date on which the system automatically implements changes must be reached&#10;The ECO must be at the status of Completed&#10;&#10;Within one bill of material, only one Engineering Change Order ID is allowed. The ECO must be at the status of Completed.&#10;&#10;Type: Text&#10;Length: 12(80) - see introduction</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">URL*&#10;&#10;Type: Text&#10;Length: unrestricted</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Document Title*&#10;&#10;If the text exceeds the field length, use the Comment field.&#10;&#10;Type: Text&#10;Length: 128</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Document Type&#10;&#10;Examples: Standard attachment, product specification, technical drawing, product image.&#10;&#10;Type: Text&#10;Length: 80</Data></Cell>
+    <Cell ss:StyleID="s89"><Data ss:Type="String">Comment&#10;&#10;A piece of text that provides supplementary information.&#10;&#10;&#10;&#10;Type: Text&#10;Length: unrestricted</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Visible>SheetHidden</Visible>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>23</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>7</SplitHorizontal>
+   <TopRowBottomPane>7</TopRowBottomPane>
+   <SplitVertical>5</SplitVertical>
+   <LeftColumnRightPane>5</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveCol>0</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Documentation" ss:Protected="1">
+  <Table ss:ExpandedColumnCount="26" ss:ExpandedRowCount="3" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultRowHeight="14.25">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="14.5"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="109" ss:Span="24"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s63">
+    <Cell ss:MergeAcross="9" ss:StyleID="s65"><Data ss:Type="String">Documentation for Migration Object: Bills of Material</Data><NamedCell
+      ss:Name="Documentation"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15" ss:StyleID="s66">
+    <Cell ss:MergeAcross="9" ss:StyleID="s67"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:Index="2" ss:MergeAcross="4"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <FitToPage/>
+   <Print>
+    <FitHeight>99</FitHeight>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>9</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>3</SplitHorizontal>
+   <TopRowBottomPane>3</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveRow>2</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>True</ProtectObjects>
+   <ProtectScenarios>True</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Field List" ss:Protected="1">
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="84" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s78" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s78" ss:AutoFitWidth="0" ss:Width="14.5"/>
+   <Column ss:StyleID="s78" ss:AutoFitWidth="0" ss:Width="67"/>
+   <Column ss:StyleID="s78" ss:AutoFitWidth="0" ss:Width="88"/>
+   <Column ss:StyleID="s78" ss:AutoFitWidth="0" ss:Width="172"/>
+   <Column ss:StyleID="s78" ss:AutoFitWidth="0" ss:Width="135"/>
+   <Column ss:StyleID="s78" ss:AutoFitWidth="0" ss:Width="82.5"/>
+   <Column ss:StyleID="s78" ss:AutoFitWidth="0" ss:Width="56.5" ss:Span="1"/>
+   <Column ss:Index="9" ss:StyleID="s78" ss:AutoFitWidth="0" ss:Width="14.5"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30" ss:StyleID="s96">
+    <Cell ss:MergeAcross="8" ss:StyleID="s65"><Data ss:Type="String">Field List for Migration Object: Bills of Material</Data><NamedCell
+      ss:Name="Fields"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s97">
+    <Cell ss:MergeAcross="8" ss:StyleID="s67"><Data ss:Type="String">Version SAP_BYD 833  - 2023.11.04 © Copyright SAP SE. All rights reserved.</Data></Cell>
+   </Row>
+   <Row ss:Index="4" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s98"><Data ss:Type="String">Sheet Name</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Group Name</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String" ss:TabID="Sheet Name" ss:DataType="Type" ss:Tech_field_name="Field Name">Field Name</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Importance</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Type</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Length</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Decimal</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="6" ss:StyleID="m2594763111464"><Data
+      ss:Type="String">BoM General (mandatory)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeDown="2" ss:StyleID="s107"/>
+    <Cell ss:StyleID="s111"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Bill of Material ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:MergeDown="1" ss:StyleID="s111"><Data ss:Type="String">Main Description</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Language</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">BoM Description</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:Index="10" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="6" ss:StyleID="m2594763111524"><Data
+      ss:Type="String">BoM Other Languages (optional, hidden)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeDown="2" ss:StyleID="s107"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s111"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">BoM ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Language</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:StyleID="s111"><Data ss:Type="String">Other Languages</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">BoM Description</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:Index="15" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="6" ss:StyleID="m2594763109176"><Data
+      ss:Type="String">BoM Item Groups (mandatory)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeDown="3" ss:StyleID="s107"/>
+    <Cell ss:MergeDown="1" ss:StyleID="s111"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">BoM ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Line Item Group ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:MergeDown="1" ss:StyleID="s111"><Data ss:Type="String">Item Group Data</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Multiple Selections Allowed</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">1     </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Selection Required</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">1     </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:Index="21" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="6" ss:StyleID="m2594763115584"><Data
+      ss:Type="String">Item Group Descriptions (recommended)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeDown="3" ss:StyleID="s107"/>
+    <Cell ss:MergeDown="2" ss:StyleID="s111"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">BoM ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Line Item Group ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Language</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:StyleID="s111"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Line Item Group Description</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:Index="27" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="6" ss:StyleID="m2594763115644"><Data
+      ss:Type="String">BoM Variants (mandatory)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeDown="5" ss:StyleID="s107"/>
+    <Cell ss:MergeDown="3" ss:StyleID="s111"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">BoM ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Variant ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">8(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Product ID in BoM variant</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Product Specification ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:MergeDown="1" ss:StyleID="s111"><Data ss:Type="String">Quantity</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Quantity</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Number</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">31    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">5     </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Quantity UoM</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:Index="35" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="6" ss:StyleID="m2594763111008"><Data
+      ss:Type="String">Variant Descriptions (recommended)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeDown="4" ss:StyleID="s107"/>
+    <Cell ss:MergeDown="2" ss:StyleID="s111"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">BoM ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Variant ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">8(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Language</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:MergeDown="1" ss:StyleID="s111"><Data ss:Type="String">Variant Description</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Description</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Long Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">unrestricted</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:Index="42" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="6" ss:StyleID="m2594763111088"><Data
+      ss:Type="String">Variant Attachments (optional, hidden)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeDown="5" ss:StyleID="s107"/>
+    <Cell ss:MergeDown="2" ss:StyleID="s111"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">BoM ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Variant ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">8(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">URL</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">unrestricted</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:MergeDown="2" ss:StyleID="s111"><Data ss:Type="String">Attachments</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Document Title</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">128   </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Document Type</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Comment</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">unrestricted</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:Index="50" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="6" ss:StyleID="m2594763118496"><Data
+      ss:Type="String">Input Products (mandatory)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeDown="14" ss:StyleID="s107"/>
+    <Cell ss:MergeDown="3" ss:StyleID="s111"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">BoM ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Variant ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">8(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Line Item Group ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Line Item BoM</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">8(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:MergeDown="5" ss:StyleID="s111"><Data ss:Type="String">Component</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Input Product ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Quantity</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Number</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">31    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">5     </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Quantity UoM</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Engineering Change Order ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">12(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Fixed Quantity Indicator</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">1     </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Deleted</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">1     </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:MergeDown="4" ss:StyleID="s111"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Phantom Info</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">120(120)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Phatom Per</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">120(120)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Designators</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">unrestricted</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Customer Approval?</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">1     </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Listed On Safety Data File?</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">1     </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:Index="67" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="6" ss:StyleID="m2594763118596"><Data
+      ss:Type="String">Item Change Descriptions (optional, hidden)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeDown="6" ss:StyleID="s107"/>
+    <Cell ss:MergeDown="4" ss:StyleID="s111"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">BoM ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Line Item Group ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Line Item</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">8(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Engineering Change Order ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">12(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Language</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:MergeDown="1" ss:StyleID="s111"><Data ss:Type="String">Change Description</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Line Item Change Description</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Line Item Details Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">unrestricted</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:Index="76" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeAcross="6" ss:StyleID="m2594763112108"><Data
+      ss:Type="String">Item Attachments (optional, hidden)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:MergeDown="7" ss:StyleID="s107"/>
+    <Cell ss:MergeDown="4" ss:StyleID="s111"><Data ss:Type="String">Key</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">BoM ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Line Item Group ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">40(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Line Item</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">8(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Engineering Change Order ID</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">12(80)</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">URL</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">unrestricted</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:MergeDown="2" ss:StyleID="s111"><Data ss:Type="String">Attachments</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Document Title</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">mandatory for sheet</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">128   </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Document Type</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">80    </Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4" ss:StyleID="s112"><Data ss:Type="String">Comment</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">Text</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String">unrestricted</Data></Cell>
+    <Cell ss:StyleID="s112"><Data ss:Type="String"></Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <FitToPage/>
+   <Print>
+    <FitHeight>99</FitHeight>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <TabColorIndex>9</TabColorIndex>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>4</SplitHorizontal>
+   <TopRowBottomPane>4</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveRow>2</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>True</ProtectObjects>
+   <ProtectScenarios>True</ProtectScenarios>
+   <AllowSizeCols/>
+   <AllowSizeRows/>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

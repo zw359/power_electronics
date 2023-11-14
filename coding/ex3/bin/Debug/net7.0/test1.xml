@@ -1,0 +1,7 @@
+<books xmlns="http://www.contoso.com/books">  
+    <book>  
+        <title>Title</title>  
+        <author>Author Name</author>  
+        <price>5.50</price>  
+    </book>  
+</books>  
