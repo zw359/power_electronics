@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Working\\power_electronics\\coding\\ex3\\ex3.csproj",
+      "projectUniqueName": "C:\\wip\\power_electronics\\coding\\ex3\\ex3.csproj",
       "projectName": "ex3",
-      "projectPath": "C:\\Working\\power_electronics\\coding\\ex3\\ex3.csproj",
+      "projectPath": "C:\\wip\\power_electronics\\coding\\ex3\\ex3.csproj",
       "packagesPath": "C:\\Users\\wei\\.nuget\\packages\\",
-      "outputPath": "C:\\Working\\power_electronics\\coding\\ex3\\obj\\",
+      "outputPath": "C:\\wip\\power_electronics\\coding\\ex3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\wei\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

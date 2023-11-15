@@ -20,9 +20,15 @@ namespace ex3
 			nsmgr.AddNamespace("html","http://www.w3.org/TR/REC-html40");
 			//XmlNode node = doc.SelectSingleNode("/df:Workbook/df:Worksheet", nsmgr);
 			XmlNode node = doc.SelectSingleNode("/df:Workbook/df:Worksheet[@ss:Name='Input Products']", nsmgr);
-			XmlNode node = doc.SelectSingleNode("/df:Workbook/df:Worksheet[@ss:Name='Input Products']", nsmgr);
-			Console.WriteLine(node.Attributes[1].InnerText);
-			Console.WriteLine(node.Name);
+			//XmlNode node = doc.SelectSingleNode("/df:Workbook/df:Worksheet[last()]", nsmgr);
+			//XmlNode node = doc.SelectSingleNode("/df:Workbook/df:Worksheet[last()]/df:Table/df:Row[last()]", nsmgr);
+			//XmlNode node = doc.SelectSingleNode("/df:Workbook/df:Worksheet[@ss:Name='Input Products']/df:Table/df:Row[8]/df:Cell/df:Data[1]", nsmgr);
+			
+			//Console.WriteLine(node.Attributes[0].InnerText);
+			//Console.WriteLine(node.Attributes[0].Name);
+			//Console.WriteLine(node.Name);
+			//Console.WriteLine(node.InnerText);
+			Console.WriteLine(node.GetAttribute("ss:Name", nsmgr));
 			//Console.WriteLine(doc.DocumentElement.ChildNodes[0].ChildNodes[0].Name);
 		
 			
