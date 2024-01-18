@@ -1,6 +1,6 @@
 Vin=600; // full bridge
 Vin=300; // half bridge
-Rload=3;
+Rload=0.6;
 Lr=30E-6;
 Cr=300E-9;
 Lm=220E-6;
@@ -23,7 +23,7 @@ s=%s;
 num = -Kf*(1/Rload + s*Co); // use positive Kf here
 den = 1 + s* Leq/(n^2*Rload) + s*s*Leq*Co/n^2;
 Gif= syslin('c', num,den); // Gid small-signal model
-
+Q_Gif = 0.5 * (1/n/Rload)*sqrt(Leq/Co);
 // ---- Set PI controller Gi
 Kp1 = -10 * 1/Gif_Kdc;
 Kp1 = 1;
