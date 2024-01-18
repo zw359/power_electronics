@@ -3080,10 +3080,10 @@ Property name="value" value="UCC25600 VCO\n83kHz/1mA" autopos=0 x=0 y=156 align=
 Netnames
 .EndInstance
 --EndSXVERSION1.5
-Text value=".simulator SIMPLIS\n*.ac DEC 30 1m 100k\n.options\n+ PSP_NPT=200001\n+ POP_ITRMAX=20\n+ POP_OUTPUT_CYCLES=5\n+ SNAPSHOT_INTVL=0\n+ SNAPSHOT_NPT=11\n+ MIN_AVG_TOPOLOGY_DUR=1a\n+ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128\n*.pop TRIG_GATE={TRIG_GATE} TRIG_COND=0_TO_1 MAX_PERIOD=50u CONVERGENCE=1p CYCLES_BEFORE_LAUNCH=20 TD_RUN_AFTER_POP_FAILS=-1\n.tran 15m 0\n\n.simulator DEFAULT\n"
+Text value=".simulator SIMPLIS\n.ac DEC 100 1k 20k\n.options\n+ PSP_NPT=200001\n+ POP_ITRMAX=20\n+ POP_OUTPUT_CYCLES=5\n+ SNAPSHOT_INTVL=0\n+ SNAPSHOT_NPT=11\n+ MIN_AVG_TOPOLOGY_DUR=1a\n+ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128\n.pop\n+ TRIG_GATE={TRIG_GATE}\n+ TRIG_COND=0_TO_1\n+ MAX_PERIOD=50u\n+ CONVERGENCE=1p\n+ CYCLES_BEFORE_LAUNCH=20\n+ TD_RUN_AFTER_POP_FAILS=-1\n*.tran 15m 0\n\n.simulator DEFAULT\n"
 LicenseInfo version="8.40" feats=Basic|Micron|Mcore2|Schematic|Styles|Advanced|Soa|Multistep|Monte|Sim|Plugindevices|Rdif|Scripts|Rtn|SIMPLIS_IF|RemoteSimplis|beta|Va|Dotload|ProModels|Binning|Hspicedotlib|Vl|VerilogHdl|Mcore1|Opt|Snapshot|Sensitivity|Vs|Vx|Dvm|SIMPLIS_Vl|mdm|Mcsp1|Mcsp2|SimplisElite|Dev serial=unknown user="unknown" code=unknown product="SIMetrix/SIMPLIS" binarch=x64 system="WINNT/10.0/x64/16794439680/14/1/20/418336162"
 SimulatorMode value="Simplis"
-View x=-1096 y=-2610 zoomlevel=32 zoom=9 snapgrid=120 offsetX=3283 offsetY=2610
+View x=-2988 y=-2610 zoomlevel=32 zoom=9 snapgrid=120 offsetX=3283 offsetY=2610
 Property name="CreateProduct" value="SIMetrix/SIMPLIS Elite with DVM and Verilog for SIMPLIS" type=value
 Property name="CurrentMeasureItem" value="Frequency|0|0|0|" type=value
 Property name="dataEnd" value="0.015" type=value
@@ -3100,9 +3100,9 @@ Property name="method" value="interpolated" type=value
 Property name="minFreq" value="0" type=value
 Property name="plottype" value="mag" type=value
 Property name="specSpan" value="false" type=value
-Property name="UserVersion" value="152" type=value
+Property name="UserVersion" value="153" type=value
 Property name="window" value="hanning" type=value
-Property name="WriteLog" value="152/29/102609/63189" type=value
+Property name="WriteLog" value="153/29/112080/63189" type=value
 Property name="xlog" value="lin" type=value
 .EndSchematic
 .EndComponent
