@@ -1,0 +1,197 @@
+********************************************************************************
+***                                                                          ***
+*** SIMetrix/SIMPLIS Elite Version 8.40 (x64) - 19/01/2024 5:18 PM           ***
+*** Platform: Windows 10                                                     ***
+*** Architecture: x64                                                        ***
+*** Serial Number:                                                           ***
+*** User:                                                                    ***
+***                                                                          ***
+*** TITLE:   * C:\wip\power_electronics\RT21 48V\Current Controller Gi.sxsch***
+*** NETLIST: C:\wip\power_electronics\RT21 48V\design.net                    ***
+***                                                                          ***
+********************************************************************************
+
+********************************************************************************
+***                                                                          ***
+***                                Input Deck                                ***
+***                                                                          ***
+********************************************************************************
+
+.options allowdivzero=1
+.options initCondMode=2
+.options icres=0.002
+.options inhibitAttoISource=1
+#SIMETRIX
+V1 V1_P V1_N AC 1
+X2 X2_inp X2_inn X2_vsp 0 C5_P PARAM_OPAMP params: A0=100k
++ CMRR=100k
++ GBW=10Meg
++ IB=200p
++ IBOS=200p
++ IQ=1m
++ PSRR=100k
++ RIN=1Meg
++ ROUT=100
++ SR_NEG=1Meg
++ SR_POS=1Meg
++ VDIFF_NEG=0
++ VDIFF_POS=0
++ VOFF_TOL=0
++ VOS=0 pinnames: inp inn vsp vsn out
+V2 R9_N 0 1.31449
+V3 X2_vsp 0 5
+V4 V1_N 0 1.31449
+R4 X2_inn V1_P 100k
+R5 C6_N 0 47k
+R6 C5_P R6_N 47k
+R7 R6_N X2_inn 470k
+R8 X2_inp C6_N 470k
+R9 X2_inp R9_N 100k
+R12 V1_P C8_P 10k
+C4 R6_N X2_inn 2.2n   
+C5 C5_P R6_N 1n   
+C6 X2_inp C6_N 4.7n   
+C7 C6_N 0 1n   
+C8 C8_P X2_inn 1n   
+.GRAPH C5_P curveLabel= X2-out nowarn=true ylog=auto xlog=auto analysis=tran|pop disabled=false PROBEREF=Probe3  
+.KEEP C5_P V1_P
+.GRAPH "db(:C5_P/:V1_P)" Curvelabel="Gi_gain" nowarn=true yunit="dB" complete=True analysis="ac" axisname=bodemag ylog=lin  persistence=0 disabled=false 
+.GRAPH "ph(:C5_P/:V1_P)" Curvelabel="Gi_phase" nowarn=true yunit="degrees" complete=True analysis="ac"  axisname=bodephase ylog=lin   persistence=0 disabled=false
+.GRAPH R9_N axisType="auto" persistence=-1 curveLabel="Iref" analysis="tran|pop" xLog="auto" yLog="auto"  nowarn=true disabled=false PROBEREF=Probe9  
+.ac dec 25 1 100k
+.subckt PARAM_OPAMP VINP VINN VCC VEE VOUT params:
++ VOS=0 IB=100n IBOS=1n A0=100k GBW=1e6 SR_POS=1e6 SR_NEG=1e6
++ CMRR=100k PSRR=100k RIN=1meg
++ ROUT=100 IQ=0.001 VDIFF_POS=2 VDIFF_NEG=2 VOFF_TOL=0 
+*#LABELS ,Offset Voltage,Bias Current,Offset Current,Open-loop Gain,Gain-bandwidth,Pos. Slew Rate,Neg. Slew Rate,CMRR,PSRR,Input Resistance,Output Res.,Quiescent Curr.,Headroom Pos.,Headroom Neg.,Offseet V. (Statistical)::-0.1|0.1|10u
+.PARAM voffStat = {VOFF_TOL*(GAUSS(1)-1)}
+B1ARB1 G4_N G3_P I=ilim*tanh((V(VINN,VINP)-VOS-voffStat)*Gin/ilim) 
+V1ARB2 G3_P G4_N 0
+** Soft limit using LNCOSH
+.PARAM sharp=10
+** The first term ensures that there is always at least a tiny amount 
+** of gain. No gain at all often leads to problems
+** Modified 29.4.03 - correct error with vee and vcc ref.
+B1ARB2 C1_P G4_N V=-R*I(V1ARB2)/A0*1e-5 +  ((lncosh(sharp*((-R*I(V1ARB2))-(V(VEE,G4_N)+VDIFF_NEG)))+sharp*(V(VEE,G4_N)+VDIFF_NEG) - (lncosh(sharp*((-R*I(V1ARB2))-(V(VCC,G4_N)-VDIFF_POS)))-sharp*(V(VCC,G4_N)-VDIFF_POS)))/sharp/2)
+**B1ARB2 C1_P G4_N V=-R*I(V1ARB2)/A0*1e-5 +  ((lncosh(sharp*((-R*I(V1ARB2))-(V(VEE)+VDIFF_NEG)))+sharp*(V(VEE)+VDIFF_NEG) - (lncosh(sharp*((-R*I(V1ARB2))-(V(VCC)-VDIFF_POS)))-sharp*(V(VCC)-VDIFF_POS)))/sharp/2)
+**B1ARB2 C1_P G4_N V=Limit(-R*I(V1ARB2),V(VEE)+VDIFF_NEG, V(VCC)-VDIFF_POS) 
+**.ends
+V2 V2_P V2_N {Vbias}
+V3 V2_N V3_N {Vbias}
+** 29.04.03 Split offset and bias into separate generators
+I2 VINP G4_N {IB}
+IBOS2 VINP G4_N {IBOS/2}
+I1 VINN G4_N {IB}
+IBOS1 VINN G4_N {-IBOS/2}
+C2 V2_N G4_N {1/2/PI/RO/5/gbw}
+C1 C1_P G3_P {C}
+E2 G4_N VEE VCC VEE 500m
+G4 G3_P G4_N VCC G4_N {gin*psgain}
+G2 G3_P G4_N VEE G4_N {gin*psgain}
+G3 G3_P G4_N VINN G4_N {gin*cmgain/2}
+G1 G3_P G4_N VINP G4_N {gin*cmgain/2}
+Q2 VEE V3_N VOUT VCC P1
+Q1 VCC V2_P VOUT VEE N1
+R3 V2_N C1_P {RO}
+** 19.8.04 - somehow got left off
+RIN VINP VINN {RIN}
+.PARAM ILIM = {sqrt(SR_POS)*1e-8}
+.PARAM C = {1e-8/sqrt(SR_POS)}
+.PARAM Gin = {2*PI*GBW*C}
+.PARAM R = {A0/Gin}
+.PARAM IS=1e-15
+.PARAM BETA=100
+** Version 8.1 - fix for Iq/ROUT dependence
+** Use NF parameter to get lower emitter resistance.
+** To retain behaviour for cases where Iq and Rout
+** are compatible, we keep NF at 1.0 wherever possible.
+** Reduce in decade steps for Iq*Rout too small.
+.PARAM Vt0={BOLTZ*300.15/ECHARGE}
+.param NFMAX= {(BETA+1)*ROUT*IQ*2/Vt0/BETA}
+.PARAM NF = {IF(NFMAX<1.0, 10^(floor(log10(NFMAX))), 1.0)}
+.model N1 npn IS={IS} bf={BETA} NF={NF} T_ABS={IF(NFMAX>=1.0,TEMP,27)}
+.model P1 pnp IS={IS} bf={BETA} NF={NF} T_ABS={IF(NFMAX>=1.0,TEMP,27)}
+.PARAM Vt={Vt0*NF}
+.PARAM cmgain={1.0/CMRR}
+.PARAM psgain={1.0/PSRR}
+.PARAM VBIAS = {LN(IQ/IS+1)*Vt}
+.PARAM RO={(BETA+1)*ROUT-VT/IQ/2*BETA}
+.ends
+** Peak- peak voltage source
+
+********************************************************************************
+***                                                                          ***
+*** Starting AC analysis at 5:18 PM                                          ***
+***                                                                          ***
+*** Analysis card: .ac dec 25 1 100k                                         ***
+***                                                                          ***
+********************************************************************************
+********************************************************************************
+***                                                                          ***
+***                            Simulation Options                            ***
+***                                                                          ***
+********************************************************************************
+RELTOL                    0.001
+ABSTOL                    1e-12
+VNTOL                     1e-06
+POINTTOL                  0.001
+TEMPERATURE               27C
+GMIN                      1e-12
+Matrix Solver             UF KLU Version 1.1
+
+
+
+********************************************************************************
+***                                                                          ***
+***                             Device parameters                            ***
+***                                                                          ***
+********************************************************************************
+Model parameters for devices of type BJT
+========================================
+Model:       X2.N1        X2.P1        
+
+bf           100          100          
+is           1f           1f           
+nf           1            1            
+t_abs        27           27           
+
+
+Analysis statistics
+===================
+
+Nominal temperature = 27
+Operating temperature = 27
+Total iterations = 12
+Transient iterations = 0
+Transient timepoints = 0
+Accepted timepoints = 0
+Total analysis time = 0.109
+Transient time = 0
+Matrix reordering time = 0
+L-U decomposition time = 0
+Matrix solve time = 0
+Load time = 0
+Transient L-U decomp time = 0
+Transient solve time = 0
+Circuit build time = 0
+Simulator initialise time = 0
+Data write time = 0
+Convergence test time = 0
+LTE time = 0
+JI2 Iterations = 12
+Diag. GMIN stepping iterations = 0
+Junc. GMIN stepping iterations = 0
+Source stepping iterations = 0
+PTA iterations = 0
+Number of matrix fill ins = -23
+Number of initial matrix elements = 83
+Circuit equations = 26
+State vector size = 124
+Number of write buffer faults = 0
+
+Run statistics
+==============
+
+Netlist read in time = 0.093
+Total run time = 0.359 seconds
+Analysis concluded 19/01/2024 5:18 PM
