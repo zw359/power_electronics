@@ -1114,14 +1114,14 @@ Netnames pin1="41" pin2="27"
 .Instance
 Attributes type=symbol name="Bode_Probe" selected=0 protected=0 x=8400 y=1680 orient=M0 
 Property name="DISABLED" value="0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="LABEL" value="Gain_loop" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
+Property name="LABEL" value="Gain_open_vloop" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="MAX_DB" value="0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="MAX_PHASE" value="180" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="MIN_DB" value="-100" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="MIN_PHASE" value="-180" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="NEGATION" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="PERSISTENCE" value="0" autopos=1 normal=Top rotated=Left visible=0 font=Default order=-1
-Property name="PHASELABEL" value="Phase_loop" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
+Property name="PHASELABEL" value="Phase_open_vloop" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="PROBE_DISABLED" value="false" autopos=0 x=0 y=1260 align=LeftTop visible=0 font=Default order=-1
 Property name="REF" value="Probe7" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
@@ -2829,14 +2829,6 @@ Property name="NetName" value="24" autopos=1 normal=Left rotated=Left visible=0 
 Property name="StyleNormal" value="DefaultWire" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 .EndWire
-Wire x1=7200 y1=1680 x2=7200 y2=1800 net="41" branch=""
-.Wire
-Attributes x1=7200 y1=1680 x2=7200 y2=1800 
-Property name="BranchFormula" value="" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="NetName" value="41" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="StyleNormal" value="DefaultWire" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-.EndWire
 Wire x1=7200 y1=1800 x2=7200 y2=2280 net="41" branch=""
 .Wire
 Attributes x1=7200 y1=1800 x2=7200 y2=2280 
@@ -2856,14 +2848,6 @@ Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rota
 Wire x1=7440 y1=1680 x2=7440 y2=2280 net="41" branch=""
 .Wire
 Attributes x1=7440 y1=1680 x2=7440 y2=2280 
-Property name="BranchFormula" value="" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="NetName" value="41" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="StyleNormal" value="DefaultWire" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-.EndWire
-Wire x1=7440 y1=2280 x2=7440 y2=2400 net="41" branch=""
-.Wire
-Attributes x1=7440 y1=2280 x2=7440 y2=2400 
 Property name="BranchFormula" value="" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="NetName" value="41" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultWire" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
@@ -3150,14 +3134,14 @@ Netnames
 Text value=".simulator SIMPLIS\n.ac DEC 100 1 100k\n.options\n+ PSP_NPT=200001\n+ POP_ITRMAX=20\n+ POP_OUTPUT_CYCLES=5\n+ SNAPSHOT_INTVL=0\n+ SNAPSHOT_NPT=11\n+ MIN_AVG_TOPOLOGY_DUR=1a\n+ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128\n.pop\n+ TRIG_GATE={TRIG_GATE}\n+ TRIG_COND=0_TO_1\n+ MAX_PERIOD=50u\n+ CONVERGENCE=1p\n+ CYCLES_BEFORE_LAUNCH=20\n+ TD_RUN_AFTER_POP_FAILS=-1\n*.tran 15m 0\n\n.simulator DEFAULT\n"
 LicenseInfo version="8.40" feats=Basic|Micron|Mcore2|Schematic|Styles|Advanced|Soa|Multistep|Monte|Sim|Plugindevices|Rdif|Scripts|Rtn|SIMPLIS_IF|RemoteSimplis|beta|Va|Dotload|ProModels|Binning|Hspicedotlib|Vl|VerilogHdl|Mcore1|Opt|Snapshot|Sensitivity|Vs|Vx|Dvm|SIMPLIS_Vl|mdm|Mcsp1|Mcsp2|SimplisElite|Dev serial=unknown user="unknown" code=unknown product="SIMetrix/SIMPLIS" binarch=x64 system="WINNT/10.0/x64/16794439680/14/1/20/418336162"
 SimulatorMode value="Simplis"
-View x=-359 y=-3234 zoomlevel=33 zoom=10 snapgrid=120 offsetX=3283 offsetY=3263
+View x=-3302 y=-3263 zoomlevel=33 zoom=10 snapgrid=120 offsetX=3283 offsetY=3263
 Property name="CreateProduct" value="SIMetrix/SIMPLIS Elite with DVM and Verilog for SIMPLIS" type=value
 Property name="CurrentMeasureItem" value="Frequency|0|0|0|" type=value
 Property name="dataEnd" value="0.015" type=value
 Property name="dataStart" value="0" type=value
 Property name="dcdFilter" value="all;" type=value
 Property name="fundamental" value="66.6666666666667" type=value
-Property name="GUID" value="{1396ba39-363f-442a-ae2b-3d323b2a8b76}" type=value
+Property name="GUID" value="{fef96f61-a39d-4af2-aa4d-cd3165baec47}" type=value
 Property name="interpOrder" value="2" type=value
 Property name="interpPoints" value="8192" type=value
 Property name="interval" value="66.666667" type=value
@@ -3167,9 +3151,9 @@ Property name="method" value="interpolated" type=value
 Property name="minFreq" value="0" type=value
 Property name="plottype" value="mag" type=value
 Property name="specSpan" value="false" type=value
-Property name="UserVersion" value="150" type=value
+Property name="UserVersion" value="153" type=value
 Property name="window" value="hanning" type=value
-Property name="WriteLog" value="150/29/103791/63189" type=value
+Property name="WriteLog" value="153/29/104016/63189" type=value
 Property name="xlog" value="lin" type=value
 .EndSchematic
 .EndComponent
