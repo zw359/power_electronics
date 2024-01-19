@@ -1210,14 +1210,14 @@ Property name="value" value="To check the transfer functions:\ncontrol -to- outp
 Netnames
 .EndInstance
 --EndSXVERSION1.5
-Text value=".simulator SIMPLIS\n.ac DEC 50 1m 100k\n.options\n+ PSP_NPT=50001\n+ POP_ITRMAX=20\n+ POP_OUTPUT_CYCLES=5\n+ SNAPSHOT_INTVL=0\n+ SNAPSHOT_NPT=11\n+ MIN_AVG_TOPOLOGY_DUR=1a\n+ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128\n.pop\n+ TRIG_GATE={TRIG_GATE}\n+ TRIG_COND=0_TO_1\n+ MAX_PERIOD=20u\n+ CONVERGENCE=1p\n+ CYCLES_BEFORE_LAUNCH=10\n+ TD_RUN_AFTER_POP_FAILS=-1\n.tran 30m 0\n\n.simulator DEFAULT\n"
+Text value=".simulator SIMPLIS\n.ac DEC 50 1m 100k\n.options\n+ PSP_NPT=100001\n+ POP_ITRMAX=20\n+ POP_OUTPUT_CYCLES=5\n+ SNAPSHOT_INTVL=0\n+ SNAPSHOT_NPT=11\n+ MIN_AVG_TOPOLOGY_DUR=1a\n+ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128\n.pop\n+ TRIG_GATE={TRIG_GATE}\n+ TRIG_COND=0_TO_1\n+ MAX_PERIOD=20u\n+ CONVERGENCE=1p\n+ CYCLES_BEFORE_LAUNCH=10\n+ TD_RUN_AFTER_POP_FAILS=-1\n.tran 30m 0\n\n.simulator DEFAULT\n"
 LicenseInfo version="8.40" feats=Basic|Micron|Mcore2|Schematic|Styles|Advanced|Soa|Multistep|Monte|Sim|Plugindevices|Rdif|Scripts|Rtn|SIMPLIS_IF|RemoteSimplis|beta|Va|Dotload|ProModels|Binning|Hspicedotlib|Vl|VerilogHdl|Mcore1|Opt|Snapshot|Sensitivity|Vs|Vx|Dvm|SIMPLIS_Vl|mdm|Mcsp1|Mcsp2|SimplisElite|Dev serial=unknown user="unknown" code=unknown product="SIMetrix/SIMPLIS" binarch=x64 system="WINNT/10.0/x64/34294738944/8/1/16/685120455"
 SimulatorMode value="Simplis"
 View x=-2620 y=-1706 zoomlevel=33 zoom=10 snapgrid=120 offsetX=2620 offsetY=1706
 Property name="CreateProduct" value="SIMetrix/SIMPLIS Elite with DVM and Verilog for SIMPLIS" type=value
 Property name="CurrentMeasureItem" value="Frequency|0|0|0|" type=value
 Property name="GUID" value="{478495bc-1d73-4e40-aef8-4a3b12d9dcb0}" type=value
-Property name="UserVersion" value="35" type=value
-Property name="WriteLog" value="35/4/152612/22989" type=value
+Property name="UserVersion" value="36" type=value
+Property name="WriteLog" value="36/4/152871/22989" type=value
 .EndSchematic
 .EndComponent
