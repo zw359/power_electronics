@@ -1,11 +1,11 @@
-* C:\wip\power_electronics\RT21 48V\Current Controller Gi.sxsch
+* C:\Working\power_electronics\RT21 48V\Current Controller Gi.sxsch
 *#SIMETRIX
-V1 V1_P V1_N AC 1
+V1 V1_P R9_N AC 1
 X2 X2_inp X2_inn X2_vsp 0 C5_P PARAM_OPAMP params: A0=100k
 + CMRR=100k
 + GBW=10Meg
 + IB=200p
-+ IBOS=200p
++ IBOS=50p
 + IQ=1m
 + PSRR=100k
 + RIN=1Meg
@@ -18,23 +18,21 @@ X2 X2_inp X2_inn X2_vsp 0 C5_P PARAM_OPAMP params: A0=100k
 + VOS=0 pinnames: inp inn vsp vsn out
 V2 R9_N 0 1.31449
 V3 X2_vsp 0 5
-V4 V1_N 0 1.31449
 R4 X2_inn V1_P 100k
 R5 C6_N 0 47k
 R6 C5_P R6_N 47k
-R7 R6_N X2_inn 470k
-R8 X2_inp C6_N 470k
+R7 R6_N X2_inn 1Meg
+R8 X2_inp C6_N 1Meg
 R9 X2_inp R9_N 100k
 R12 V1_P C8_P 10k
 C4 R6_N X2_inn 2.2n   
-C5 C5_P R6_N 1n   
-C6 X2_inp C6_N 4.7n   
-C7 C6_N 0 1n   
+C5 C5_P R6_N 2.2n   
+C6 X2_inp C6_N 2.2n   
+C7 C6_N 0 2.2n   
 C8 C8_P X2_inn 1n   
 .GRAPH C5_P curveLabel= X2-out nowarn=true ylog=auto xlog=auto analysis=tran|pop disabled=false PROBEREF=Probe3  
 .KEEP C5_P V1_P
 .GRAPH "db(:C5_P/:V1_P)" Curvelabel="Gi_gain" nowarn=true yunit="dB" complete=True analysis="ac" axisname=bodemag ylog=lin  persistence=0 disabled=false 
 .GRAPH "ph(:C5_P/:V1_P)" Curvelabel="Gi_phase" nowarn=true yunit="degrees" complete=True analysis="ac"  axisname=bodephase ylog=lin   persistence=0 disabled=false
-.GRAPH R9_N axisType="auto" persistence=-1 curveLabel="Iref" analysis="tran|pop" xLog="auto" yLog="auto"  nowarn=true disabled=false PROBEREF=Probe9  
 .ac dec 25 1 100k
 

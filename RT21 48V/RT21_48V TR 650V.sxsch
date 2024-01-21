@@ -608,7 +608,7 @@ Netnames pin1="0"
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=2160 y=2520 orient=N90 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="-5.5299680336218046e+02" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="-4.0418856201016973e+02" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -616,13 +616,13 @@ Property name="REF" value="C1" autopos=1 normal=Right rotated=Bottom font=Defaul
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="270n IC=-4.0418856201016973e+02" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="270n" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="54" pin2="53"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=5400 y=240 orient=M270 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="-2.9294722747052765e-01" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="-3.1773156428425720e-01" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -630,13 +630,13 @@ Property name="ref" value="C10" autopos=1 normal=Right rotated=Bottom font=Defau
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="100p IC=-3.1773156428425720e-01" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="100p" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="38" pin2="32"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=4680 y=240 orient=M270 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="-3.6562390527342931e-01" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="-3.1775999458828608e-01" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -644,13 +644,13 @@ Property name="ref" value="C11" autopos=1 normal=Right rotated=Bottom font=Defau
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="2.2n IC=-3.1775999458828608e-01" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="2.2n" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="27" pin2="38"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=10080 y=1680 orient=N90 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="-1.8913778926045790e+00" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="-1.8855287497823259e+00" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -658,13 +658,13 @@ Property name="REF" value="C12" autopos=1 normal=Right rotated=Bottom font=Defau
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="1n IC=-1.8855287497823259e+00" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="1n" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="0" pin2="43"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=10200 y=4200 orient=N90 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="1.1605032616933953e-02" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="6.7353550996760256e-02" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -672,12 +672,13 @@ Property name="ref" value="C13" autopos=1 normal=Right rotated=Bottom font=Defau
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="1n IC=6.7353550996760256e-02" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="1n" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="33" pin2="64"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=6480 y=2640 orient=N0 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
+Property name="INIT_COND" value="5.4689447990743560e+01" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -685,12 +686,13 @@ Property name="REF" value="C14" autopos=1 normal=Right rotated=Bottom font=Defau
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="2.4m IC=5.4689447990743560e+01" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="2.4m" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="46" pin2="62"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=5880 y=2640 orient=N0 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
+Property name="INIT_COND" value="5.4689296462078943e+01" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -698,13 +700,13 @@ Property name="ref" value="C15" autopos=1 normal=Right rotated=Bottom font=Defau
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="10.8m IC=5.4689296462078943e+01" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="10.8m" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="58" pin2="61"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=5400 y=2640 orient=N0 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="3.1018297801258734e+02" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="5.4667329424454486e+01" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -712,28 +714,27 @@ Property name="REF" value="C2" autopos=1 normal=Right rotated=Bottom font=Defaul
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="1.2m IC=5.4667329424454486e+01" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="1.2m" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="57" pin2="60"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=3960 y=1440 orient=N0 
-Property name="FORM" value="BRANCH={IF(ANALYSIS=2,1,0)}" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="1.0812139263289486e+00" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="1.1550302315638565e+00" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase linear=1 font=User2 overrideStyle="PropertySmall" order=-1
+Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
 Property name="REF" value="C3" autopos=1 normal=Right rotated=Bottom font=Default order=-1
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="300n IC=1.1550302315638565e+00" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="300n" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="35" pin2="0"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=720 y=360 orient=M270 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="5.1486078072707253e-01" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="4.3796171501287029e-01" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -741,13 +742,13 @@ Property name="ref" value="C4" autopos=1 normal=Right rotated=Bottom font=Defaul
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="2.2n IC=4.3796171501287029e-01" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="2.2n" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="39" pin2="34"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=0 y=360 orient=M270 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="2.4068884221311471e-02" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="2.0689352788756388e-02" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -755,13 +756,13 @@ Property name="ref" value="C5" autopos=1 normal=Right rotated=Bottom font=Defaul
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="2.2n IC=2.0689352788756388e-02" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="2.2n" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="31" pin2="39"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=2520 y=-480 orient=M0 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="1.0823657271050064e+00" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="1.1460473580981332e+00" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -769,13 +770,13 @@ Property name="ref" value="C6" autopos=1 normal=Right rotated=Bottom font=Defaul
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="2.2n IC=1.1460473580981332e+00" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="2.2n" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="26" pin2="36"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=2520 y=240 orient=M0 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="5.0870449137500849e-02" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="5.3864038336063569e-02" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -783,13 +784,13 @@ Property name="ref" value="C7" autopos=1 normal=Right rotated=Bottom font=Defaul
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="2.2n IC=5.3864038336063569e-02" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="2.2n" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="36" pin2="0"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=1440 y=-120 orient=N90 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="-5.1215682925431383e-02" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="-4.3993587876016288e-02" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -797,13 +798,13 @@ Property name="REF" value="C8" autopos=1 normal=Right rotated=Bottom font=Defaul
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="1n IC=-4.3993587876016288e-02" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="1n" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="37" pin2="34"
 .EndInstance
 .Instance
 Attributes type=symbol name="cap" selected=0 protected=0 x=7200 y=-600 orient=M0 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=660 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="1.8999997185840607e+00" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="1.9499997173481904e+00" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="INIT_SCRIPT" value="ic_reactive" autopos=0 x=0 y=840 align=LeftBase visible=0 font=Default order=-1
 Property name="MODEL" value="C" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="plus" value=" +" autopos=0 x=-60 y=60 align=CentreBase visible=0 linear=1 font=User2 overrideStyle="PropertySmall" order=-1
@@ -811,7 +812,7 @@ Property name="ref" value="C9" autopos=1 normal=Right rotated=Bottom font=Defaul
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %VALUE%" autopos=0 x=0 y=480 align=LeftBase visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="100n IC=1.9499997173481904e+00" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="VALUE" value="100n" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="24" pin2="0"
 .EndInstance
 .Instance
@@ -949,43 +950,45 @@ Netnames pin1="45" pin2="58"
 .Instance
 Attributes type=symbol name="ind" selected=0 protected=0 x=1440 y=2520 orient=N0 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=600 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="-3.1125052350325402e+00" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="-2.5151200949453699e+01" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="MODEL" value="L" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="REF" value="L1" autopos=1 normal=Bottom rotated=Right font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="27u IC=-2.5151200949453699e+01" autopos=1 normal=Top rotated=Right font=Default order=-1
+Property name="VALUE" value="27u" autopos=1 normal=Top rotated=Right font=Default order=-1
 Netnames pin1="52" pin2="53"
 .EndInstance
 .Instance
 Attributes type=symbol name="ind" selected=0 protected=0 x=2880 y=2520 orient=N90 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=600 align=LeftTop visible=0 font=Default order=-1
-Property name="INIT_COND" value="3.4556206133226008e+00" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="INIT_COND" value="2.0862128426895034e-02" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="MODEL" value="L" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="REF" value="L2" autopos=1 normal=Bottom rotated=Right font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="220u IC=2.0862128426895034e-02" autopos=1 normal=Top rotated=Right font=Default order=-1
+Property name="VALUE" value="220u" autopos=1 normal=Top rotated=Right font=Default order=-1
 Netnames pin1="54" pin2="0"
 .EndInstance
 .Instance
 Attributes type=symbol name="ind" selected=0 protected=0 x=5880 y=2040 orient=N0 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=600 align=LeftTop visible=0 font=Default order=-1
+Property name="INIT_COND" value="9.1141658583825802e+01" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="MODEL" value="L" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="REF" value="L3" autopos=1 normal=Bottom rotated=Right font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="400n IC=9.1141658583825802e+01" autopos=1 normal=Top rotated=Right font=Default order=-1
+Property name="VALUE" value="400n" autopos=1 normal=Top rotated=Right font=Default order=-1
 Netnames pin1="45" pin2="46"
 .EndInstance
 .Instance
 Attributes type=symbol name="ind" selected=0 protected=0 x=5400 y=2040 orient=N0 
 Property name="ICANAL" value="0;1;0;0;" autopos=0 x=0 y=600 align=LeftTop visible=0 font=Default order=-1
+Property name="INIT_COND" value="8.9287930597962500e+01" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="MODEL" value="L" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="ref" value="L4" autopos=1 normal=Bottom rotated=Right font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="50n IC=8.9287930597962500e+01" autopos=1 normal=Top rotated=Right font=Default order=-1
+Property name="VALUE" value="50n" autopos=1 normal=Top rotated=Right font=Default order=-1
 Netnames pin1="41" pin2="45"
 .EndInstance
 .Instance
@@ -1381,7 +1384,7 @@ Property name="simplis_template" value="X$%ref% <nodelist> Nonind_Tx%ref% ;.subc
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="template" value="X$%ref% <nodelist> Nonind_Tx%ref% <pinnames> ;.subckt Nonind_Tx%ref% <pinlist> ;F1 0 n1 E1 10;E1 P1P P1N n1 0 10;F2 0 n1 E2 2;E2 S1P S1N n1 0 2;.ends ;" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="USEIC" value="1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="USEIC" value="0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Netnames pin1="54" pin2="0" pin3="49" pin4="50"
 .EndInstance
 .Instance
@@ -1396,7 +1399,7 @@ Property name="ref" value="U2" autopos=1 normal=Right rotated=Right font=Default
 Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %PARAM_MODEL_NAME%  vars: FREQ0=%FREQ0% VTOP=%VTOP% VBOT=%VBOT%;<t:INIT_COND>" autopos=1 normal=Bottom rotated=Left visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="USEIC" value="1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="USEIC" value="0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="VBOT" value="0" autopos=1 normal=Top rotated=Top visible=0 linear=1 selectable=1 font=Default displayName=1 order=-1
 Property name="VTOP" value="1" autopos=1 normal=Top rotated=Top visible=0 linear=1 selectable=1 font=Default displayName=1 order=-1
 Netnames pin1="23" pin2="0" pin3="48" pin4="55" pin5="0"
@@ -1414,8 +1417,8 @@ Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %PARAM_MODEL_NAME% vars
 Property name="SIMULATOR" value="SIMPLIS" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="USEIC" value="1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="IC=1 RIN=10Meg ROUT=1m HYSTWD=1m VOL=0 VOH=630 DELAY=0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="USEIC" value="0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="VALUE" value="IC=1 RIN=10Meg ROUT=1m HYSTWD=1m VOL=0 VOH=620 DELAY=0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="VALUESCRIPT" value="edit_parameterised_subckt 'VALUE'" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Netnames pin1="51" pin2="0" pin3="48" pin4="56"
 .EndInstance
@@ -1497,7 +1500,7 @@ Property name="SIMPLIS_TEMPLATE" value="<ref> <nodelist> %PARAM_MODEL_NAME% vars
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="TRIG_COND" value="0_TO_1" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
-Property name="USEIC" value="1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="USEIC" value="0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="VOH" value="5" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="VOL" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="VREF" value="10" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
@@ -1530,7 +1533,7 @@ Property name="SR_POS" value="1Meg" autopos=1 normal=Top rotated=Right visible=0
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="TEMPLATE" value="<ref> <nodelist> %PARAM_MODEL_NAME% params: A0=%A0%\n+ CMRR=%CMRR%\n+ GBW=%GBW%\n+ IB=%IB%\n+ IBOS=%IBOS%\n+ IQ=%IQ%\n+ PSRR=%PSRR%\n+ RIN=%RIN%\n+ ROUT=%ROUT%\n+ SR_NEG=%SR_NEG%\n+ SR_POS=%SR_POS%\n+ VDIFF_NEG=%VDIFF_NEG%\n+ VDIFF_POS=%VDIFF_POS%\n+ VOFF_TOL=%VOFF_TOL%\n+ VOS=%VOS% <pinnames>" autopos=1 normal=Left rotated=Left visible=0 linear=1 font=Default order=-1
-Property name="USEIC" value="1" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
+Property name="USEIC" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="VDIFF_NEG" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="VDIFF_POS" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="VOFF_TOL" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
@@ -1564,7 +1567,7 @@ Property name="SR_POS" value="1Meg" autopos=1 normal=Top rotated=Right visible=0
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="TEMPLATE" value="<ref> <nodelist> %PARAM_MODEL_NAME% params: A0=%A0%\n+ CMRR=%CMRR%\n+ GBW=%GBW%\n+ IB=%IB%\n+ IBOS=%IBOS%\n+ IQ=%IQ%\n+ PSRR=%PSRR%\n+ RIN=%RIN%\n+ ROUT=%ROUT%\n+ SR_NEG=%SR_NEG%\n+ SR_POS=%SR_POS%\n+ VDIFF_NEG=%VDIFF_NEG%\n+ VDIFF_POS=%VDIFF_POS%\n+ VOFF_TOL=%VOFF_TOL%\n+ VOS=%VOS% <pinnames>" autopos=1 normal=Left rotated=Left visible=0 linear=1 font=Default order=-1
-Property name="USEIC" value="1" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
+Property name="USEIC" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="VDIFF_NEG" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="VDIFF_POS" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="VOFF_TOL" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
@@ -1598,7 +1601,7 @@ Property name="SR_POS" value="1Meg" autopos=1 normal=Top rotated=Right visible=0
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="TEMPLATE" value="<ref> <nodelist> %PARAM_MODEL_NAME% params: A0=%A0%\n+ CMRR=%CMRR%\n+ GBW=%GBW%\n+ IB=%IB%\n+ IBOS=%IBOS%\n+ IQ=%IQ%\n+ PSRR=%PSRR%\n+ RIN=%RIN%\n+ ROUT=%ROUT%\n+ SR_NEG=%SR_NEG%\n+ SR_POS=%SR_POS%\n+ VDIFF_NEG=%VDIFF_NEG%\n+ VDIFF_POS=%VDIFF_POS%\n+ VOFF_TOL=%VOFF_TOL%\n+ VOS=%VOS% <pinnames>" autopos=1 normal=Left rotated=Left visible=0 linear=1 font=Default order=-1
-Property name="USEIC" value="1" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
+Property name="USEIC" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="VDIFF_NEG" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="VDIFF_POS" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
 Property name="VOFF_TOL" value="0" autopos=1 normal=Top rotated=Right visible=0 font=Default order=-1
@@ -3132,16 +3135,16 @@ Netnames
 .EndInstance
 --EndSXVERSION1.5
 Text value=".simulator SIMPLIS\n*.ac DEC 100 1 100k\n.options\n+ PSP_NPT=200001\n+ POP_ITRMAX=20\n+ POP_OUTPUT_CYCLES=5\n+ SNAPSHOT_INTVL=0\n+ SNAPSHOT_NPT=11\n+ MIN_AVG_TOPOLOGY_DUR=1a\n+ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128\n*.pop TRIG_GATE={TRIG_GATE} TRIG_COND=0_TO_1 MAX_PERIOD=50u CONVERGENCE=1p CYCLES_BEFORE_LAUNCH=20 TD_RUN_AFTER_POP_FAILS=-1\n.tran 200m 0\n\n.simulator DEFAULT\n"
-LicenseInfo version="8.40" feats=Basic|Micron|Mcore2|Schematic|Styles|Advanced|Soa|Multistep|Monte|Sim|Plugindevices|Rdif|Scripts|Rtn|SIMPLIS_IF|RemoteSimplis|beta|Va|Dotload|ProModels|Binning|Hspicedotlib|Vl|VerilogHdl|Mcore1|Opt|Snapshot|Sensitivity|Vs|Vx|Dvm|SIMPLIS_Vl|mdm|Mcsp1|Mcsp2|SimplisElite|Dev serial=unknown user="unknown" code=unknown product="SIMetrix/SIMPLIS" binarch=x64 system="WINNT/10.0/x64/16794439680/14/1/20/418336162"
+LicenseInfo version="8.40" feats=Basic|Micron|Mcore2|Schematic|Styles|Advanced|Soa|Multistep|Monte|Sim|Plugindevices|Rdif|Scripts|Rtn|SIMPLIS_IF|RemoteSimplis|beta|Va|Dotload|ProModels|Binning|Hspicedotlib|Vl|VerilogHdl|Mcore1|Opt|Snapshot|Sensitivity|Vs|Vx|Dvm|SIMPLIS_Vl|mdm|Mcsp1|Mcsp2|SimplisElite|Dev serial=unknown user="unknown" code=unknown product="SIMetrix/SIMPLIS" binarch=x64 system="WINNT/10.0/x64/34294738944/8/1/16/685120455"
 SimulatorMode value="Simplis"
-View x=-4801 y=-8826 zoomlevel=36 zoom=12 snapgrid=120 offsetX=4801 offsetY=8826
+View x=-10125 y=-4819 zoomlevel=33 zoom=10 snapgrid=120 offsetX=3299 offsetY=6260
 Property name="CreateProduct" value="SIMetrix/SIMPLIS Elite with DVM and Verilog for SIMPLIS" type=value
 Property name="CurrentMeasureItem" value="Frequency|0|0|0|" type=value
 Property name="dataEnd" value="0.015" type=value
 Property name="dataStart" value="0" type=value
 Property name="dcdFilter" value="all;" type=value
 Property name="fundamental" value="66.6666666666667" type=value
-Property name="GUID" value="{11f1461b-2a25-4748-822d-b6d55a861f7f}" type=value
+Property name="GUID" value="{eee9b3fb-bce6-4105-94cc-6f2de0626b58}" type=value
 Property name="interpOrder" value="2" type=value
 Property name="interpPoints" value="8192" type=value
 Property name="interval" value="66.666667" type=value
@@ -3151,9 +3154,9 @@ Property name="method" value="interpolated" type=value
 Property name="minFreq" value="0" type=value
 Property name="plottype" value="mag" type=value
 Property name="specSpan" value="false" type=value
-Property name="UserVersion" value="161" type=value
+Property name="UserVersion" value="167" type=value
 Property name="window" value="hanning" type=value
-Property name="WriteLog" value="161/29/105478/63189" type=value
+Property name="WriteLog" value="167/29/132581/63189" type=value
 Property name="xlog" value="lin" type=value
 .EndSchematic
 .EndComponent
