@@ -820,7 +820,7 @@ Attributes type=symbol name="dio" selected=0 protected=0 x=4320 y=2400 orient=N1
 Property name="EDVT_TEMPLATE" value="%REF% | <nodepinlist> | REF=%REF% MODEL_NAME=%PARAM_MODEL_NAME% %PARAM_VALUES%" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="MODEL" value="D" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="PARAM_MODEL_NAME" value="DIODE_SPICE_V3" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="PARAM_VALUES" value="LIMIT_MAX_ROFF=1 TEMP=50 USER_DIODE_FWD_RES=386.058u LEVEL=0 USER_IC_A=1 USER_IC_B=1 USER_IC_C=1 USER_IC_D=1 USER_IC=1 DEVICE='IDEAL' VD_PEAK=100 LABEL='USER_LABEL' USER_DIODE_FWD_VOLTAGE=767.821m ID_PEAK=100 CONFIG=0 NUMSEG=3 IC_A=1 USER_DIODE_CJ=0 IC_B=1 IC_C=1 IC_D=1 MAX_ROFF=100Meg IC=1 ID0=-5.249750710617706u ID1=7.199232620176097n ID2=31.30845764284493 ID3=100.0000000000023 VD0=-100.0000000000023 VD1=719.9232620176097m USER_DIODE_OFF_RESISTANCE=3.86058Meg VD2=779.9083386221662m VD3=806.4272708809503m USE_EXTRACTED=1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="PARAM_VALUES" value="LIMIT_MAX_ROFF=1 TEMP=50 USER_DIODE_FWD_RES=107.238u LEVEL=0 USER_IC_A=1 USER_IC_B=1 USER_IC_C=1 USER_IC_D=1 USER_IC=1 DEVICE='IDEAL' VD_PEAK=100 LABEL='USER_LABEL' USER_DIODE_FWD_VOLTAGE=803.49m ID_PEAK=360 CONFIG=0 NUMSEG=3 IC_A=1 USER_DIODE_CJ=0 IC_B=1 IC_C=1 IC_D=1 MAX_ROFF=100Meg IC=1 ID0=-18.92416599409736u ID1=7.555922949380761n ID2=112.7104475142569 ID3=360.0000000000081 VD0=-100.0000000000023 VD1=755.5922949380761m USER_DIODE_OFF_RESISTANCE=1.07238Meg VD2=815.577371552475m VD3=842.096303811261m USE_EXTRACTED=1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="PARAMSSCRIPT" value="edit_simplis_device_params" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="REF" value="D1" autopos=1 normal=Right rotated=Bottom font=Default order=-1
 Property name="SIMPLIS_TEMPLATE" value="<ref:X> <nodelist:nox> %PARAM_MODEL_NAME% vars: %PARAM_VALUES% REF='%REF%'" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
@@ -836,7 +836,7 @@ Attributes type=symbol name="dio" selected=0 protected=0 x=4320 y=3600 orient=N1
 Property name="EDVT_TEMPLATE" value="%REF% | <nodepinlist> | REF=%REF% MODEL_NAME=%PARAM_MODEL_NAME% %PARAM_VALUES%" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="MODEL" value="D" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="PARAM_MODEL_NAME" value="DIODE_SPICE_V3" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="PARAM_VALUES" value="LIMIT_MAX_ROFF=1 TEMP=50 USER_DIODE_FWD_RES=386.058u LEVEL=0 USER_IC_A=1 USER_IC_B=1 USER_IC_C=1 USER_IC_D=1 USER_IC=3 DEVICE='IDEAL' VD_PEAK=100 LABEL='USER_LABEL' USER_DIODE_FWD_VOLTAGE=767.821m ID_PEAK=100 CONFIG=0 NUMSEG=3 IC_A=1 USER_DIODE_CJ=0 IC_B=1 IC_C=1 IC_D=1 MAX_ROFF=100Meg IC=3 ID0=-5.249750710617706u ID1=7.199232620176097n ID2=31.30845764284493 ID3=100.0000000000023 VD0=-100.0000000000023 VD1=719.9232620176097m USER_DIODE_OFF_RESISTANCE=3.86058Meg VD2=779.9083386221662m VD3=806.4272708809503m USE_EXTRACTED=1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="PARAM_VALUES" value="LIMIT_MAX_ROFF=1 TEMP=50 USER_DIODE_FWD_RES=107.238u LEVEL=0 USER_IC_A=1 USER_IC_B=1 USER_IC_C=1 USER_IC_D=1 USER_IC=2 DEVICE='IDEAL' VD_PEAK=100 LABEL='USER_LABEL' USER_DIODE_FWD_VOLTAGE=803.49m ID_PEAK=360 CONFIG=0 NUMSEG=3 IC_A=1 USER_DIODE_CJ=0 IC_B=1 IC_C=1 IC_D=1 MAX_ROFF=100Meg IC=3 ID0=-18.92416599409736u ID1=7.555922949380761n ID2=112.7104475142569 ID3=360.0000000000081 VD0=-100.0000000000023 VD1=755.5922949380761m USER_DIODE_OFF_RESISTANCE=1.07238Meg VD2=815.577371552475m VD3=842.096303811261m USE_EXTRACTED=1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="PARAMSSCRIPT" value="edit_simplis_device_params" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="ref" value="D2" autopos=1 normal=Right rotated=Bottom font=Default order=-1
 Property name="SIMPLIS_TEMPLATE" value="<ref:X> <nodelist:nox> %PARAM_MODEL_NAME% vars: %PARAM_VALUES% REF='%REF%'" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
@@ -852,7 +852,7 @@ Attributes type=symbol name="dio" selected=0 protected=0 x=4800 y=3600 orient=N1
 Property name="EDVT_TEMPLATE" value="%REF% | <nodepinlist> | REF=%REF% MODEL_NAME=%PARAM_MODEL_NAME% %PARAM_VALUES%" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="MODEL" value="D" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="PARAM_MODEL_NAME" value="DIODE_SPICE_V3" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="PARAM_VALUES" value="LIMIT_MAX_ROFF=1 TEMP=50 USER_DIODE_FWD_RES=386.058u LEVEL=0 USER_IC_A=1 USER_IC_B=1 USER_IC_C=1 USER_IC_D=1 USER_IC=1 DEVICE='IDEAL' VD_PEAK=100 LABEL='USER_LABEL' USER_DIODE_FWD_VOLTAGE=767.821m ID_PEAK=100 CONFIG=0 NUMSEG=3 IC_A=1 USER_DIODE_CJ=0 IC_B=1 IC_C=1 IC_D=1 MAX_ROFF=100Meg IC=1 ID0=-5.249750710617706u ID1=7.199232620176097n ID2=31.30845764284493 ID3=100.0000000000023 VD0=-100.0000000000023 VD1=719.9232620176097m USER_DIODE_OFF_RESISTANCE=3.86058Meg VD2=779.9083386221662m VD3=806.4272708809503m USE_EXTRACTED=1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="PARAM_VALUES" value="LIMIT_MAX_ROFF=1 TEMP=50 USER_DIODE_FWD_RES=107.238u LEVEL=0 USER_IC_A=1 USER_IC_B=1 USER_IC_C=1 USER_IC_D=1 USER_IC=1 DEVICE='IDEAL' VD_PEAK=100 LABEL='USER_LABEL' USER_DIODE_FWD_VOLTAGE=803.49m ID_PEAK=360 CONFIG=0 NUMSEG=3 IC_A=1 USER_DIODE_CJ=0 IC_B=1 IC_C=1 IC_D=1 MAX_ROFF=100Meg IC=1 ID0=-18.92416599409736u ID1=7.555922949380761n ID2=112.7104475142569 ID3=360.0000000000081 VD0=-100.0000000000023 VD1=755.5922949380761m USER_DIODE_OFF_RESISTANCE=1.07238Meg VD2=815.577371552475m VD3=842.096303811261m USE_EXTRACTED=1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="PARAMSSCRIPT" value="edit_simplis_device_params" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="ref" value="D3" autopos=1 normal=Right rotated=Bottom font=Default order=-1
 Property name="SIMPLIS_TEMPLATE" value="<ref:X> <nodelist:nox> %PARAM_MODEL_NAME% vars: %PARAM_VALUES% REF='%REF%'" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
@@ -868,7 +868,7 @@ Attributes type=symbol name="dio" selected=0 protected=0 x=4800 y=2400 orient=N1
 Property name="EDVT_TEMPLATE" value="%REF% | <nodepinlist> | REF=%REF% MODEL_NAME=%PARAM_MODEL_NAME% %PARAM_VALUES%" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="MODEL" value="D" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="PARAM_MODEL_NAME" value="DIODE_SPICE_V3" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="PARAM_VALUES" value="LIMIT_MAX_ROFF=1 TEMP=50 USER_DIODE_FWD_RES=386.058u LEVEL=0 USER_IC_A=1 USER_IC_B=1 USER_IC_C=1 USER_IC_D=1 USER_IC=3 DEVICE='IDEAL' VD_PEAK=100 LABEL='USER_LABEL' USER_DIODE_FWD_VOLTAGE=767.821m ID_PEAK=100 CONFIG=0 NUMSEG=3 IC_A=1 USER_DIODE_CJ=0 IC_B=1 IC_C=1 IC_D=1 MAX_ROFF=100Meg IC=3 ID0=-5.249750710617706u ID1=7.199232620176097n ID2=31.30845764284493 ID3=100.0000000000023 VD0=-100.0000000000023 VD1=719.9232620176097m USER_DIODE_OFF_RESISTANCE=3.86058Meg VD2=779.9083386221662m VD3=806.4272708809503m USE_EXTRACTED=1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="PARAM_VALUES" value="LIMIT_MAX_ROFF=1 TEMP=50 USER_DIODE_FWD_RES=107.238u LEVEL=0 USER_IC_A=1 USER_IC_B=1 USER_IC_C=1 USER_IC_D=1 USER_IC=2 DEVICE='IDEAL' VD_PEAK=100 LABEL='USER_LABEL' USER_DIODE_FWD_VOLTAGE=803.49m ID_PEAK=360 CONFIG=0 NUMSEG=3 IC_A=1 USER_DIODE_CJ=0 IC_B=1 IC_C=1 IC_D=1 MAX_ROFF=100Meg IC=3 ID0=-18.92416599409736u ID1=7.555922949380761n ID2=112.7104475142569 ID3=360.0000000000081 VD0=-100.0000000000023 VD1=755.5922949380761m USER_DIODE_OFF_RESISTANCE=1.07238Meg VD2=815.577371552475m VD3=842.096303811261m USE_EXTRACTED=1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="PARAMSSCRIPT" value="edit_simplis_device_params" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="ref" value="D4" autopos=1 normal=Right rotated=Bottom font=Default order=-1
 Property name="SIMPLIS_TEMPLATE" value="<ref:X> <nodelist:nox> %PARAM_MODEL_NAME% vars: %PARAM_VALUES% REF='%REF%'" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
@@ -1314,7 +1314,7 @@ Property name="MODEL" value="R" autopos=1 normal=Left rotated=Left visible=0 fon
 Property name="REF" value="R3" autopos=1 normal=Right rotated=Bottom font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="1K" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="value" value="1k" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="40" pin2="35"
 .EndInstance
 .Instance
@@ -1418,7 +1418,7 @@ Property name="SIMULATOR" value="SIMPLIS" autopos=1 normal=Left rotated=Left vis
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="USEIC" value="0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="IC=1 RIN=10Meg ROUT=1m HYSTWD=1m VOL=0 VOH=620 DELAY=0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="VALUE" value="IC=1 RIN=10Meg ROUT=1m HYSTWD=1m VOL=0 VOH=600 DELAY=0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="VALUESCRIPT" value="edit_parameterised_subckt 'VALUE'" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Netnames pin1="51" pin2="0" pin3="48" pin4="56"
 .EndInstance
@@ -3134,10 +3134,10 @@ Property name="value" value="UCC25600 VCO\n83kHz/1mA" autopos=0 x=0 y=156 align=
 Netnames
 .EndInstance
 --EndSXVERSION1.5
-Text value=".simulator SIMPLIS\n*.ac DEC 100 1 100k\n.options\n+ PSP_NPT=200001\n+ POP_ITRMAX=20\n+ POP_OUTPUT_CYCLES=5\n+ SNAPSHOT_INTVL=0\n+ SNAPSHOT_NPT=11\n+ MIN_AVG_TOPOLOGY_DUR=1a\n+ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128\n*.pop TRIG_GATE={TRIG_GATE} TRIG_COND=0_TO_1 MAX_PERIOD=50u CONVERGENCE=1p CYCLES_BEFORE_LAUNCH=20 TD_RUN_AFTER_POP_FAILS=-1\n.tran 200m 0\n\n.simulator DEFAULT\n"
-LicenseInfo version="8.40" feats=Basic|Micron|Mcore2|Schematic|Styles|Advanced|Soa|Multistep|Monte|Sim|Plugindevices|Rdif|Scripts|Rtn|SIMPLIS_IF|RemoteSimplis|beta|Va|Dotload|ProModels|Binning|Hspicedotlib|Vl|VerilogHdl|Mcore1|Opt|Snapshot|Sensitivity|Vs|Vx|Dvm|SIMPLIS_Vl|mdm|Mcsp1|Mcsp2|SimplisElite|Dev serial=unknown user="unknown" code=unknown product="SIMetrix/SIMPLIS" binarch=x64 system="WINNT/10.0/x64/34294738944/8/1/16/685120455"
+Text value=".simulator SIMPLIS\n*.ac DEC 100 1 100k\n.options\n+ PSP_NPT=200001\n+ POP_ITRMAX=20\n+ POP_OUTPUT_CYCLES=5\n+ SNAPSHOT_INTVL=0\n+ SNAPSHOT_NPT=11\n+ MIN_AVG_TOPOLOGY_DUR=1a\n+ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128\n*.pop TRIG_GATE={TRIG_GATE} TRIG_COND=0_TO_1 MAX_PERIOD=50u CONVERGENCE=1p CYCLES_BEFORE_LAUNCH=20 TD_RUN_AFTER_POP_FAILS=-1\n.tran 60m 0\n\n.simulator DEFAULT\n"
+LicenseInfo version="8.40" feats=Basic|Micron|Mcore2|Schematic|Styles|Advanced|Soa|Multistep|Monte|Sim|Plugindevices|Rdif|Scripts|Rtn|SIMPLIS_IF|RemoteSimplis|beta|Va|Dotload|ProModels|Binning|Hspicedotlib|Vl|VerilogHdl|Mcore1|Opt|Snapshot|Sensitivity|Vs|Vx|Dvm|SIMPLIS_Vl|mdm|Mcsp1|Mcsp2|SimplisElite|Dev serial=unknown user="unknown" code=unknown product="SIMetrix/SIMPLIS" binarch=x64 system="WINNT/10.0/x64/16794439680/14/1/20/418336162"
 SimulatorMode value="Simplis"
-View x=-10125 y=-4819 zoomlevel=33 zoom=10 snapgrid=120 offsetX=3299 offsetY=6260
+View x=1591 y=-2203 zoomlevel=33 zoom=10 snapgrid=120 offsetX=3283 offsetY=2203
 Property name="CreateProduct" value="SIMetrix/SIMPLIS Elite with DVM and Verilog for SIMPLIS" type=value
 Property name="CurrentMeasureItem" value="Frequency|0|0|0|" type=value
 Property name="dataEnd" value="0.015" type=value
@@ -3154,9 +3154,9 @@ Property name="method" value="interpolated" type=value
 Property name="minFreq" value="0" type=value
 Property name="plottype" value="mag" type=value
 Property name="specSpan" value="false" type=value
-Property name="UserVersion" value="167" type=value
+Property name="UserVersion" value="173" type=value
 Property name="window" value="hanning" type=value
-Property name="WriteLog" value="167/29/132581/63189" type=value
+Property name="WriteLog" value="173/29/156998/63189" type=value
 Property name="xlog" value="lin" type=value
 .EndSchematic
 .EndComponent

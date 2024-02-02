@@ -32,8 +32,16 @@ Gi= syslin('c', Kp1 * T1 *s +1,  T1*s);
 //bode([Gif; Gif*Gc1] ,1E-3, 1E8, ["Gif", "open loop"]); // Gid bode plot
 T2= 1/(2*3.14*10E3);
 //T2=Rload*Co;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//   get the esr resistor in as power loss in circuit
+Z_Leq = syslin('c', s*Leq, n^2);
+Z_Co=syslin('c', 1, s*Co);
+Z_Rload = syslin('c', Rload, 1);
+esr = 10e-3;
+Z_esr = syslin('c', esr,1);
+Z_Vin = syslin('c', Kf/n, 1);
 
-
+Gif_esr = Z_Vin/(Z_Leq + Z_esr+ Z_Rload*Z_Co/(Z_Rload + Z_Co));
 //-----set the LPF for current sense
 Fp2 = 1000 // 1kHz pole
 Wp2 = 2*3.14*Fp2;

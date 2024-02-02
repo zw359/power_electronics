@@ -1,7 +1,7 @@
-* C:\Working\power_electronics\RT21 48V\Current Controller Gi.sxsch
+* C:\wip\power_electronics\RT21 48V\opamp compensator.sxsch
 *#SIMETRIX
-V1 V1_P R9_N AC 1
-X2 X2_inp X2_inn X2_vsp 0 C5_P PARAM_OPAMP params: A0=100k
+V1 V1_P X2_inp AC 1
+X2 X2_inp X2_inn X2_vsp 0 R1_N PARAM_OPAMP params: A0=100k
 + CMRR=100k
 + GBW=10Meg
 + IB=200p
@@ -15,24 +15,16 @@ X2 X2_inp X2_inn X2_vsp 0 C5_P PARAM_OPAMP params: A0=100k
 + VDIFF_NEG=0
 + VDIFF_POS=0
 + VOFF_TOL=0
-+ VOS=0 pinnames: inp inn vsp vsn out
-V2 R9_N 0 1.31449
++ VOS=100n pinnames: inp inn vsp vsn out
+V2 X2_inp 0 1.31449
+R1 X2_inn R1_N 1Meg
 V3 X2_vsp 0 5
-R4 X2_inn V1_P 100k
-R5 C6_N 0 47k
-R6 C5_P R6_N 47k
-R7 R6_N X2_inn 1Meg
-R8 X2_inp C6_N 1Meg
-R9 X2_inp R9_N 100k
-R12 V1_P C8_P 10k
-C4 R6_N X2_inn 2.2n   
-C5 C5_P R6_N 2.2n   
-C6 X2_inp C6_N 2.2n   
-C7 C6_N 0 2.2n   
-C8 C8_P X2_inn 1n   
-.GRAPH C5_P curveLabel= X2-out nowarn=true ylog=auto xlog=auto analysis=tran|pop disabled=false PROBEREF=Probe3  
-.KEEP C5_P V1_P
-.GRAPH "db(:C5_P/:V1_P)" Curvelabel="Gi_gain" nowarn=true yunit="dB" complete=True analysis="ac" axisname=bodemag ylog=lin  persistence=0 disabled=false 
-.GRAPH "ph(:C5_P/:V1_P)" Curvelabel="Gi_phase" nowarn=true yunit="degrees" complete=True analysis="ac"  axisname=bodephase ylog=lin   persistence=0 disabled=false
+R4 X2_inn V1_P 10k
+R7 C5_N X2_inn 100k
+C5 R1_N C5_N 1n   
+.GRAPH R1_N curveLabel= X2-out nowarn=true ylog=auto xlog=auto analysis=tran|pop disabled=false PROBEREF=Probe3  
+.KEEP R1_N V1_P
+.GRAPH "db(:R1_N/:V1_P)" Curvelabel="Gi_gain" nowarn=true yunit="dB" complete=True analysis="ac" axisname=bodemag ylog=lin  persistence=0 disabled=false 
+.GRAPH "ph(:R1_N/:V1_P)" Curvelabel="Gi_phase" nowarn=true yunit="degrees" complete=True analysis="ac"  axisname=bodephase ylog=lin   persistence=0 disabled=false
 .ac dec 25 1 100k
 
