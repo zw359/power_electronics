@@ -387,18 +387,18 @@ Property name="value" value="1m" autopos=1 normal=Right rotated=Top font=Default
 Netnames pin1="R3_P" pin2="V1_P"
 .EndInstance
 .Instance
-Attributes type=symbol name="idealTx_1_2_v4" selected=0 protected=0 x=2400 y=1800 orient=N0 
-Property name="idealTxInd" value="39.0625u" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Attributes type=symbol name="idealTx_1_2_v4" selected=1 protected=0 x=2400 y=1800 orient=N0 
+Property name="idealTxInd" value="3.90625u" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="idealTxKPP" value="1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="idealTxKPS" value="1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="idealTxKSS" value="1" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="idealTxKPS" value="990m" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="idealTxKSS" value="990m" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="idealTxPrimaryRatios" value="[16]" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="idealTxSecondaryRatios" value="[1, 1]" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="ref" value="TX1" autopos=1 normal=Right rotated=Bottom font=Default order=-1
-Property name="simplis_template" value="X$%ref% <nodelist> Ideal_Tx%ref% ;.subckt Ideal_Tx%ref% 10 11 20 21 30 31 ;.node_map P1P 10 ;.node_map P1N 11 ;.node_map S1P 20 ;.node_map S1N 21 ;.node_map S2P 30 ;.node_map S2N 31 ;!T$%ref% N_WIND=3 10 11 N1=16 20 21 N2=1 30 31 N3=1;L$%ref% 10 11 10m ;.ends ;<t:INIT_COND>" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="simplis_template" value="X$%ref% <nodelist> Ideal_Tx%ref% ;.subckt Ideal_Tx%ref% 10 11 20 21 30 31 ;.node_map P1P 10 ;.node_map P1N 11 ;.node_map S1P 20 ;.node_map S1N 21 ;.node_map S2P 30 ;.node_map S2N 31 ;L1 10 11 1m ;L2 20 21 3.90625u ;L3 30 31 3.90625u ;M-L1-L2 61.875u ;M-L1-L3 61.875u ;M-L2-L3 3.86719u ; ;.ends ;<t:INIT_COND>" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="template" value="X$%ref% <nodelist> Ideal_Tx%ref% <pinnames> ;.subckt Ideal_Tx%ref% <pinlist> ;L1 P1P P1N 10m ;L2 S1P S1N 39.0625u ;L3 S2P S2N 39.0625u ;K12 L1 L2 1 ;K13 L1 L3 1 ;K23 L2 L3 1 ;.ends ;" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="template" value="X$%ref% <nodelist> Ideal_Tx%ref% <pinnames> ;.subckt Ideal_Tx%ref% <pinlist> ;L1 P1P P1N 1m ;L2 S1P S1N 3.90625u ;L3 S2P S2N 3.90625u ;K12 L1 L2 990m ;K13 L1 L3 990m ;K23 L2 L3 990m ;.ends ;" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Netnames pin1="TX1_P1P" pin2="TX1_P1N" pin3="TX1_S1P" pin4="0" pin5="0" pin6="TX1_S2N"
 .EndInstance
 .Instance
@@ -690,13 +690,13 @@ Property name="StyleNormal" value="DefaultWire" autopos=1 normal=Left rotated=Le
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 .EndWire
 Text value=".simulator SIMETRIX\n.tran 1m\n.simulator SIMPLIS\n.options\n+ PSP_NPT=10001\n+ POP_ITRMAX=20\n+ POP_OUTPUT_CYCLES=5\n+ SNAPSHOT_INTVL=0\n+ SNAPSHOT_NPT=11\n+ MIN_AVG_TOPOLOGY_DUR=1a\n+ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128\n.tran 5m 0\n\n.simulator DEFAULT\n"
-LicenseInfo version="8.40" feats=Basic|Micron|Mcore2|Schematic|Styles|Advanced|Soa|Multistep|Monte|Sim|Plugindevices|Rdif|Scripts|Rtn|SIMPLIS_IF|RemoteSimplis|beta|Va|Dotload|ProModels|Binning|Hspicedotlib|Vl|VerilogHdl|Mcore1|Opt|Snapshot|Sensitivity|Vs|Vx|Dvm|SIMPLIS_Vl|mdm|Mcsp1|Mcsp2|SimplisElite|Dev serial=unknown user="unknown" code=unknown product="SIMetrix/SIMPLIS" binarch=x64 system="WINNT/10.0/x64/16794439680/14/1/20/1186619080"
+LicenseInfo version="8.40" feats=Basic|Micron|Mcore2|Schematic|Styles|Advanced|Soa|Multistep|Monte|Sim|Plugindevices|Rdif|Scripts|Rtn|SIMPLIS_IF|RemoteSimplis|beta|Va|Dotload|ProModels|Binning|Hspicedotlib|Vl|VerilogHdl|Mcore1|Opt|Snapshot|Sensitivity|Vs|Vx|Dvm|SIMPLIS_Vl|mdm|Mcsp1|Mcsp2|SimplisElite|Dev serial=unknown user="unknown" code=unknown product="SIMetrix/SIMPLIS" binarch=x64 system="WINNT/10.0/x64/34294738944/8/1/16/685120455"
 SimulatorMode value="SIMetrix"
-View x=-2611 y=-2715 zoomlevel=34 zoom=11 snapgrid=120 offsetX=2611 offsetY=2715
+View x=-458 y=-323 zoomlevel=29 zoom=7 snapgrid=120 offsetX=458 offsetY=254
 Property name="CreateProduct" value="SIMetrix/SIMPLIS Elite with Verilog for SIMPLIS - Magnetics Design Module - DVM" type=value
 Property name="CurrentMeasureItem" value="Frequency|0|0|0|" type=value
 Property name="GUID" value="{7fe8a2ae-63c1-4a93-bd15-3d0ae57f32ae}" type=value
-Property name="UserVersion" value="5" type=value
-Property name="WriteLog" value="5/0/7073/0" type=value
+Property name="UserVersion" value="6" type=value
+Property name="WriteLog" value="6/0/21735/0" type=value
 .EndSchematic
 .EndComponent
