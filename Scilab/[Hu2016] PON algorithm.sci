@@ -3,7 +3,7 @@ Vo=12;
 Po=600;
 Rload = Vo^2/Po;
 Io = Vo/Rload;
-Cr = 20E-9;
+Cr = 16E-9;
 Vin_min = 280;
 Fsw_min = 100E3;
 N = 16;
@@ -26,10 +26,19 @@ func2=  'res(2) = 4* ((K1-K2 -Vo^2) * sin(x(2)) .*x(1) + (K1-K2 -Vo^2) * sin(x(2
 
 deff('res=pon_calc(x)',[func1; func2]);
 
-Theta=2.726440
-Alpha=1.278888
+Theta=2.635710
+Alpha=1.089578
 
 x0 = [Alpha;Theta];
 xsol1 =fsolve(x0,pon_calc) 
 res1 = pon_calc(xsol1) 
+printf('res1=%f\n', res1);
+Theta = xsol1(2);
+Alpha = xsol1(1);
 //res1 = pon_calc(x0); 
+
+den1= K1 * sin(Theta) + K1 * sin(Alpha) -K2 * sin(Theta) +K2* sin(Alpha) - sin(Theta) *Vo^2 -sin(Alpha) *Vo^2;
+
+num1 = -K1 * (Theta + Alpha);
+
+K = num1/den1;
