@@ -14,18 +14,18 @@ temp1 = (2*N*Cr*Rload*Vo*Vin_min*Fsw_min - Cr*Rload*Vin_min^2 * Fsw_min -Vo^2)
 den1 = 2*N*temp1;
 Theta = acos(num1/den1);
 
-// alpha equation(27)
+// Lambda equation(27)
 num2 = (2*N*Cr*Rload*Vo*Vin_min*Fsw_min - Cr*Rload*Vin_min^2*Fsw_min - Vo^2)* sin(Theta);
 den2 = 2*N*Cr*Rload*Vo*Vin_min*Fsw_min + Cr*Rload*Vin_min^2*Fsw_min - Vo^2;
-Alpha = asin(num2/den2);
+Lambda = asin(num2/den2);
 
 // K euqation(31)
-num3 = -N*Cr*Rload*Vo*Vin_min*Fsw_min*(Alpha + Theta);
+num3 = -N*Cr*Rload*Vo*Vin_min*Fsw_min*(Lambda + Theta);
 den3 = num2;
 K = num3/den3;
 
 // Omega   equation (33)
-Omega = 2*(Alpha + Theta)*Fsw_min;
+Omega = 2*(Lambda + Theta)*Fsw_min;
 
 // Lr   equation(34)
 Lr = 1/(Cr*Omega^2);
@@ -40,7 +40,7 @@ den4= 2*Rload*Fsw_min*Cr*Vin_min;
 Vmargin = num4/den4 - N*Vo - N*Vo*(K+1)/K;
 
 printf('Theta=%f\n', Theta);
-printf('Alpha=%f\n', Alpha);
+printf('Lambda=%f\n', Lambda);
 printf('K=%f\n', K);
 printf('resonant Omega=%f kHz\n', Omega/1000/2/%pi);
 printf('Lr=%f uH\n', Lr*1E6);
