@@ -1,12 +1,5 @@
 // Algorithm from paper [Hu2016]
-Vo=12;
-Po=600;
-Rload = Vo^2/Po;
-Io = Vo/Rload;
-Cr = 16E-9;
-Vin_min = 280;
-Fsw_min = 100E3;
-N = 16;
+function [Lr, Lp, Fr, Fp, Lambda, Theta] = PON_calc(Vo, Rload, Vin_min, Fsw_min, N, Cr, Theta0, Lambda0)
 
 // x1 = Lambda
 // x2 = theta
@@ -23,18 +16,12 @@ func2= ' res(2) = 4* ((K1-K2 -Vo^2) * sin(x(2)) .*x(1) + (K1-K2 -Vo^2) * sin(x(2
 
 deff('res=pon_calc(x)',[func1; func2]);
 
-Theta=2.635710
-Lambda=1.089578
-
-//Theta=2.924462
-//Lambda=0.819139
-
-x0 = [Lambda;Theta];
+x0 = [Lambda0;Theta0];
 xsol1 =fsolve(x0,pon_calc) 
 res1 = pon_calc(xsol1) 
 
-printf('check the convergence of pon_calc \n')
-printf('res1=%f\n', res1);
+//printf('check the convergence of pon_calc \n')
+//printf('res1=%f\n', res1);
 
 Lambda = xsol1(1);
 Theta = xsol1(2);
@@ -56,8 +43,8 @@ x0=0;
 xsol2 = fsolve(x0, psi_calc);
 res2 = psi_calc(xsol2);
 
-printf('check the convergence of psi_calc \n')
-printf('res2=%f\n', res2);
+//printf('check the convergence of psi_calc \n')
+//printf('res2=%f\n', res2);
 
 psi = xsol2;
 
@@ -66,18 +53,10 @@ psi1= atan(K5/K4) -acos(-K6/sqrt(K4^2 +K5^2));
 
 Omega_r = 2*psi*sqrt(K+1)*Fsw_min + 2*Fsw_min*Lambda + 2*Fsw_min*Theta;
 Omega_p = Omega_r/sqrt(K+1);
+Fr = Omega_r/1000/2/%pi;
+Fp = Omega_p/1000/2/%pi;
 Lr = 1/(Cr*Omega_r^2);
 Lp = K*Lr;
+endfunction
 
-
-printf('Theta=%f\n', Theta);
-printf('Lambda=%f\n', Lambda);
-printf('psi=%f\n', psi);
-printf('psi1 = %f \n', psi1);
-
-printf('K=%f\n', K);
-printf('resonant Fr=%f kHz\n', Omega_r/1000/2/%pi);
-printf('resonant Fp=%f kHz\n', Omega_p/1000/2/%pi);
-printf('Lr=%f uH\n', Lr*1E6);
-printf('Lp=%f uH\n', Lp*1E6);
 

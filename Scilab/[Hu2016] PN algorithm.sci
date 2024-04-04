@@ -25,10 +25,10 @@ den3 = num2;
 K = num3/den3;
 
 // Omega   equation (33)
-Omega = 2*(Lambda + Theta)*Fsw_min;
+Omega_r = 2*(Lambda + Theta)*Fsw_min;
 
 // Lr   equation(34)
-Lr = 1/(Cr*Omega^2);
+Lr = 1/(Cr*Omega_r^2);
 
 // Lp  equation (35)
 Lp = K*Lr;
@@ -42,7 +42,7 @@ Vmargin = num4/den4 - N*Vo - N*Vo*(K+1)/K;
 printf('Theta=%f\n', Theta);
 printf('Lambda=%f\n', Lambda);
 printf('K=%f\n', K);
-printf('resonant Omega=%f kHz\n', Omega/1000/2/%pi);
+printf('resonant Fr=%f kHz\n', Omega_r/1000/2/%pi);
 printf('Lr=%f uH\n', Lr*1E6);
 printf('Lp=%f uH\n', Lp*1E6);
 printf('Vmargin=%f \n', Vmargin);
