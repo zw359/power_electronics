@@ -1,5 +1,5 @@
 // Algorithm from paper [Hu2016]
-function [Lr, Lp, Fr, Fp, Lambda, Theta] = PON_calc(Vo, Rload, Vin_min, Fsw_min, N, Cr, Theta0, Lambda0)
+function [Lr, Lp, Fr, Fp, Lambda, Theta, K] = PON_calc(Vo, Rload, Vin_min, Fsw_min, N, Cr, Theta0, Lambda0)
 
 // x1 = Lambda
 // x2 = theta

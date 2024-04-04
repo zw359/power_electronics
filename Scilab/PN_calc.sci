@@ -1,5 +1,5 @@
 // Algorithm from paper [Hu2016]
-function [Lr, Lp, Fr, Vmargin, Lambda, Theta] = PN_calc(Vo, Rload, Vin_min, Fsw_min, N, Cr)
+function [Lr, Lp, Fr, Fp, Vmargin, Lambda, Theta, K] = PN_calc(Vo, Rload, Vin_min, Fsw_min, N, Cr)
     
 
 num1 = Vin_min*(4*N^2*Cr*Rload*Vo*Fsw_min - 2*N*Cr*Rload*Vin_min*Fsw_min + Vo);
@@ -25,7 +25,7 @@ Lr = 1/(Cr*Omega_r^2);
 
 // Lp  equation (35)
 Lp = K*Lr;
-
+Fp =1/(2*%pi*sqrt(Cr*(Lr+Lp)))/1000; //kHz
 // margin euqation(38)
 num4= temp1 *cos(Theta);
 den4= 2*Rload*Fsw_min*Cr*Vin_min;
