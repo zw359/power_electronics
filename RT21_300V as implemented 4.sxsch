@@ -1093,7 +1093,7 @@ Property name="MODEL" value="R" autopos=1 normal=Left rotated=Left visible=0 fon
 Property name="REF" value="R1" autopos=1 normal=Right rotated=Bottom font=Default order=-1
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="value" value="80" autopos=1 normal=Right rotated=Top font=Default order=-1
+Property name="value" value="15.6" autopos=1 normal=Right rotated=Top font=Default order=-1
 Netnames pin1="41" pin2="0"
 .EndInstance
 .Instance
@@ -1332,7 +1332,7 @@ Property name="SIMULATOR" value="SIMPLIS" autopos=1 normal=Left rotated=Left vis
 Property name="StyleNormal" value="DefaultInstance" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="StyleSelected" value="DefaultSelected" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="USEIC" value="0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
-Property name="VALUE" value="IC=1 RIN=10Meg ROUT=1m HYSTWD=1m VOL=0 VOH=650 DELAY=0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
+Property name="VALUE" value="IC=1 RIN=10Meg ROUT=1m HYSTWD=1m VOL=0 VOH=658 DELAY=0" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Property name="VALUESCRIPT" value="edit_parameterised_subckt 'VALUE'" autopos=1 normal=Left rotated=Left visible=0 font=Default order=-1
 Netnames pin1="49" pin2="0" pin3="46" pin4="54"
 .EndInstance
@@ -2939,10 +2939,10 @@ Netnames
 Text value=".simulator SIMPLIS\n*.ac DEC 30 1m 100k\n.options\n+ PSP_NPT=100001\n+ POP_ITRMAX=20\n+ POP_OUTPUT_CYCLES=5\n+ SNAPSHOT_INTVL=0\n+ SNAPSHOT_NPT=11\n+ MIN_AVG_TOPOLOGY_DUR=1a\n+ AVG_TOPOLOGY_DUR_MEASUREMENT_WINDOW=128\n*.pop TRIG_GATE={TRIG_GATE} TRIG_COND=0_TO_1 MAX_PERIOD=50u CONVERGENCE=1p CYCLES_BEFORE_LAUNCH=20 TD_RUN_AFTER_POP_FAILS=-1\n.tran 20m 0\n\n.simulator DEFAULT\n"
 LicenseInfo version="8.40" feats=Basic|Micron|Mcore2|Schematic|Styles|Advanced|Soa|Multistep|Monte|Sim|Plugindevices|Rdif|Scripts|Rtn|SIMPLIS_IF|RemoteSimplis|beta|Va|Dotload|ProModels|Binning|Hspicedotlib|Vl|VerilogHdl|Mcore1|Opt|Snapshot|Sensitivity|Vs|Vx|Dvm|SIMPLIS_Vl|mdm|Mcsp1|Mcsp2|SimplisElite|Dev serial=unknown user="unknown" code=unknown product="SIMetrix/SIMPLIS" binarch=x64 system="WINNT/10.0/x64/16794439680/14/1/20/1186619080"
 SimulatorMode value="Simplis"
-View x=-1536 y=-1636 zoomlevel=32 zoom=9 snapgrid=120 offsetX=3283 offsetY=4810
+View x=-3283 y=-10406 zoomlevel=32 zoom=9 snapgrid=120 offsetX=3283 offsetY=4810
 Property name="CreateProduct" value="SIMetrix/SIMPLIS Elite with DVM and Verilog for SIMPLIS" type=value
 Property name="GUID" value="{c4932eab-1dfc-4805-98ce-0980c668e211}" type=value
-Property name="UserVersion" value="102" type=value
-Property name="WriteLog" value="102/29/178465/63189" type=value
+Property name="UserVersion" value="104" type=value
+Property name="WriteLog" value="104/29/178677/63189" type=value
 .EndSchematic
 .EndComponent
