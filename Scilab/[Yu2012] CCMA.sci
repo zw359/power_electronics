@@ -56,8 +56,8 @@ func6 = ' res(6) = rL * (1/Gamma) * ( x(6) .* x(4) - 0.5* Lambda * x(6).^2 - (-x
 deff('res=CCMA_mode(x)',[func1; func2; func3; func4; func5; func6]);
 
 // Initial condition
-x1_0 = 1;//-184;
-x2_0 = 1;//-184;
+x1_0 = -1;//-184;
+x2_0 = -1;//-184;
 x3_0 = K1;//K1;
 x4_0 = K1;//K1;
 x5_0 = 1;
