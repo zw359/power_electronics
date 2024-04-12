@@ -1,12 +1,10 @@
 // Algorithm from paper [Yu2012]
 // DCMB mode solver
-// NOT work yet
+
+// circuit parameters
 Vin=280;
 Rload = 1;
 N = 16;
-
-
-
 Cr =25E-9;
 Lr = 47.0212E-6
 Lm = 175.7023E-6;
@@ -18,7 +16,7 @@ Kx= Omega1/Omega0;
 Fr = 1/(2*%pi*sqrt(Lr*Cr));
 
 Fs = Fr;
-Fs = 0.6812*Fr;
+Fs = 0.9*Fr;
 Fs = 100E3;
 //Fs = Fr;
 
@@ -50,19 +48,18 @@ func2 = 'res(2) = x(2) +  Kx *(-((x(1)-1/x(3)+1).*cos(x(4)) + x(2).*sin(x(4)) +1
 func3 = 'res(3) = ((-x(1) +1/x(3) -1 ) .* sin(x(4)) + x(2) .*cos(x(4))) - x(2) - Lambda*x(4) ';
 
 // equation (18d)
+//func4 = 'res(4) =  rL * ((-x(1) + 1/x(3) -1) .* (1- cos(x(4)))  + x(2) .* sin(x(4)) -x(2) .* x(4) - 0.5 * Lambda * x(4).^2) -Gamma';
 func4 = 'res(4) =  (rL/Gamma) * ((-x(1) + 1/x(3) -1) .* (1- cos(x(4)))  + x(2) .* sin(x(4)) -x(2) .* x(4) - 0.5 * Lambda * x(4).^2) -1';
-
 
 
 
 deff('res=DCMB_mode(x)',[func1; func2; func3; func4]);
 
 // Initial condition
-x1_0=1
+x1_0=0
 x2_0=0
-x3_0=-1
-x4_0=0
-
+x3_0=1
+x4_0=%pi
 
 x0 = [x1_0; x2_0; x3_0; x4_0];
 xsol1 =fsolve(x0, DCMB_mode); 

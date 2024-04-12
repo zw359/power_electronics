@@ -2,20 +2,13 @@
 // DCMB mode solver
 // NOT work yet
 Vin=280;
-Rload = 1;
+Rload = 0.5;
 N = 16;
 
+Cr = 16E-9;
+Lr = 112.5902E-6
+Lm = 134.5184E-6;
 
-
-Cr =25E-9;
-Lr = 47.0212E-6
-Lm = 175.7023E-6;
-
-
-Cr =35E-9;
-Lr = 47.0212E-6
-Lm = 175.7023E-6;
-Lm = Lr *4.8;
 
 Omega0= 1/sqrt(Lr*Cr);
 Omega1= 1/sqrt((Lr+Lm)*Cr);
@@ -66,12 +59,12 @@ func6 = 'res(6) =  (rL/Gamma) * ((-x(1) + 1/x(5) -1) .* (1- cos(x(6)))  + x(3) .
 deff('res=DCMB_mode(x)',[func1; func2; func3; func4; func5; func6]);
 
 // Initial condition
-x1_0=-0.115361
-x2_0=4.444387
-x3_0=-2.491840
-x4_0=-2.869083
-x5_0=0.295310
-x6_0=-1.409630
+x1_0=0
+x2_0=0
+x3_0=0
+x4_0=0
+x5_0=1
+x6_0=%pi
 
 x0 = [x1_0; x2_0; x3_0; x4_0; x5_0; x6_0];
 xsol1 =fsolve(x0, DCMB_mode); 
