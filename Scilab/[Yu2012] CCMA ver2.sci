@@ -1,27 +1,23 @@
 // Algorithm from paper [Hu2016]
-Vo=12;
-Po=600;
-Rload = Vo^2/Po;
-
-Io = Vo/Rload;
-Cr = 16E-9;
-Vin_min = 280;
 Vin=280;
-Fsw_min = 100E3;
-
+Rload = 1;
 N = 16;
 
 
 
-Cr = 16E-9;
-Lr = 112.5902E-6
-Lm = 134.5184E-6;
+Cr =25E-9;
+Lr = 47.0212E-6
+Lm = 175.7023E-6;
+
+Omega0= 1/sqrt(Lr*Cr);
+Omega1= 1/sqrt((Lr+Lm)*Cr);
+Kx= Omega1/Omega0; 
+
 
 Fr = 1/(2*%pi*sqrt(Lr*Cr));
 
-Fs = 118.59E3;
+Fs = Fr;
 //Fs = 130E3;
-Fs = 150E3;
 
 F = Fs/Fr;
 Lambda = Lr/Lm;
