@@ -36,13 +36,13 @@ rL= N^2*Rload/Zbase;
 // M            x(5)
 // alpha        x(6)
 
-// equation (15a)
+// equation mc(alpha)   P mode  0-- alpha
 func1 = 'res(1) = -x(2) + (x(1)-1/x(5)+1).*cos(x(6)) + x(3).*sin(x(6)) +1/x(5) -1';
 
-// equation (15c)
+// equation iLr(alpha)  P mode  0-- alpha
 func2 = 'res(2) = -x(4) + ( -x(1) +1/x(5) -1 ) .* sin(x(6)) + x(3) .*cos(x(6))';
 
-// equation (15d)
+// equation iLm(alpha)  P mode  0-- alpha
 func3 = 'res(3) = -x(4) + x(3) + Lambda * x(6)';
 
 // equation (18a)
