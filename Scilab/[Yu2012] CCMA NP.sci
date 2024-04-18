@@ -1,27 +1,19 @@
 // Algorithm from paper [Hu2016]
-Vo=12;
-Po=600;
-Rload = Vo^2/Po;
+// CCMA  NP mode   most common mode when Fs > Fr
+// Norminal load condition  set at Rload =1
+// mm2_0 >1
+// mm2_alpha >1
 
-Io = Vo/Rload;
-Cr = 16E-9;
-Vin_min = 280;
 Vin=280;
-Fsw_min = 100E3;
-
+Rload = 1;
 N = 16;
 
-
-
-Cr = 16E-9;
-Lr = 112.5902E-6
-Lm = 134.5184E-6;
+Cr = 25E-9;
+Lr = 47.0212E-6
+Lm = 175.7023E-6;
 
 Fr = 1/(2*%pi*sqrt(Lr*Cr));
-
-Fs = 118.59E3;
-//Fs = 130E3;
-Fs = 150E3;
+Fs = 180E3;
 
 F = Fs/Fr;
 Lambda = Lr/Lm;
@@ -40,34 +32,26 @@ rL= N^2*Rload/Zbase;
 
 // equation (25a)
 func1 =  'res(1) = x(1) + (x(2) -1/x(5) +1) .* cos(Gamma-x(6)) + Im_alpha .* sin(Gamma-x(6)) + 1/x(5)-1';
-
 // equation (22a)
 func2 =  'res(2) = -x(2) + (x(1) -1/x(5) -1).*cos(x(6)) + x(3) .* sin(x(6)) + 1/x(5) +1' ;
-
 // equation (22d)
 func3 =  'res(3) = x(4)- Lambda * x(6) - Im_alpha';
-
 // equation (25b)
 func4 =  'res(4) = x(3) + (-x(2) +1/x(5) -1) .* sin(Gamma-x(6)) + Im_alpha .* cos(Gamma-x(6))';
-
 // equation (22c)
 func5 =  'res(5) = -Im_alpha + (-x(1) +1/x(5) +1) .* sin(x(6)) + x(3) .* cos(x(6))';
-
 // euqation (25c)
 func6 =  'res(6) = rL * (1/Gamma) * ( x(6) .* x(4) - 0.5* Lambda * x(6).^2 - (-x(1) +1/x(5) +1) .* (1-cos(x(6)))  - x(3).*sin(x(6)) + (-x(2)+1/x(5)-1) .* (1-cos(Gamma-x(6))) +Im_alpha * sin(Gamma-x(6)) - Im_alpha*(Gamma-x(6)) -0.5*Lambda*(Gamma-x(6)).^2) -1' ; 
-
 
 deff('res=CCMA_mode(x)',[func1; func2; func3; func4; func5; func6]);
 
 // Initial condition
-x1_0=-2.144084
-x2_0=-2.144474
-x3_0=-1.315849
-x4_0=-1.314373
-x5_0=0.999818
-x6_0=0.000296
-//Theta=2.924462
-//Lambda=0.819139
+x1_0=-0
+x2_0=-0
+x3_0=-0
+x4_0=-0
+x5_0=1
+x6_0=0
 
 x0 = [x1_0; x2_0; x3_0; x4_0; x5_0; x6_0];
 xsol1 =fsolve(x0, CCMA_mode); 
@@ -86,12 +70,16 @@ Ibase = Vbase/Zbase;
 Vo = Vbase/N;
 Vc_0 = xsol1(1) * Vbase;
 Vc_alpha = xsol1(2) * Vbase;
-I_lr_0= xsol1(3) * Ibase;
-I_lm_0= xsol1(4) * Ibase;
 
 mm2_0 = (-mc_0 + 1/M )/(1+Lambda);
 mm2_alpha = (-mc_alpha +1/M)/(1+Lambda);
-mm2_gamma = (mc_0 -1/M)/(1+Lambda);
+mm2_gamma = (mc_0 +1/M)/(1+Lambda);
+
+// copy from func5 , func6
+dt=0.2;
+I_lr_alpha_d  = (-xsol1(1)+1/xsol1(5)-1) * sin(dt);
+I_lm_alpha_d  = Im_alpha + Lambda*dt;
+
 
 printf('CCM mode check \n')
 printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n')

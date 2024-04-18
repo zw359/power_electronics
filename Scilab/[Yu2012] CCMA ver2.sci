@@ -1,6 +1,6 @@
 // Algorithm from paper [Hu2016]
 Vin=280;
-Rload = 1;
+Rload = 2.4;
 N = 16;
 
 
@@ -17,9 +17,7 @@ Kx= Omega1/Omega0;
 Fr = 1/(2*%pi*sqrt(Lr*Cr));
 
 Fs = Fr;
-//Fs = 130E3;
-
-F = Fs/Fr;
+Fs = 180E3;
 Lambda = Lr/Lm;
 Gamma = %pi/F;
 

@@ -19,6 +19,7 @@ Fr = 1/(2*%pi*sqrt(Lr*Cr));
 Fs = Fr;
 Fs = 0.9*Fr;
 Fs = 90E3;
+Fs=87261.487
 //Fs = Fr;
 
 F = Fs/Fr;
@@ -72,15 +73,15 @@ Vo = Vbase/N;
 Vc_0 = xsol1(1) * Vbase;
 I_lr_0= xsol1(2) * Ibase;
 
-/*
+mc_alpha = (mc_0-1/M+1) * cos(Alpha) + I_lr_0*sin(Alpha) +1/M -1;
+
 mm2_0 = (-mc_0 + 1/M )/(1+Lambda);
 mm2_alpha = (-mc_alpha +1/M)/(1+Lambda);
-mm2_gamma = (mc_0 -1/M)/(1+Lambda);
+mm2_gamma = (mc_0 +1/M)/(1+Lambda);
 
 printf('CCM mode check \n')
 printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n')
 printf('%f \t %f \t %f\n', abs(mm2_0), abs(mm2_alpha), abs(mm2_gamma));
-*/
 
 printf('x1_0=%f\n', xsol1(1));
 printf('x2_0=%f\n', xsol1(2));

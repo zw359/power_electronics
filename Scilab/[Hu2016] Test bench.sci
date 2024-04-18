@@ -1,20 +1,20 @@
 exec('PN_calc.sci');
 exec('PON_calc.sci');
 
-Vo=12;
-Po=600;
+Vo=70;
+Po=5000;
 Rload = Vo^2/Po;
 Io = Vo/Rload;
 
 Cr_step = 1E-9; // incremenal values.
-Cr_init = 6E-9; // Inicial values.
+Cr_init = 80E-9; // Inicial values.
 Cr= Cr_init;
 
 i=0;//  counter starts from zero
 
-Vin_min = 280;
-Fsw_min = 100E3;
-N = 16;
+Vin_min = 600;
+Fsw_min = 58E3;
+N = 5;
 
 PN=1
 Vmargin=1

@@ -1,6 +1,6 @@
 // Algorithm from paper [Yu2012]
-// DCMB mode solver
-
+// DCMB (PO)mode solver
+// add Gamma and F as unknowns
 // circuit parameters
 Vin=280;
 Rload = 1;
@@ -21,9 +21,9 @@ Fs = 0.9*Fr;
 Fs = 90E3;
 //Fs = Fr;
 
-F = Fs/Fr;
+//F = Fs/Fr;
 Lambda = Lr/Lm;
-Gamma = %pi/F;
+//Gamma = %pi/F;
 
 Zbase = sqrt(Lr/Cr);
 rL= N^2*Rload/Zbase;
@@ -32,31 +32,40 @@ rL= N^2*Rload/Zbase;
 // iLr(0)       x(2)
 // M            x(3)
 // alpha        x(4)
+// gamma        x(5)
+// F            x(6)
 
 // equation (18a)
-func1 = 'res(1) = x(1) + ( ((x(1)-1/x(3)+1).*cos(x(4)) + x(2).*sin(x(4)) +1/x(3) -1) -1/x(3)) .* cos(Kx *(Gamma-x(4))) + (1/Kx) * (( -x(1) +1/x(3) -1 ) .* sin(x(4)) + x(2) .*cos(x(4)) ) .* sin(Kx*(Gamma-x(4))) + 1/x(3)';
+func1 = 'res(1) = x(1) + ( ((x(1)-1/x(3)+1).*cos(x(4)) + x(2).*sin(x(4)) +1/x(3) -1) -1/x(3)) .* cos(Kx *(x(5)-x(4))) + (1/Kx) * (( -x(1) +1/x(3) -1 ) .* sin(x(4)) + x(2) .*cos(x(4)) ) .* sin(Kx*(x(5)-x(4))) + 1/x(3)';
 
 // equation (18b)
-func2 = 'res(2) = x(2) +  Kx *(-((x(1)-1/x(3)+1).*cos(x(4)) + x(2).*sin(x(4)) +1/x(3) -1) +1/x(3)).* sin(Kx*(Gamma -x(4))) + ((-x(1) +1/x(3) -1 ) .* sin(x(4)) + x(2) .*cos(x(4))) .* cos(Kx*(Gamma -x(4)))' ;
+func2 = 'res(2) = x(2) +  Kx *(-((x(1)-1/x(3)+1).*cos(x(4)) + x(2).*sin(x(4)) +1/x(3) -1) +1/x(3)).* sin(Kx*(x(5) -x(4))) + ((-x(1) +1/x(3) -1 ) .* sin(x(4)) + x(2) .*cos(x(4))) .* cos(Kx*(x(5) -x(4)))' ;
 
 // equation (18c)
 func3 = 'res(3) = ((-x(1) +1/x(3) -1 ) .* sin(x(4)) + x(2) .*cos(x(4))) - x(2) - Lambda*x(4) ';
 
 // equation (18d)
 //func4 = 'res(4) =  rL * ((-x(1) + 1/x(3) -1) .* (1- cos(x(4)))  + x(2) .* sin(x(4)) -x(2) .* x(4) - 0.5 * Lambda * x(4).^2) -Gamma';
-func4 = 'res(4) =  (rL/Gamma) * ((-x(1) + 1/x(3) -1) .* (1- cos(x(4)))  + x(2) .* sin(x(4)) -x(2) .* x(4) - 0.5 * Lambda * x(4).^2) -1';
+func4 = 'res(4) =  (rL/x(5)) * ((-x(1) + 1/x(3) -1) .* (1- cos(x(4)))  + x(2) .* sin(x(4)) -x(2) .* x(4) - 0.5 * Lambda * x(4).^2) -1';
 
+// gamma = %pi/F
 
+func5 = 'res(5) = x(5)-%pi/x(6)';
 
-deff('res=DCMB_mode(x)',[func1; func2; func3; func4]);
+//  Extra function
+func6 = 'res(6) = -x(3)+2';
+
+deff('res=DCMB_mode(x)',[func1; func2; func3; func4; func5; func6]);
 
 // Initial condition
 x1_0=0
 x2_0=0
 x3_0=1
 x4_0=%pi
+x5_0=%pi
+x6_0=1
 
-x0 = [x1_0; x2_0; x3_0; x4_0];
+x0 = [x1_0; x2_0; x3_0; x4_0; x5_0; x6_0];
 xsol1 =fsolve(x0, DCMB_mode); 
 res1 = DCMB_mode(xsol1) ;
 
@@ -72,15 +81,15 @@ Vo = Vbase/N;
 Vc_0 = xsol1(1) * Vbase;
 I_lr_0= xsol1(2) * Ibase;
 
-/*
+mc_alpha = (mc_0-1/M+1) * cos(Alpha) + I_lr_0*sin(Alpha) +1/M -1;
+
 mm2_0 = (-mc_0 + 1/M )/(1+Lambda);
 mm2_alpha = (-mc_alpha +1/M)/(1+Lambda);
-mm2_gamma = (mc_0 -1/M)/(1+Lambda);
+mm2_gamma = (mc_0 +1/M)/(1+Lambda);
 
 printf('CCM mode check \n')
 printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n')
 printf('%f \t %f \t %f\n', abs(mm2_0), abs(mm2_alpha), abs(mm2_gamma));
-*/
 
 printf('x1_0=%f\n', xsol1(1));
 printf('x2_0=%f\n', xsol1(2));
