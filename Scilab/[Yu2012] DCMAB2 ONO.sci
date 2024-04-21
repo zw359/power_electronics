@@ -53,12 +53,12 @@ func1 = 'res(1) = -x(2) + (x(1)-1/x(13)) .* cos(Kx*x(14))  + (x(5)/Kx) .* sin(Kx
 func2 = 'res(2) = -x(6)  + (-x(1) +1/x(13)) *Kx .* sin(Kx*x(14))  + x(5) .* cos(Kx*x(14))';
 //  iLm(alpha)  O mode  0-- alpha
 func3 = 'res(3) = -x(10) + x(6)';
-//  mc(beta)    P mode alpha -- beta
-func4 = 'res(4) =  -x(3) + (x(2)-1/x(13)+1) .* cos(x(15)-x(14)) + x(6).*sin(x(15)-x(14)) +1/x(13) -1';
-// iLr(beta)   P mode alpha -- beta
-func5 = 'res(5) =  -x(7) + (-x(2) +1/x(13) -1 ) .* sin(x(15)-x(14)) + x(6) .*cos(x(15)-x(14))' ;
-// iLm(beta)   P mode alpha -- beta
-func6 = 'res(6) =-x(11) + x(10) + Lambda * (x(15)-x(14))';
+//  mc(beta)    N mode alpha -- beta
+func4 = 'res(4) =  -x(3) + (x(2)-1/x(13)-1) .* cos(x(15)-x(14)) + x(6).*sin(x(15)-x(14)) +1/x(13) +1';
+// iLr(beta)   N mode alpha -- beta
+func5 = 'res(5) =  -x(7) + (-x(2) +1/x(13) +1 ) .* sin(x(15)-x(14)) + x(6) .*cos(x(15)-x(14))' ;
+// iLm(beta)   N mode alpha -- beta
+func6 = 'res(6) =-x(11) + x(10) - Lambda * (x(15)-x(14))';
 //  mc(gamma)    O mode beta -- gamma
 func7 = 'res(7) =  -x(4) + (x(3)-1/x(13)) .* cos(Kx*(Gamma-x(15)))  + (x(7)/Kx) .* sin(Kx*(Gamma-x(15))) + 1/x(13)' ;
 //  iLr(gamma)  O mode beta -- gamma
@@ -73,13 +73,14 @@ func11 = 'res(11) = x(5) +x(8)';
 func12 = 'res(12) = x(9) + x(12)';
 // iLr(beta) - iLm(beta) =0
 func13 ='res(13) =  x(7) -x(11)' ;
-//  mm(alpha) =1
-//  mc(alpha) = 1/M - Lambda -1
-func14 = 'res(14) = -x(2)+ 1/x(13) - Lambda - 1';
-// iout  voltage balance balance
-func15 = 'res(15) = ( (-x(2) +1/x(13) -1) .*( 1-cos(x(15)-x(14))) + x(6) .* sin(x(15) - x(14)) -x(10).*(x(15)-x(14)) - 0.5*Lambda*(x(15)-x(14)).^2 ) * rL -Gamma'; 
+//  mm(alpha) =-1
+//  mc(alpha) = 1/M + Lambda +1
+func14 = 'res(14) = -x(2)+ 1/x(13) + Lambda + 1';
 
-deff('res=DCMAB_mode(x)',[func1; func2; func3; func4; func5; func6; func7; func8; func9; func10; func11; func12; func13; func14; func15]);
+// iout  voltage balance balance
+func15 = 'res(15) = ( (-x(2) +1/x(13) +1) .*( cos(x(15)-x(14))-1) - x(6) .* sin(x(15) - x(14)) +x(10).*(x(15)-x(14)) - 0.5*Lambda*(x(15)-x(14)).^2 ) * rL -Gamma'; 
+
+deff('res=DCMAB2_mode(x)',[func1; func2; func3; func4; func5; func6; func7; func8; func9; func10; func11; func12; func13; func14; func15]);
 
 // Initial condition
 x1_0=0
@@ -94,15 +95,14 @@ x9_0=0
 x10_0=0
 x11_0=0
 x12_0=0
-x13_0=0.8 // M <1 
+x13_0= 0.8 // M <1 
 x14_0=Gamma *0.3 // critial alpha
 x15_0=Gamma *0.6  // critical beta  x15_0 > x14_0
 
 
 
-
 x0 = [x1_0; x2_0; x3_0; x4_0; x5_0; x6_0; x7_0; x8_0; x9_0; x10_0; x11_0; x12_0; x13_0; x14_0; x15_0];
-[xsol1, res1, info] =fsolve(x0, DCMAB_mode); 
+[xsol1, res1, info] =fsolve(x0, DCMAB2_mode); 
 
 mc_0= xsol1(1);
 mc_alpha = xsol1(2);
@@ -126,17 +126,17 @@ mm2_beta = abs((-xsol1(3) +1/M)/(1+Lambda));
 
 dt = 0.5;
 // iLr(beta)   P mode alpha -- beta
-I_lr_alpha_d =  (-xsol1(2) +1/xsol1(13) -1 ) .* sin((xsol1(15)-xsol1(14))*dt) + xsol1(6) .*cos((xsol1(15)-xsol1(14))*dt) ;
+I_lr_alpha_d =  (-xsol1(2) +1/xsol1(13) +1 ) .* sin((xsol1(15)-xsol1(14))*dt) + xsol1(6) .*cos((xsol1(15)-xsol1(14))*dt) ;
 // iLm(beta)   P mode alpha -- beta
-I_lm_alpha_d =  xsol1(10) + Lambda * ((xsol1(15)-xsol1(14))*dt);
+I_lm_alpha_d =  xsol1(10) - Lambda * ((xsol1(15)-xsol1(14))*dt);
 
-DCMAB_OPO =%F;
-if (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(15)<Gamma) & (mm2_0<1) & (mm2_gamma<1) &( xsol1(14)< xsol1(15) ) & (xsol1(14)>0) & (xsol1(15)>0) & (info ==1) & (xsol1(13)>0 )then
-    DCMAB_OPO = %T;
+DCMAB2_ONO =%F;
+if (I_lr_alpha_d < I_lm_alpha_d ) & (xsol1(15)<Gamma) & (mm2_0<1) & (mm2_gamma<1) &( xsol1(14)< xsol1(15) ) & (xsol1(14)>0) & (xsol1(15)>0) & (xsol1(13)>0) & (info ==1)then
+    DCMAB2_ONO = %T;
 end
 
 
-printf('DCMAB_OPO mode check %s \n', DCMAB_OPO)
+printf('DCMAB2_ONO mode check %s \n', DCMAB2_ONO)
 printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n')
 printf('%f \t %f \t %f\n', abs(mm2_0), abs(mm2_alpha), abs(mm2_gamma));
 

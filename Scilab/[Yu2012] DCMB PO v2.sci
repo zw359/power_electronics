@@ -3,7 +3,7 @@
 // add Gamma and F as unknowns
 // circuit parameters
 Vin=280;
-Rload = 1;
+Rload = 0.5;
 N = 16;
 
 Cr =25E-9;

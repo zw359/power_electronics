@@ -2,15 +2,16 @@
 // DCMAB mode solver  same as OPO mode
 // This mode happens both below and above the Fr
 // @ Very light load
-
+function [mc_0, iLr_0, iLm_0, alpha, beta1, M, correctMode] = DCMAB_OPO_solver(Cr, Lr, Lm, N, Rload,Fn)
+/*
 Vin=280;
-Rload =10;
+Rload =5;
 N = 16;
 
 Cr = 25E-9;
 Lr = 47.0212E-6
 Lm = 175.7023E-6;
-
+*/
 Omega0= 1/sqrt(Lr*Cr);
 Omega1= 1/sqrt((Lr+Lm)*Cr);
 Kx= Omega1/Omega0; 
@@ -18,13 +19,11 @@ Fr = 1/(2*%pi*sqrt(Lr*Cr));
 
 Fs = 100E3;
 Fs = 90E3;
-Fs = 180E3
 //Fs = Fr;
-Fs=132113;
-F = Fs/Fr;
-F = 0.3;
+
+//F = Fs/Fr;
 Lambda = Lr/Lm;
-Gamma = %pi/F;
+Gamma = %pi/Fn;
 
 Zbase = sqrt(Lr/Cr);
 rL= N^2*Rload/Zbase;
@@ -95,10 +94,8 @@ x10_0=0
 x11_0=0
 x12_0=0
 x13_0=0.8 // M <1 
-x14_0=Gamma *0.3 // critial alpha
-x15_0=Gamma *0.6  // critical beta  x15_0 > x14_0
-
-
+x14_0=%pi/4 // critial alpha
+x15_0=%pi/3  // critical beta  x15_0 > x14_0
 
 
 x0 = [x1_0; x2_0; x3_0; x4_0; x5_0; x6_0; x7_0; x8_0; x9_0; x10_0; x11_0; x12_0; x13_0; x14_0; x15_0];
@@ -109,6 +106,10 @@ mc_alpha = xsol1(2);
 I_lr_0 = xsol1(5);
 I_lr_alpha = xsol1(6);
 M = xsol1(13);
+iLr_0 = xsol1(5);
+iLm_0 =xsol1(9);
+alpha = xsol1(14);
+beta1 =xsol1(15);
 
 Vbase = 0.5*Vin*M;
 Ibase = Vbase/Zbase;
@@ -134,12 +135,12 @@ DCMAB_OPO =%F;
 if (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(15)<Gamma) & (mm2_0<1) & (mm2_gamma<1) &( xsol1(14)< xsol1(15) ) & (xsol1(14)>0) & (xsol1(15)>0) & (info ==1) & (xsol1(13)>0 )then
     DCMAB_OPO = %T;
 end
+correctMode = DCMAB_OPO;
 
-
+/*
 printf('DCMAB_OPO mode check %s \n', DCMAB_OPO)
 printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n')
 printf('%f \t %f \t %f\n', abs(mm2_0), abs(mm2_alpha), abs(mm2_gamma));
-
 
 printf('x1_0=%f\n', xsol1(1));
 printf('x2_0=%f\n', xsol1(2));
@@ -147,16 +148,8 @@ printf('x3_0=%f\n', xsol1(3));
 printf('x4_0=%f\n', xsol1(4));
 printf('x5_0=%f\n', xsol1(5));
 printf('x6_0=%f\n', xsol1(6));
-printf('x7_0=%f\n', xsol1(7));
-printf('x8_0=%f\n', xsol1(8));
-printf('x9_0=%f\n', xsol1(9));
-printf('x10_0=%f\n', xsol1(10));
-printf('x11_0=%f\n', xsol1(11));
-printf('x12_0=%f\n', xsol1(12));
-printf('x13_0=%f\n', xsol1(13));
-printf('x14_0=%f\n', xsol1(14));
-printf('x15_0=%f\n', xsol1(15));
 
 printf('res1=%f\n', res1);
 printf('Vo = %f\n', Vo);
-
+*/
+endfunction

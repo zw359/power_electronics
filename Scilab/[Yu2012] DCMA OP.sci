@@ -6,7 +6,7 @@
 // mmc_alpha =1
 
 Vin=280;
-Rload = 5;
+Rload =5.331;
 N = 16;
 
 Cr = 25E-9;
@@ -116,12 +116,32 @@ mm2_0 = (-mc_0 + 1/M )/(1+Lambda);
 mm2_alpha = (-mc_alpha +1/M)/(1+Lambda);
 mm2_gamma = (-mc_gamma + 1/M)/(1+Lambda);
 
-// copy from func5 , func6
-dt=0.2;
-I_lr_alpha_d  =  (-xsol1(2) +1/xsol1(10) -1 ) .* sin(dt) + xsol1(5) .*cos(dt)'
-I_lm_alpha_d  = xsol1(8) + Lambda * (dt)';
+// copy from func5 func6
+dt=0.1;
 
-printf('CCM mode check \n')
+//  iLr(alpha)  N mode  0-- alpha
+//I_lr_0_d = (-xsol1(1) +1/xsol1(13) +1 ) .* sin(xsol1(14)*dt) + xsol1(5) .*cos(xsol1(14)*dt);
+//  iLm(alpha)  N mode  0-- alpha
+//I_lm_0_d = xsol1(9) - Lambda * xsol1(14)*dt;
+
+//  iLr(alpha)  O mode  0-- alpha
+// (-xsol1(1) +1/xsol1(10)) *Kx .* sin(Kx*xsol1(11)*dt)  + xsol1(4) .* cos(Kx*xsol1(11)*dt)';
+//  iLm(alpha)  O mode  0-- alpha
+//func3 = 'res(3) = -x(8) + x(5)';
+
+// iLr(gamma)   P mode alpha -- gamma
+I_lr_alpha_d  = (-xsol1(2) +1/xsol1(10) -1 ) .* sin((Gamma-xsol1(11))*dt) + xsol1(5) .*cos((Gamma-xsol1(11))*dt);
+// iLm(gamma)   P mode alpha -- gamma
+I_lm_alpha_d  = xsol1(8) + Lambda * (Gamma-xsol1(11))*dt;
+
+
+
+DCMA_OP =%F;
+if (I_lr_alpha_d > I_lm_alpha_d )  then
+    DCMA_OP = %T;
+end
+
+printf('DCMA_OP mode check %s\n', DCMA_OP)
 printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n')
 printf('%f \t %f \t %f\n', abs(mm2_0), abs(mm2_alpha), abs(mm2_gamma));
 

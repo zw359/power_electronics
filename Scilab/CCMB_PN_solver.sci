@@ -1,15 +1,18 @@
 // Algorithm from paper [Yu2012]
 // DCMB2 mode solver  same as PON mode
 
-Vin=280;
-Rload = 0.2;
-N = 16;
+
+function [mc_0, iLr_0, iLm_0, alpha, M, correctMode] = CCMB_PN_solver(Cr, Lr, Lm, N, Rload,Fn)
+    
+//Vin=280;
+//Rload = 0.1;
+//N = 16;
 
 // [Yu2012] desing option 20 parameter
 // PON mode
-Cr = 25E-9;
-Lr = 47.0212E-6
-Lm = 175.7023E-6;
+//Cr = 25E-9;
+//Lr = 47.0212E-6
+//Lm = 175.7023E-6;
 
 // [Yu2012] desing option 3 parameter
 // PN mode
@@ -23,13 +26,14 @@ Kx= Omega1/Omega0;
 
 Fr = 1/(2*%pi*sqrt(Lr*Cr));
 
-Fs = Fr;
-Fs = 90E3;
+//Fs = Fr;
+//Fs = 90E3;
 //Fs = Fr;
 
-F = Fs/Fr;
+//F = Fs/Fr;
+
 Lambda = Lr/Lm;
-Gamma = %pi/F;
+Gamma = %pi/Fn;
 
 Zbase = sqrt(Lr/Cr);
 rL= N^2*Rload/Zbase;
@@ -95,6 +99,7 @@ x0 = [x1_0; x2_0; x3_0; x4_0; x5_0; x6_0; x7_0; x8_0; x9_0; x10_0; x11_0];
 
 [xsol1, res1, info] =fsolve(x0, CCMB_mode, tol=1D-20); 
 
+
 mc_0= xsol1(1);
 mc_alpha = xsol1(2);
 mc_gamma = xsol1(3);
@@ -137,7 +142,12 @@ CCMB_PN =%F;
 if (I_lr_alpha_d < I_lm_alpha_d ) & ( I_lr_0_d > I_lm_0_d) &(mm2_alpha>1)  & (info ==1) then
    CCMB_PN = %T;
 end
+correctMode = CCMB_PN;
+iLr_0 = xsol1(4);
+iLm_0 = xsol1(7);
+alpha = xsol1(11);
 
+/*
 printf('CCMB_PN mode check %s \n' , CCMB_PN)
 printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n')
 printf('%f \t %f \t %f\n', abs(mm2_0), abs(mm2_alpha), abs(mm2_gamma));
@@ -153,12 +163,8 @@ printf('x8_0=%f\n', xsol1(8));
 printf('x9_0=%f\n', xsol1(9));
 printf('x10_0=%f\n', xsol1(10));
 printf('x11_0=%f\n', xsol1(11));
-
-
-
-
-
 printf('res1=%f\n', res1);
 printf('Vo = %f\n', Vo);
+*/
 
-
+endfunction

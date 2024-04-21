@@ -1,13 +1,13 @@
 // Algorithm from paper [Yu2012]
-// DCMA mode solver  same as NOP mode
+// DCMA2 mode solver  same as NOP mode
 // this a very narrow working mode
 // set Rload at 2.3
-
 // mm2_alpha <1
-// mm2_beta =1
+// mm2_beta >=1
 // I_lr_0 < I_lm_0
+
 Vin=280;
-Rload = 1;  // this load shows NOP mode in PSim 
+Rload = 4;  // this load shows NOP mode in PSim 
 N = 16;
 
 Cr = 25E-9;
@@ -89,7 +89,7 @@ func15 = 'res(15) = ( x(9).*(x(14))- 0.5*Lambda*x(14).^2 - (-x(1)+1/x(13)+1).*(1
 
 
 
-deff('res=DCMB2_mode(x)',[func1; func2; func3; func4; func5; func6; func7; func8; func9; func10; func11; func12; func13; func14; func15]);
+deff('res=DCMA2_mode(x)',[func1; func2; func3; func4; func5; func6; func7; func8; func9; func10; func11; func12; func13; func14; func15]);
 
 // Initial condition
 x1_0=0
@@ -109,8 +109,8 @@ x14_0=0
 x15_0=0
 
 x0 = [x1_0; x2_0; x3_0; x4_0; x5_0; x6_0; x7_0; x8_0; x9_0; x10_0; x11_0; x12_0; x13_0; x14_0; x15_0];
-xsol1 =fsolve(x0, DCMB2_mode); 
-res1 = DCMB2_mode(xsol1) ;
+xsol1 =fsolve(x0, DCMA2_mode); 
+res1 = DCMA2_mode(xsol1) ;
 
 mc_0= xsol1(1);
 mc_alpha = xsol1(2);
@@ -142,18 +142,18 @@ mm2_beta = (-mc_beta +1/M)/(1+Lambda);
 mm2_gamma = (-mc_gamma +1/M)/(1+Lambda);
 
 // take the point half way between 0 and alpha
-dt = xsol1(14)/2;
+dt=0.5;
 //  iLr(alpha)  N mode  0-- alpha
-I_lr_0_d = (-xsol1(1) +1/xsol1(13) +1 ) .* sin(dt) + xsol1(5) .*cos(dt);
+I_lr_0_d = (-xsol1(1) +1/xsol1(13) +1 ) .* sin(xsol1(14)*dt) + xsol1(5) .*cos(xsol1(14)*dt);
 //  iLm(alpha)  N mode  0-- alpha
-I_lm_0_d = xsol1(9) - Lambda * dt;
+I_lm_0_d = xsol1(9) - Lambda * xsol1(14)*dt;
 
-if (I_lr_0_d < I_lm_0_d ) & (mm2_alpha<1) & (mm2_beta<=1.0000000) then
-    CCMA_NP =1;
-else
-    CCMA_NP=0;
+DCMA2_NOP =%F;
+if (I_lr_0_d < I_lm_0_d ) & (xsol1(15)<Gamma) & (xsol1(14)>0) & (mm2_alpha <1) then
+    DCMA2_NOP = %T;
 end
-printf('CCM mode check \n')
+
+printf('DCMA2_NOP mode check %s \n', DCMA2_NOP);
 printf('|mm2_0| \t |mm2_alpha| \t |mm2_beta| \t |mm2_gamma|\n')
 printf('%f \t %f \t %f \t %f\n', abs(mm2_0), abs(mm2_alpha), abs(mm2_beta), abs(mm2_gamma));
 
@@ -171,7 +171,7 @@ printf('x11_0=%f\n', xsol1(11));
 printf('x12_0=%f\n', xsol1(12));
 printf('x13_0=%f\n', xsol1(13));
 printf('x14_0=%f\n', xsol1(14));
-printf('x5_0=%f\n', xsol1(15));
+printf('x15_0=%f\n', xsol1(15));
 printf('res1=%f\n', res1);
 printf('Vo = %f\n', Vo);
 
