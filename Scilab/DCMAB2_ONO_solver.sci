@@ -91,7 +91,7 @@ x9_0=0
 x10_0=0
 x11_0=0
 x12_0=0
-x13_0= 0.8 // M <1 
+x13_0= 2 // M <1 
 x14_0=Gamma *0.3 // critial alpha
 x15_0=Gamma *0.6  // critical beta  x15_0 > x14_0
 

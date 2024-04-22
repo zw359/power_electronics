@@ -22,7 +22,7 @@ Fs = 74E3;
 //Fs = Fr;
 F = Fs/Fr;
 
-F=0.55
+F=0.3
 Lambda = Lr/Lm;
 Gamma = %pi/F;
 
@@ -182,7 +182,7 @@ I_lr_beta_d = (-xsol1(3) +1/xsol1(13) +1) .* sin((Gamma-xsol1(15))*dt)  + xsol1(
 I_lm_beta_d =  xsol1(11) - Lambda * (Gamma-xsol1(15))*dt;
 
 DCMB_PON = %F
-if  (I_lr_0_d > I_lm_0_d) & (I_lr_beta_d < I_lm_beta_d) & (mm2_alpha<1) & (xsol1(15)< Gamma) &( xsol1(14)< xsol1(15)) & (info==1) then
+if  (I_lr_0_d > I_lm_0_d) & (I_lr_beta_d < I_lm_beta_d) & (mm2_alpha<1) & (xsol1(15)< Gamma) &( xsol1(14)< xsol1(15)) & (xsol1(15) >0) & (xsol1(14)>0) & (info==1) then
     DCMB_PON =%T
 end
 

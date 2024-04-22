@@ -142,6 +142,11 @@ dt = 0.5;
 I_lr_0_d = (-xsol1(1) + 1/xsol1(13) -1).*sin(xsol1(14)*dt) + xsol1(5).*cos(xsol1(14)*dt);
 I_lm_0_d = xsol1(9) + Lambda * xsol1(14)*dt;
 
+//  iLr(gamma)  N mode beta -- gamma
+I_lr_beta_d = (-xsol1(3) +1/xsol1(13) +1) .* sin((Gamma-xsol1(15))*dt)  + xsol1(7) * cos((Gamma-xsol1(15))*dt); 
+//  iLm(gamma)   N mode.  beta -- gamma
+I_lm_beta_d =  xsol1(11) - Lambda * (Gamma-xsol1(15))*dt;
+
 DCMB2_PON = %F
 if (I_lr_0_d > I_lm_0_d) & (I_lr_beta_d < I_lm_beta_d) & (mm2_alpha<1) & (xsol1(15)< Gamma) &( xsol1(14)< xsol1(15)) & (info==1) then
     DCMB2_PON =%T

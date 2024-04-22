@@ -4,7 +4,7 @@
 // @ Very light load
 
 Vin=280;
-Rload =10;
+Rload =6;
 N = 16;
 
 Cr = 25E-9;
@@ -22,7 +22,7 @@ Fs = 180E3
 //Fs = Fr;
 Fs=132113;
 F = Fs/Fr;
-F = 0.3;
+F = 0.41;
 Lambda = Lr/Lm;
 Gamma = %pi/F;
 
@@ -95,10 +95,13 @@ x9_0=0
 x10_0=0
 x11_0=0
 x12_0=0
-x13_0= 0.8 // M <1 
+x13_0= 1.2 // M <1 
 x14_0=Gamma *0.3 // critial alpha
 x15_0=Gamma *0.6  // critical beta  x15_0 > x14_0
 
+x13_0=2.931317
+x14_0=3.434248
+x15_0=6.042374
 
 
 x0 = [x1_0; x2_0; x3_0; x4_0; x5_0; x6_0; x7_0; x8_0; x9_0; x10_0; x11_0; x12_0; x13_0; x14_0; x15_0];
@@ -134,7 +137,6 @@ DCMAB2_ONO =%F;
 if (I_lr_alpha_d < I_lm_alpha_d ) & (xsol1(15)<Gamma) & (mm2_0<1) & (mm2_gamma<1) &( xsol1(14)< xsol1(15) ) & (xsol1(14)>0) & (xsol1(15)>0) & (xsol1(13)>0) & (info ==1)then
     DCMAB2_ONO = %T;
 end
-
 
 printf('DCMAB2_ONO mode check %s \n', DCMAB2_ONO)
 printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n')
