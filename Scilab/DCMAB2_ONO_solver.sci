@@ -76,7 +76,7 @@ func14 = 'res(14) = -x(2)+ 1/x(13) + Lambda + 1';
 // iout  voltage balance balance
 func15 = 'res(15) = ( (-x(2) +1/x(13) +1) .*( cos(x(15)-x(14))-1) - x(6) .* sin(x(15) - x(14)) +x(10).*(x(15)-x(14)) - 0.5*Lambda*(x(15)-x(14)).^2 ) * rL -Gamma'; 
 
-deff('res=DCMAB2_mode(x)',[func1; func2; func3; func4; func5; func6; func7; func8; func9; func10; func11; func12; func13; func14; func15]);
+deff('res=DCMAB2_ONO_mode(x)',[func1; func2; func3; func4; func5; func6; func7; func8; func9; func10; func11; func12; func13; func14; func15]);
 
 // Initial condition
 x1_0=0
@@ -91,14 +91,14 @@ x9_0=0
 x10_0=0
 x11_0=0
 x12_0=0
-x13_0= 2 // M <1 
+x13_0=1.2 // M <1 
 x14_0=Gamma *0.3 // critial alpha
 x15_0=Gamma *0.6  // critical beta  x15_0 > x14_0
 
 
 
 x0 = [x1_0; x2_0; x3_0; x4_0; x5_0; x6_0; x7_0; x8_0; x9_0; x10_0; x11_0; x12_0; x13_0; x14_0; x15_0];
-[xsol1, res1, info] =fsolve(x0, DCMAB2_mode); 
+[xsol1, res1, info] =fsolve(x0, DCMAB2_ONO_mode); 
 
 mc_0= xsol1(1);
 mc_alpha = xsol1(2);
