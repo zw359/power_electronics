@@ -65,16 +65,16 @@ deff('res=DCMB2_PON_mode(x)',[func1; func2; func3; func4; func5; func6; func7; f
 [xsol1, res1, info] =fsolve(x0, DCMB2_PON_mode); 
 
 
-Vbase = 0.5*Vin*M;
+Vbase = 0.5*Vin*xsol1(13);
 Ibase = Vbase/Zbase;
 Vo = Vbase/N;
 Vc_0 = xsol1(1) * Vbase;
 Vc_alpha = xsol1(2) * Vbase;
 
 
-mm2_0 = abs((-xsol1(1) + 1/M )/(1+Lambda));
-mm2_alpha = abs((-xsol1(2) +1/M)/(1+Lambda));
-mm2_gamma = abs((-xsol1(3) +1/M)/(1+Lambda));
+mm2_0 = abs((-xsol1(1) + 1/xsol1(13) )/(1+Lambda));
+mm2_alpha = abs((-xsol1(2) +1/xsol1(13))/(1+Lambda));
+mm2_gamma = abs((-xsol1(3) +1/xsol1(13))/(1+Lambda));
 
 dt = 0.5;
 I_lr_0_d = (-xsol1(1) + 1/xsol1(13) -1).*sin(xsol1(14)*dt) + xsol1(5).*cos(xsol1(14)*dt);

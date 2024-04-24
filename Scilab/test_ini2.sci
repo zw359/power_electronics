@@ -34,14 +34,6 @@ Fn = 0.5
 //alpha_0=Gamma *0.3 // critial alpha
 //beta1_0=Gamma *0.6  // critical beta  x15_0 > x14_0
 
-M_0 =M;
-alpha_0 = alpha;
-beta_0 = beta1;
-
-M_0=1.307793
-alpha_0=2.462601
-beta_0=3.302927
-
 x1_0=0
 x2_0=0
 x3_0=0
@@ -76,7 +68,7 @@ end
 
 
 if correctMode == %F then
-    [mc_0, iLr_0, iLm_0, alpha, M, correctMode] = DCMB_PO_solver(Cr, Lr, Lm, N, Rload,Fn);
+    [x1, correctMode] = DCMB_PO_solver_ini2(Cr, Lr, Lm, N, Rload,Fn, x0);
     printf('DCMB_PO %s\n', correctMode);
 end
 
