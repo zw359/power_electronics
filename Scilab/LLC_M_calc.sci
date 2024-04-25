@@ -8,7 +8,7 @@ exec('DCMAB2_ONO_solver.sci', -1)
 exec('DCMAB_OPO_solver.sci', -1)
 
 
-function [M_final, alpha_final, beta1_final]= LLC_M_calc(Cr, Lr, Lm, N, Rload,Fn, alpha_0, beta1_0, M_0 )
+function [M_final, alpha_final, beta1_final]= LLC_M_calc(Cr, Lr, Lm, N, Rload,Fn)
 
 /*
 Vin=280;

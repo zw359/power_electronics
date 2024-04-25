@@ -2,7 +2,7 @@
 // DCMAB mode solver  same as OPO mode
 // This mode happens both below and above the Fr
 // @ Very light load
-function [mc_0, iLr_0, iLm_0, alpha, beta1, M, correctMode] = DCMAB_OPO_solver_ini(Cr, Lr, Lm, N, Rload,Fn, alpha_0, beta1_0, M_0)
+function [mc_0, iLr_0, iLm_0, alpha, beta1, M, correctMode] = DCMAB_OPO_solver_ini(Cr, Lr, Lm, N, Rload,Fn, M_0, alpha_0, beta_0)
 /*
 Vin=280;
 Rload =5;
@@ -93,9 +93,9 @@ x9_0=0
 x10_0=0
 x11_0=0
 x12_0=0
-x13_0=M_0
+x13_0=M_0 // M > 1 
 x14_0=alpha_0 // critial alpha
-x15_0=beta1_0  // critical beta  x15_0 > x14_0
+x15_0=beta_0  // critical beta  x15_0 > x14_0
 
 
 x0 = [x1_0; x2_0; x3_0; x4_0; x5_0; x6_0; x7_0; x8_0; x9_0; x10_0; x11_0; x12_0; x13_0; x14_0; x15_0];
@@ -132,7 +132,7 @@ I_lr_alpha_d =  (-xsol1(2) +1/xsol1(13) -1 ) .* sin((xsol1(15)-xsol1(14))*dt) + 
 I_lm_alpha_d =  xsol1(10) + Lambda * ((xsol1(15)-xsol1(14))*dt);
 
 DCMAB_OPO =%F;
-if (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(15)<Gamma) & (mm2_0<1) & (mm2_gamma<1) &( xsol1(14)< xsol1(15) ) & (xsol1(14)>0) & (xsol1(15)>0) & /*(info ==1) &*/ (xsol1(13)>0 )then
+if (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(15)<Gamma) & (mm2_0<1) & (mm2_gamma<1) &( xsol1(14)< xsol1(15) ) & (xsol1(14)>0) & (xsol1(15)>0) & (info ==1) & (xsol1(13)>0 )then
     DCMAB_OPO = %T;
 end
 correctMode = DCMAB_OPO;

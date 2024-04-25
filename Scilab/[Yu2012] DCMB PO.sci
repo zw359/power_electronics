@@ -3,7 +3,7 @@
 // circuit parameters
 
 Vin=280;
-Rload =1;
+Rload =6;
 N = 16;
 Cr =25E-9;
 Lr = 47.0212E-6
@@ -20,7 +20,7 @@ Fs = 90E3;
 //Fs = Fr;
 
 F = Fs/Fr;
-F =0.5041136;
+F =0.47
 Lambda = Lr/Lm;
 Gamma = %pi/F;
 
@@ -55,6 +55,11 @@ x2_0=0
 x3_0=1.2
 x4_0=%pi/2
 
+x1_0=0
+//x2_0=0.268780
+//x3_0=13.742257
+//x4_0=1.141105
+
 x0 = [x1_0; x2_0; x3_0; x4_0];
 [xsol1, res1, info] =fsolve(x0, DCMB_mode); 
 
@@ -71,7 +76,7 @@ Vo = Vbase/N;
 Vc_0 = xsol1(1) * Vbase;
 I_lr_0= xsol1(2) * Ibase;
 
-mc_alpha = (mc_0-1/M+1) * cos(Alpha) + I_lr_0*sin(Alpha) +1/M -1;
+mc_alpha = (xsol1(1)-1/xsol1(3)+1) * cos(xsol1(4)) + xsol1(2)*sin(xsol1(4)) +1/xsol1(3) -1;
 
 mm2_0 = abs((-mc_0 + 1/M )/(1+Lambda));
 mm2_alpha = abs((-mc_alpha +1/M)/(1+Lambda));

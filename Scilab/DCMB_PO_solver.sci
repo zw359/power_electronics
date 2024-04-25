@@ -64,7 +64,7 @@ Vo = Vbase/N;
 Vc_0 = xsol1(1) * Vbase;
 I_lr_0= xsol1(2) * Ibase;
 
-mc_alpha = (mc_0-1/M+1) * cos(Alpha) + I_lr_0*sin(Alpha) +1/M -1;
+mc_alpha = (xsol1(1)-1/xsol1(3)+1) * cos(xsol1(4)) + xsol1(2)*sin(xsol1(4)) +1/xsol1(3) -1;
 
 mm2_0 = abs((-mc_0 + 1/M )/(1+Lambda));
 mm2_alpha = abs((-mc_alpha +1/M)/(1+Lambda));

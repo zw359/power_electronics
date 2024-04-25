@@ -2,14 +2,12 @@
 // DCMB2 mode solver  same as PON mode
 
 Vin=280;
-Rload =0.6;
+Rload =0.2;
 N = 16;
 
 Cr = 25E-9;
 Lr = 47.0212E-6
 Lm = 175.7023E-6;
-
-
 
 Omega0= 1/sqrt(Lr*Cr);
 Omega1= 1/sqrt((Lr+Lm)*Cr);
@@ -98,7 +96,7 @@ x13_0=1
 x14_0=%pi * 0.3
 x15_0=%pi * 0.6
 x13_0=1
-x14_0=Gamma*0.3
+x14_0=Gamma*0.2
 x15_0=Gamma*0.6 
 
 // values taken from Fn=0.59

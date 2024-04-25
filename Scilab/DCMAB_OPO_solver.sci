@@ -132,7 +132,7 @@ I_lr_alpha_d =  (-xsol1(2) +1/xsol1(13) -1 ) .* sin((xsol1(15)-xsol1(14))*dt) + 
 I_lm_alpha_d =  xsol1(10) + Lambda * ((xsol1(15)-xsol1(14))*dt);
 
 DCMAB_OPO =%F;
-if (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(15)<Gamma) & (mm2_0<1) & (mm2_gamma<1) &( xsol1(14)< xsol1(15) ) & (xsol1(14)>0) & (xsol1(15)>0) & /*(info ==1) &*/ (xsol1(13)>0 )then
+if (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(15)<Gamma) & (mm2_0<1) & (mm2_gamma<1) &( xsol1(14)< xsol1(15) ) & (xsol1(14)>0) & (xsol1(15)>0) & (info ==1) & (xsol1(13)>0 )then
     DCMAB_OPO = %T;
 end
 correctMode = DCMAB_OPO;
