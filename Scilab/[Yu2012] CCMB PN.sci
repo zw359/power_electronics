@@ -2,7 +2,7 @@
 // DCMB2 mode solver  same as PON mode
 
 Vin=280;
-Rload = 0.2;
+Rload = 0.4;
 N = 16;
 
 // [Yu2012] desing option 20 parameter
@@ -28,6 +28,7 @@ Fs = 90E3;
 //Fs = Fr;
 
 F = Fs/Fr;
+F = 1.46;
 Lambda = Lr/Lm;
 Gamma = %pi/F;
 

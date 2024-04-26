@@ -4,9 +4,8 @@
 // set Rload =5
 
 // mmc_alpha =1
-
 Vin=280;
-Rload =5.331;
+Rload =5;
 N = 16;
 
 Cr = 25E-9;
@@ -24,6 +23,7 @@ Fs = 180E3;
 //Fs = Fr;
 
 F = Fs/Fr;
+//F=1.1
 Lambda = Lr/Lm;
 Gamma = %pi/F;
 
@@ -131,7 +131,7 @@ I_lm_alpha_d  = xsol1(8) + Lambda * (Gamma-xsol1(11))*dt;
 
 
 DCMA_OP =%F;
-if (I_lr_alpha_d > I_lm_alpha_d )  then
+if (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(6) == xsol1(9)) & (xsol1(11)>0) & (xsol1(11)<Gamma) & (xsol1(10)>0) & (info==1) then
     DCMA_OP = %T;
 end
 

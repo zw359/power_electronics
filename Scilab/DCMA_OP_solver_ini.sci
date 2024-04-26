@@ -90,7 +90,7 @@ I_lm_alpha_d  = xsol1(8) + Lambda * (Gamma-xsol1(11))*dt;
 
 
 DCMA_OP =%F;
-if (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(11)>0) & (xsol1(11)<Gamma) & (info==1) then
+if (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(6) == xsol1(9)) & (xsol1(11)>0) & (xsol1(11)<Gamma) & (xsol1(10)>0) & (info==1) then
     DCMA_OP = %T;
 end
 correctMode = DCMA_OP;

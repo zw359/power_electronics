@@ -65,7 +65,7 @@ I_lm_alpha_d  = Im_alpha + Lambda*(Gamma-xsol1(6))*dt;
 
 
 CCMA_NP =%F;
-if (I_lr_0_d < I_lm_0_d ) & (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(6)>0)  &  (xsol1(6)<Gamma) & (mm2_alpha >1) then
+if (I_lr_0_d < I_lm_0_d ) & (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(5)>0) & (xsol1(6)>0)  &  (xsol1(6)<Gamma) & (mm2_alpha >1) then
     CCMA_NP = %T;
 end
 correctMode = CCMA_NP;

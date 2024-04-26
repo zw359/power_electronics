@@ -120,7 +120,7 @@ I_lr_0_d = (-xsol1(1) +1/xsol1(13) +1 ) .* sin(xsol1(14)*dt) + xsol1(5) .*cos(xs
 I_lm_0_d = xsol1(9) - Lambda * xsol1(14)*dt;
 
 DCMA2_NOP =%F;
-if (I_lr_0_d < I_lm_0_d ) & (xsol1(14)>0) & (xsol1(15)>xsol1(14)) &  (xsol1(15)<Gamma) & (xsol1(14)>0) & (mm2_alpha <1) then
+if (I_lr_0_d < I_lm_0_d ) & (xsol1(14)>0) & (xsol1(15)>xsol1(14)) &  (xsol1(15)<Gamma) & (xsol1(13)>0) & (mm2_alpha <1) then
     DCMA2_NOP = %T;
 end
 

@@ -59,7 +59,7 @@ I_lr_0_d = (-xsol1(1) + 1/xsol1(3) -1).*sin(xsol1(4)*dt) + xsol1(2).*cos(xsol1(4
 I_lm_0_d = xsol1(2) + Lambda * xsol1(4)*dt;
 
 DCMB_PO = %F
-if  (I_lr_0_d > I_lm_0_d) & (mm2_alpha<1) & (mm2_0 >1) & (mm2_gamma <=1)  & (info ==1) then
+if  (I_lr_0_d > I_lm_0_d) & (mm2_alpha<1) & (mm2_0 >1) & (mm2_gamma <=1) & (xsol1(3)>0) & (xsol1(4)>0) &(xsol1(4)< Gamma) & (info ==1) then
     DCMB_PO =%T
 end
 iLr_0 = xsol1(2); 

@@ -79,7 +79,7 @@ I_lr_alpha_d = (-xsol1(2) +1/xsol1(10) +1) .* sin((Gamma-xsol1(11))*dt)  + xsol1
 I_lm_alpha_d = xsol1(8) - Lambda * ((Gamma-xsol1(11))*dt)';
 
 CCMB_PN =%F;
-if (I_lr_alpha_d < I_lm_alpha_d ) & ( I_lr_0_d > I_lm_0_d) &(mm2_alpha>1)  & (info ==1) then
+if (I_lr_alpha_d < I_lm_alpha_d ) & ( I_lr_0_d > I_lm_0_d) &(mm2_alpha>1) & (xsol1(11)< Gamma) & ( xsol1(11)>0 ) & (xsol1(10)>0 )& (info ==1) then
    CCMB_PN = %T;
 end
 correctMode = CCMB_PN;

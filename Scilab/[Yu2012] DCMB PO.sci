@@ -3,11 +3,18 @@
 // circuit parameters
 
 Vin=280;
-Rload =6;
+Rload =0.4;
 N = 16;
 Cr =25E-9;
 Lr = 47.0212E-6
 Lm = 175.7023E-6;
+
+Vin=600;
+N = 5;
+Cr =300E-9;
+Lr = 30E-6
+Lm = 225E-6;
+Rload =1.2;
 
 Omega0= 1/sqrt(Lr*Cr);
 Omega1= 1/sqrt((Lr+Lm)*Cr);
@@ -20,7 +27,7 @@ Fs = 90E3;
 //Fs = Fr;
 
 F = Fs/Fr;
-F =0.47
+F =0.5
 Lambda = Lr/Lm;
 Gamma = %pi/F;
 
@@ -55,7 +62,10 @@ x2_0=0
 x3_0=1.2
 x4_0=%pi/2
 
-x1_0=0
+//x1_0 = -0.3675781
+//x2_0 = -0.3309581
+//x3_0 = 0.8287893
+//x4_0 = 2.9181023
 //x2_0=0.268780
 //x3_0=13.742257
 //x4_0=1.141105
@@ -88,9 +98,8 @@ I_lr_0_d = (-xsol1(1) + 1/xsol1(3) -1).*sin(xsol1(4)*dt) + xsol1(2).*cos(xsol1(4
 I_lm_0_d = xsol1(2) + Lambda * xsol1(4)*dt;
 
 
-
 DCMB_PO = %F
-if  (I_lr_0_d > I_lm_0_d) & (mm2_alpha<1) & (mm2_0 >1) & (mm2_gamma <=1)   & (info ==1)then
+if  (I_lr_0_d > I_lm_0_d) & (mm2_alpha<1) & (mm2_0 >1) & (mm2_gamma <=1) & (xsol1(3)>0) & (xsol1(4)>0) &(xsol1(4)< Gamma) & (info ==1) then
     DCMB_PO =%T
 end
 

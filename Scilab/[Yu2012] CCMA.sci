@@ -5,7 +5,7 @@
 // mm2_alpha >1
 
 Vin=280;
-Rload = 1;
+Rload = 0.4;
 N = 16;
 
 Cr = 25E-9;
@@ -16,6 +16,7 @@ Fr = 1/(2*%pi*sqrt(Lr*Cr));
 Fs = 180E3;
 
 F = Fs/Fr;
+F=1.2
 Lambda = Lr/Lm;
 Gamma = %pi/F;
 
@@ -50,9 +51,8 @@ x1_0=-0
 x2_0=-0
 x3_0=-0
 x4_0=-0
-x5_0=1
+x5_0=1.1
 x6_0=0
-
 x0 = [x1_0; x2_0; x3_0; x4_0; x5_0; x6_0];
 xsol1 =fsolve(x0, CCMA_NP_mode); 
 res1 = CCMA_NP_mode(xsol1) ;
@@ -76,12 +76,18 @@ mm2_alpha = (-mc_alpha +1/M)/(1+Lambda);
 mm2_gamma = (mc_0 +1/M)/(1+Lambda);
 
 // copy from func5 , func6
-dt=0.2;
+dt=0.5;
 I_lr_alpha_d  = (-xsol1(1)+1/xsol1(5)-1) * sin(dt);
 I_lm_alpha_d  = Im_alpha + Lambda*dt;
 
+I_lr_0_d =  (-xsol1(1)+1/xsol1(5)+1) *sin(xsol1(6) * dt) + xsol1(3) * cos(xsol1(6) * dt);
+I_lm_0_d =xsol1(4) - Lambda * xsol1(6) * dt;
+I_lr_alpha_d  = (-xsol1(1)+1/xsol1(5)-1) * sin((Gamma-xsol1(6))*dt) + Im_alpha * cos((Gamma-xsol1(6))*dt) ;
+I_lm_alpha_d  = Im_alpha + Lambda*(Gamma-xsol1(6))*dt;
+
+
 CCMA_NP =%F;
-if (I_lr_0_d < I_lm_0_d ) & (xsol1(6)>0)  &  (xsol1(6)<Gamma) & (mm2_alpha >1) then
+if (I_lr_0_d < I_lm_0_d ) & (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(5)>0) & (xsol1(6)>0)  &  (xsol1(6)<Gamma) & (mm2_alpha >1) then
     CCMA_NP = %T;
 end
 printf('CCMA_NP mode check %s \n', CCMA_NP);
