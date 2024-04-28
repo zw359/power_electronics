@@ -1,12 +1,13 @@
 funcprot(0);
 exec('LLC_M_calc_ini.sci', -1)
+exec('LLC_DC_gain.sci',-1)
 
 Vin=600;
 N = 5;
 Cr =300E-9;
 Lr = 30E-6
 Lm = 225E-6;
-Rload =1;
+Rload =0.8;
 
 
 Gamma = %pi/0.5;
@@ -26,7 +27,8 @@ x10_0=0
 x11_0=0
 x12_0=0
 
-x13_0=1.2
+x13_0=1.1
+//x13_0 = LLC_DC_gain(Cr, Lr, Lm, N, Rload,0.5); // DC gain M initial value
 x14_0=Gamma/2
 //x14_0 = %pi/2
 x15_0=Gamma
@@ -47,7 +49,7 @@ for i = [ 0.5:0.01:0.95]
     Vo = Vbase/N;
     printf('Vo = %f Fn = %f \n', Vo, Fn);
     xa=[xa i];
-    ya=[ya x1(13)];
+    ya=[ya Vo];
     x0=x1;
 //    pause    
 end
@@ -75,6 +77,7 @@ x14_0=%pi*0.3
 x15_0=%pi*0.6 
 
 x13_0=1.1
+x13_0 = LLC_DC_gain(Cr, Lr, Lm, N, Rload,1.02)
 x14_0=0
 x15_0=Gamma
 
@@ -89,7 +92,7 @@ for i = [ 1.02:0.01:1.5]
     Vo = Vbase/N;
     printf('Vo = %f Fn = %f \n', Vo, Fn);
     xb=[xb i];
-    yb=[yb x1(13)];
+    yb=[yb Vo];
     x0=x1;
 //    pause    
 end
@@ -97,5 +100,5 @@ end
 
 //plot(xa, ya);
 //plot(xb, yb);
-plot([xa,xb], [ya, yb],'y-');
+plot([xa,xb], [ya, yb],'b-');
 
