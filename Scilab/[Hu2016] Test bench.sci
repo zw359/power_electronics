@@ -1,20 +1,20 @@
-exec('PN_calc.sci');
-exec('PON_calc.sci');
+exec('PN_calc.sci', -1);
+exec('PON_calc.sci', -1);
 
-Vo=70;
-Po=5000;
+Vo=12;
+Po=600;
 Rload = Vo^2/Po;
 Io = Vo/Rload;
 
 Cr_step = 1E-9; // incremenal values.
-Cr_init = 80E-9; // Inicial values.
+Cr_init = 6E-9; // Inicial values.
 Cr= Cr_init;
 
 i=0;//  counter starts from zero
 
-Vin_min = 600;
-Fsw_min = 58E3;
-N = 5;
+Vin_min = 280;
+Fsw_min = 100E3;
+N = 16;
 
 PN=1
 Vmargin=1
@@ -22,6 +22,8 @@ Fp=0;
 K=1;
 fd =mopen('result.txt', 'wt');
 mfprintf(fd,'Cr(nF) \t Lr(uH) \t Lp(uH) \t  \Fr(kHz) \t Fp(kHz) \t Mode \t K \t Z0 \n');
+
+
 while i<25
     Cr = Cr_init + i * Cr_step;
     if PN==1 then 
@@ -39,6 +41,7 @@ while i<25
         break
     end
 end
+
 
 
 while i<25
