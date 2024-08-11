@@ -4,9 +4,11 @@ t= [0: 10E-6 :Tline];
 Vin = 230;
 Po = 17.5E3;
 Iin = Po/3/Vin;
+
 // Modulation Index 
+M=1.1;
 M=2/sqrt(3);
-M=1;
+
 Vdc = Vin*sqrt(2)*2/M;
 V1 = Vdc/2;
 V2 = Vdc/2;
