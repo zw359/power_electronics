@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Graph ID="1402" rev="2" progversion="8.40" progarch="x64" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://simetrix.co.uk/schemas/application/waveform https://simetrix.co.uk/schemas/application/waveform.xsd" xmlns="http://simetrix.co.uk/schemas/application/waveform/" version="1.00">
+ <SharedAxis ID="1405">
+  <Property name="GUID" value="{68cc9803-e81c-4088-9b19-4cd888e2579b}"/>
+ </SharedAxis>
+ <Grid ID="1408">
+  <Axis ID="1409" subtype="X">
+   <Property name="AutoLimit" value="On"/>
+   <Property name="Delta" value="0.0"/>
+   <Property name="ExpandToFitLabel" value="true"/>
+   <Property name="Grad" value="Log"/>
+   <Property name="GUID" value="{b5286985-7c71-4fc6-90f6-a93f45577639}"/>
+   <Property name="HideLines" value="false"/>
+   <Property name="Label" value="%DefaultLabel%"/>
+   <Property name="Max" ascii_value="100000" type="real" value="AAAAAABq+EA="/>
+   <Property name="Min" ascii_value="100" type="real" value="AAAAAAAAWUA="/>
+   <Property name="ProbeId" value="Hertz#$auto$#$default$#log"/>
+   <Property name="SharedID" value="1405"/>
+   <Property name="Unit" value="%DefaultUnit%"/>
+  </Axis>
+  <Axis ID="1410" subtype="Y">
+   <Property name="AutoLimit" value="On"/>
+   <Property name="Delta" value="0.0"/>
+   <Property name="ExpandToFitLabel" value="true"/>
+   <Property name="Grad" value="Lin"/>
+   <Property name="GUID" value="{372d8afb-f753-4226-8d75-89fe67bcbf6a}"/>
+   <Property name="HideLines" value="false"/>
+   <Property name="Label" value="%DefaultLabel%"/>
+   <Property name="Max" ascii_value="15.3716724779" type="real" value="ymPi2ku+LkA="/>
+   <Property name="Min" ascii_value="-208.124981823" type="real" value="C4jh2f8DasA="/>
+   <Property name="ProbeId" value="degrees#$auto$#$default$#lin"/>
+   <Property name="SharedID" value="1410"/>
+   <Property name="Unit" value="degrees"/>
+  </Axis>
+  <Curve ID="1411">
+   <CurveData ID="1412">
+    <Property name="Curve" value="1411"/>
+    <Property name="GUID" value="{d6b52942-b970-455c-a70e-de76e482929e}"/>
+    <Property name="LineStyle" value="auto"/>
+   </CurveData>
+   <Property name="Alpha" value="75"/>
+   <Property name="CreateTime" value="1728708293424"/>
+   <Property name="DisplayType" value="analog"/>
+   <Property name="ForceFastRender" value="false"/>
+   <Property name="GUID" value="{36924492-fdb3-4e2e-a227-f1934657d9c7}"/>
+   <Property name="Hidden" value="false"/>
+   <Property name="Highlight" value="false"/>
+   <Property name="HighlightColour" value="#ff00ff"/>
+   <Property name="HighlightedDivisions" value=""/>
+   <Property name="Label" value="%DefaultLabel%"/>
+   <Property name="LineStyle" value="solid"/>
+   <Property name="MeasureSpec" value=""/>
+   <Property name="Name" value="Phase_iloop"/>
+   <Property name="ProbeInst" value="ph(:18/:22).Phase_iloop#ac##"/>
+   <Property name="ProbePersistence" value="0"/>
+   <Property name="RGBColour" value="255"/>
+   <Property name="Selected" value="false"/>
+   <Property name="Sequence" value="1"/>
+   <Property name="ShortLabel" value="%DefaultShortLabel%"/>
+   <Property name="ShowPoints" value="false"/>
+   <Property name="Suffix" value=""/>
+   <Property name="UserPersistence" value="-1"/>
+   <Property name="UserProbeId" value=""/>
+   <Property name="UseSequenceColour" value="true"/>
+   <Property name="Visible" value="true"/>
+   <Property name="XAxis" value="1409"/>
+   <Property name="XUnit" value="Hertz"/>
+   <Property name="YAxis" value="1410"/>
+   <Property name="YUnit" value="degrees"/>
+   <CurveVector XUnits="Hertz" AnalysisName="Small signal AC" XYData="0" SourceName="simplis_ac63" SweepType="None" YUnitsOverride="1" Expression="ph(:18/:22)" YUnits="degrees" XExpression="freq" XUnitsOverride="0">
+    <SxData sxid="0" version="82"><![CDATA[
+AQAgQRhWfQEAAAcAAABWZWNEYXRhAQAtAQAAAAAAAAAAAAAAAAAAAAAAAAAAAACICQAAAAAAAAAAAAAA
+AAAAJjR39LFm9D82pZ/W8d/0P6RNwWD9W/U/ydkpuOTa9T/7m+VYuFz2P5M6GBeJ4fY/JkpRIGhp9z81
+5dv8ZvT3P8w9CJGXgvg/WhJuHgwU+T/n1SZF16j5P4VD/gQMQfo/9v2Xvr3c+j/9uYg0AHz7P1dcYYzn
+Hvw/ZE2qT4jF/D/eJs1s92/9Pzu66jdKHv4/VUmba5bQ/j/vnpYp8ob/P1nHoP25IABAiRcPaRmAAEB/
++g0Eo+EAQKBQ4q9iRQFAAVwhgmSrAUB2AZ/EtBMCQEovRfVffgJAVmjSxXLrAkDfUX0b+loDQEr6eg4D
+zQNAjWtl6ZpBBEAY8X8oz7gEQG9O1nitMgVAsvYzt0OvBUBeJfDuny4GQMuFi1jQsAZAd+QbWOM1B0Bq
+LIJ7570HQOm4ZnjrSAhA18r3Kf7WCEACsGWOLmgJQALqF8SL/AlAt1+WBiWUCkDlXiGrCS8LQFvq8hxJ
+zQtAfoYj2fJuDECnbCxqFhQNQGq9AGPDvA1AWPi2WQlpDkB8tbvh9xgPQCtEhoWezA9AXcLjXwZCEECL
+gAX6qJ8QQPL4YLM+/xBAocpXGs9gEUDE89akYcQRQIzDYKv9KRJATqG5Y6qREkB+yTLbbvsSQLH/jfBR
+ZxNAch51TVrVE0B6VYBfjkUUQJ3WxVD0txRAEart/5EsFUA6XcT3bKMVQNBFR2aKHBZAIyUlE++XFkCD
+C65VnxUXQM6JLQqflRdAAG2qhvEXGED0hQePmZwYQHpVgUiZIxlAg9eELPKsGUCdKNz6pDgaQKpNLqux
+xhpAOxbQXRdXG0DuzeRL1OkbQMxYzrblfhxAZU/t1kcWHUDyzrLJ9a8dQOHwBn/pSx5ALz8IphvqHkB9
+/SmZg4ofQP5o3KSLFiBA05BnleVoIECLOeINSbwgQG+jEqmuECFAUIuhIQ5mIUC1TrdGXrwhQA6HePCU
+EyJABcpt9KZrIkB4neMZiMQiQLAhUQ4rHiNA323VWYF4I0C/G91Te9MjQBsDAxgILyRAmadAexWLJECG
+VIQBkOckQOFTxNNiRCVAwgWotnehJUCW4+ABt/4lQNCcTpgHXCZAK3QK4U65JkCK03bBcBYnQDCecJhP
+cydAJSDAOszPJ0DohefwxSsoQHiFbHYahyhADku6+qXhKEDMwbcjQzspQB/9LBLLkylAnb4QaBXrKUCy
+7NRQ+EAqQJovxotIlSpALeCPeNnnKkAt/fElfTgrQP/5smIEhytAdvPS0D7TK0BeNgH7+hwsQLgJUGwG
+ZCxAOHMdyi2oLEAIMyLwPOksQGeUkg7/Ji1ASu82yj5hLUDA/VtexpctQC5qdcBfyi1A5G9HxdT4LUBT
+BGdH7yIuQNXx2k55SC5A+JOjOT1pLkDsqOrkBYUuQNjnmNaemy5A6OULZ9SsLkCQR6Tqc7guQMpj4tpL
+vi5AW1nG/iu+LkDULyiS5bcuQBD/vGtLqy5A4DF/ITKYLkBF4zErcH4uQMTvuQLeXS5AcLYKQlY2LkBZ
+jWi+tQcuQOKhx6Db0S1AZkcTe6mULUBAmS9aA1AtQHymjdTPAy1A1i4xFfivLEAUHQ7jZ1QsQEljq6QN
+8StABZAAYNqFK0C2U4u2wRIrQDQgot25lypAHA4Rk7sUKkBGIBYOwokpQHTW2ezK9ihACp2IHtZbKEAl
+EznK5bgnQGUn0jL+DSdAx74qmCVbJkBz0aIVZKAlQJShe37D3SRAzNo5OE8TJEDw9WATFEEjQOEi2yIg
+ZyJAKzVkkoKFIUB9i1B8S5wgQDxjFX4XVx9AZv5GpalmHUB6bqE9cWcbQA1ia6OSWRlAuK2gbzI9F0At
+pMUqdRIVQF4tXwN/2RJAiVi0iHOSEECac+zU6noMQNKRw3tMtQdAJF3KkUzUAkCJnRpPUbD7P25Z+wY2
+gvE/QOOyDtN63D9fmh7CY87Lv/QTpsPejey/uF9vhl1I+b8hdMMl5D4CwMo1MGZ08wfAS4gVy7/BDcBn
+Up4Q1dQRwGfRKTyN1RTAg8++Z/3iF8CNgSfZG/0awNAXd+PfIx7AW6eO06CrIMAIv8HlnEsiwMplZ5ng
+8SPA1j08VGieJcCIQsFFMFEnwH+SkTo0CinAqQdrbm/JKsBFQGpd3I4swOZRA5V0Wi7AD/yjQhgWMMCx
+OompAwIxwDao2FX38DHAVLJZTe3iMsDHizqx3tczwBZpB6zDzzTASuegYZPKNcDMaH3hQ8g2wG8tfRvK
+yDfAb5iT1xnMOMBkcoGwJdI5wPEW1BHf2jrAumZUOTbmO8DMOAY8GvQ8wNb5zQ55BD7A/mjGkj8XP8Ch
+EqLSLBZAwH4jvBnZoUDAiGrLqJkuQcAs6KwqY7xBwK4N1/kpS0LAKn2mMOLaQsCSx/26f2tDwH3mEGn2
+/EPAwVsVtBGTRMCXBf6ILSZFwE4n0Z7+uUXAk8ezJ3lORsApcbSjkeNGwGJo+PY8eUfArSfgf3APSMD2
+Df4sIqZIwN+mvpJIPUnANCmnANvUScBUohSW0WxKwE+cbFYlBUvA09S2PNCdS8B/q55OzTZMwMA94q4Y
+0EzAj5Q8r69pTcAW1t/hkANOwGUCnCq8nU7Ao3NxRFk0T8DSPMTNBs9PwOXWnhEDNVDA/uQ/i66CUMAq
+s8yQidBQwL09Ir2YHlHAr1s8k+FsUcBevVmJartRwOwVMRU7ClLAT4h0uVtZUsA6F+gU1qhSwOG6WPO0
++FLABDHMYARJU8D4gEJ9DJpTwC9aC/5n61PAxKM+pWA9VMBUY0d7CJBUwFD1Clpz41TAt80fGLc3VcDM
+966664xVwFFgJK8r41XAN9YIDpQ6VsBDxh9kKJRWwOpeb3BK7lbAGgNKnf9JV8BNCQREc6dXwFfCNYbV
+BljARCem91toWMDJuahmQsxYwEEQGsnLMlnAn5Tu9U2bWcDflTu3AghawP41AStaeFrA9/I/MsHsWsCn
+Gl/ps2VbwOjwYVvA41vASGlTw4lnXMAX1e5u9PFcwDV0pZeLg13AcAaRDXQdXsDLPL761cBewIlldgkM
+b1/AMyRDbNYUYMCjNHyOj3lgwBXfuWBB5mDA5C9YlnVcYcADIdkBpt1hwIzlN/iAa2LA9xF6cZQHY8CU
+s+cXerRjwJiCgRHfc2TAG557eY1HZcAu/8E0ADFmwI6uMVUAMWfAduMW8BBHaMADUQZ36WRpwAuI4dn/
+A2rAGE6GGYzRWMAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA
+AAAAAAAAAAD//////////wsAAAA6JCRUcmFjZTI5NwUAYDEYVn0BAAAHAAAAVmVjRGF0YQEALQEAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAiAkAAAAAAAAAAAAAAAAAAAAAAAAAAFlApcsRPROVWUAaqsJpny1aQDu0
+zTq5yVpAJE1m4HVpW0CUYhgJ6wxcQK3TueQutFxAHWRtJ1hfXUCapLcMfg5eQII7plq4wV5AZvsJZR95
+X0DAG2IIZhpgQHPkk+tremBA7Ry3ZK7cYECvxyDKOkFhQPyVrcEeqGFAySScQmgRYkCFRXKXJX1iQKCU
+7V9l62JASaH/kjZcY0BB69WAqM9jQGH97dTKRWRAIO01mK2+ZEDniDkzYTplQNiAXHD2uGVAg9chfn46
+ZkCZ6YDxCr9mQMFdSMitRmdAck+Pa3nRZ0ClCTWygF9oQEmob+PW8GhAPPlpuY+FaUDM9/Bjvx1qQLg/
+MYt6uWpA+daEUtZYa0Cwr1Fb6PtrQPxF+cfGomxApb/ZPohNbUAr9mDtQ/xtQNnVMYsRr25AVH9cXQlm
+b0C+zdQcohBwQAOq/MRtcHBAADPbp3TScEAO464TxDZxQLaoDaZpnXFA/gO+TXMGckDsKJtM73FyQPRo
+hDns33JAeSZYAnlQc0BYl/rtpMNzQMGcaJ5/OXRAg/jWEhmydEB7Kd6pgS11QKk6syPKq3VAAdJtpAMt
+dkAezlu2P7F2QJTDYkyQOHdAsKxvxAfDd0A2IPXpuFB4QNZlePi24XhA8cAtnhV2eUBgTKT+6A16QCDE
+gbVFqXpAxJtO2UBIe0AHw1L+7+p7QMR7gzlpkXxAS6eCI8M7fUAV86/bFOp9QHtPTAt2nH5Ahx2w6P5S
+f0CuQUod5AaAQL8suK11ZoBA8JJ0HkHIgEASTqy1UyyBQM6Oswi7koFAB9vd/YT7gUDMCmHOv2aCQE+F
+Qwh61IJAAAFWkMJEg0B+CzmkqLeDQISfbtw7LYRAzxB4LoylhEB6lwDvqSCFQBPGFNSlnoVAhDdn95Af
+hkCNw6LYfKOGQHmKyl97KodApSqo3560h0A7dEgY+kGIQJzxhjmg0ohA2Zyo5aRmiUDRHAY0HP6JQHPm
+xbMamYpA9aCmbrU3i0AMLtrrAdqLQCK58TIWgIxAYzPbzggqjUBFpPDQ8NeNQBC5GdTliY5AAAAAAABA
+j0COPlYMWPqPQFCqGaKDXJBAppDAxBO+kEA38D+s6SGRQJ49r+USiJFATCT0Tp3wkUCTXqQYl1uSQOHG
+8scOyZJAMuWnOBM5k0AhPSafs6uTQLGieor/IJRAkd145gaZlEAo5OT92ROVQJn5qHyJkZVAevsYciYS
+lkD7LUNTwpWWQOXWTv1uHJdAx/notz6ml0Cbib83RDOYQBBmC6GSw5hAuHwpij1XmUBpaEP+WO6ZQCHr
+B4D5iJpADqFzDDQnm0BkTaodHsmbQP8j4a3NbpxAMnVaOlkYnUBPI3PG18WdQA9Mwt5gd55AXJJLnAwt
+n0CNd8Sn8+afQOCadp6XUqBA08f+luyzoEBdBpPzhRehQM8NEzlxfaFAv8v7PLzloUDIF0gndVCiQNqZ
+XHSqvaJApiX/9moto0CTz1naxZ+jQC0BCqTKFKRAg9Q7NomMpEDA/9HREQelQNKbmhh1hKVA4xKRD8QE
+pkD9hC0hEIimQCjzwR9rDqdAMYPlR+eXp0AYMO5ClySoQC49eSmOtKhA8cMCht9HqUCjtoxXn96pQNqz
+VRTieKpAUwmgrLwWq0CBRomNRLirQKbB8qOPXaxAe3R7X7QGrUDel4u1ybOtQEZociTnZK5ATn+WtiQa
+r0AvMbkFm9OvQL6vJp+xSLBAkhpxkcupsEBZIdGHKA2xQOK58/7VcrFAWS3yw+HasUCNqDH2WUWyQOz3
+TQlNsrJArbEPx8khs0B1Em5R35OzQBnSnCSdCLRA7zcmGROAtECrtxFmUfq0QJdhF6Nod7VAgXLgymn3
+tUDJUVU9Znq2QIBN+cFvALdAo2ZUipiJt0BBgWs08xW4QF1OR82SpbhAZUeK04o4uUAEFRY67865QFq9
+wGrUaLpAmfcZSU8Gu0BoBUE1dae7QHN0yw5cTLxAGi29Nxr1vEBMNZKXxqG9QEiRWp54Ur5AAK7oR0gH
+v0AMxBIfTsC/QAHSg6DRPsBABrBbsLCfwECaJChl0QLBQMhcaDNBaMFAthPX3w3QwUAeAEmBRTrCQKtm
+loL2psJAqhOQpC8Ww0AAAAAAAIjDQBfntQd3/MNA5BSgiqRzxEDMtPC1mO3EQETsTxdkasVAAg0bnxfq
+xUBfLbGixGzGQDR2zd588sZAmXjveVJ7x0B73tEGWAfIQGnM74aglshAWksZbT8pyUD1FBegSL/JQDEd
+Xn3QWMpAAzjT2+v1ykBYOp8OsJbLQH35E+gyO8xAnoyivIrjzEA9OONlzo/NQAJsr0UVQM5AmT9OSXf0
+zkDm27PsDK3PQEMh6p73NNBA9PIE8JuV0ECrRMiHgPjQQF5witKyXdFAfLasjEDF0UA/iXjENy/SQA/2
+B9ymm9JAim85i5wK00B3O6/hJ3zTQLjK2khY8NNAlUEUhj1n1EDJeb685+DUQPDHd3BnXdVAQ9FXh83c
+1UCrvjpMK1/WQLodGnGS5NZAUMBzERVt10AT7760xfjXQHlD8FC3h9hAfIEMTf0Z2UClycqDq6/ZQLN/
+RkbWSNpAxkLBXpLl2kCgV3UT9YXbQDvmeCkUKtxA9W+y5wXS3ED9494Z4X3dQCK8qRO9Ld5AeozXs7Hh
+3kDpdINn15nfQCbyt5YjK+BAZ5C1TI2L4EDUBeTrNe7gQA7MddgqU+FAB7l3xnm64UDKKK27MCTiQOs+
+dxFekOJAKYHHdhD/4kCRDx7yVnDjQLu+k+NA5ONArVvwBt5a5EA3Yc11PtTkQLNpxalyUOVAW6iwfovP
+5UCzuO40mlHmQLESvnOw1uZA6nWhS+Be50AYntM4POrnQBWXySXXeOhAoAbEbcQK6UDuxW/fF6DpQJUl
+lr/lOOpA/zndy0LV6kAgj5g9RHXrQDamqsz/GOxA4KB3sovA7EBIgOms/mvtQJBhhgFwG+5A8CGZgPfO
+7kA+2WyIrYbvQCDNTYRVIfBAWHa4woSB8EC9OrCN8ePwQGGjSEGpSPFAxSg/ibmv8UAwPNZiMBnyQE9h
+ux4chfJA0Jr4Yovz8kDAbPEsjWTzQIu6a9Mw2PNAgsakCIZO9EALnHLcnMf0QMAtcr6FQ/VA/HNCgFHC
+9UCj2MxXEUT2QChAm+HWyPZAVwA8I7RQ90CYGLSNu9v3QAAAAAAAavhAAAAAAAAAAAAAAAAAAAAAACgA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA//////////8EAAAAZnJlcQ==
+]]></SxData>
+   </CurveVector>
+  </Curve>
+  <Property name="GridType" value="Norm"/>
+  <Property name="GUID" value="{0cddb240-b969-40ec-9c39-408d034d013d}"/>
+  <Property name="ProbeId" value=""/>
+  <Property name="VertOrder" value="139"/>
+ </Grid>
+ <Grid ID="1416">
+  <Axis ID="1417" subtype="X">
+   <Property name="AutoLimit" value="On"/>
+   <Property name="Delta" value="0.0"/>
+   <Property name="ExpandToFitLabel" value="true"/>
+   <Property name="Grad" value="Log"/>
+   <Property name="GUID" value="{9085d0ef-03be-4739-b0ff-ee9cea2b027f}"/>
+   <Property name="HideLines" value="false"/>
+   <Property name="Label" value="%DefaultLabel%"/>
+   <Property name="Max" ascii_value="100000" type="real" value="AAAAAABq+EA="/>
+   <Property name="Min" ascii_value="100" type="real" value="AAAAAAAAWUA="/>
+   <Property name="ProbeId" value=""/>
+   <Property name="SharedID" value="1405"/>
+   <Property name="Unit" value="%DefaultUnit%"/>
+  </Axis>
+  <Axis ID="1418" subtype="Y">
+   <Property name="AutoLimit" value="On"/>
+   <Property name="Delta" value="0.0"/>
+   <Property name="ExpandToFitLabel" value="true"/>
+   <Property name="Grad" value="Lin"/>
+   <Property name="GUID" value="{f106ac3a-9a96-4fb1-9707-0c68da2d6183}"/>
+   <Property name="HideLines" value="false"/>
+   <Property name="Label" value="%DefaultLabel%"/>
+   <Property name="Max" ascii_value="5.95658502815" type="real" value="UgePBovTF0A="/>
+   <Property name="Min" ascii_value="-129.161018263" type="real" value="1r/FDyclYMA="/>
+   <Property name="ProbeId" value=""/>
+   <Property name="SharedID" value="1418"/>
+   <Property name="Unit" value="%DefaultUnit%"/>
+  </Axis>
+  <Curve ID="1414">
+   <CurveData ID="1415">
+    <Property name="Curve" value="1414"/>
+    <Property name="GUID" value="{52de7d5a-cc36-4bb9-8aad-02709671f5e2}"/>
+    <Property name="LineStyle" value="auto"/>
+   </CurveData>
+   <Property name="Alpha" value="75"/>
+   <Property name="CreateTime" value="1728708293426"/>
+   <Property name="DisplayType" value="analog"/>
+   <Property name="ForceFastRender" value="false"/>
+   <Property name="GUID" value="{f7731257-3976-4c6f-8234-8d4881049144}"/>
+   <Property name="Hidden" value="false"/>
+   <Property name="Highlight" value="false"/>
+   <Property name="HighlightColour" value="#ff00ff"/>
+   <Property name="HighlightedDivisions" value=""/>
+   <Property name="Label" value="%DefaultLabel%"/>
+   <Property name="LineStyle" value="solid"/>
+   <Property name="MeasureSpec" value=""/>
+   <Property name="Name" value="Gain_iloop"/>
+   <Property name="ProbeInst" value="db(:18/:22).Gain_iloop#ac##"/>
+   <Property name="ProbePersistence" value="0"/>
+   <Property name="RGBColour" value="32768"/>
+   <Property name="Selected" value="false"/>
+   <Property name="Sequence" value="2"/>
+   <Property name="ShortLabel" value="%DefaultShortLabel%"/>
+   <Property name="ShowPoints" value="false"/>
+   <Property name="Suffix" value=""/>
+   <Property name="UserPersistence" value="-1"/>
+   <Property name="UserProbeId" value=""/>
+   <Property name="UseSequenceColour" value="true"/>
+   <Property name="Visible" value="true"/>
+   <Property name="XAxis" value="1417"/>
+   <Property name="XUnit" value="Hertz"/>
+   <Property name="YAxis" value="1418"/>
+   <Property name="YUnit" value="dB"/>
+   <CurveVector XUnits="Hertz" AnalysisName="Small signal AC" XYData="0" SourceName="simplis_ac63" SweepType="None" YUnitsOverride="1" Expression="db(:18/:22)" YUnits="dB" XExpression="freq" XUnitsOverride="0">
+    <SxData sxid="1" version="82"><![CDATA[
+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
+AGZyZXE=
+]]></SxData>
+   </CurveVector>
+  </Curve>
+  <Property name="GridType" value="Norm"/>
+  <Property name="GUID" value="{9f711f1e-e1dc-4a9f-8ca5-a655a8f8d7bd}"/>
+  <Property name="ProbeId" value=""/>
+  <Property name="VertOrder" value="141"/>
+ </Grid>
+ <Property name="AcceptNewProbes" value=""/>
+ <Property name="CursorStatusDisplay" value="Graph"/>
+ <Property name="GroupTitle" value="C:\Working\SIMetrix\Buck Avg Current Mode Control close iloop.sxsch"/>
+ <Property name="GUID" value="{268f61eb-4cde-4bfd-8ac9-c6fb2a9b47a8}"/>
+ <Property name="MainCursor" value="0"/>
+ <Property name="Path" value=""/>
+ <Property name="ProbeId" value="default#C:\Working\SIMetrix\Buck Avg Current Mode Control close iloop.sxsch#ac"/>
+ <Property name="RefCursor" value="0"/>
+ <Property name="SmallCursor" value="1407"/>
+ <Property name="SourceGroup" value="simplis_ac63"/>
+ <Property name="TabTitle" value="%SourceGroup% %FirstCurve:Label%"/>
+ <Property name="TitleBar" value="%SourceGroup% (%GroupTitle%)"/>
+ <Layout leftoffset="10" rightoffset="10" topoffset="10" bottomoffset="10"/>
+</Graph>
