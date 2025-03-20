@@ -1,4 +1,4 @@
-// Algorithm from paper [Yu2012]
+// Algorithm from paper [Wei2020]
 // DCMB mode solver
 // NOT work yet
 
@@ -55,6 +55,6 @@ x0 = 2;
 xsol1 =fsolve(x0, PO_mode_cal); 
 res1 = PO_mode_cal(xsol1) ;
 
-printf('x1_0=%f\n', xsol1);
+printf('x1_0=%f\n', xsol1);  
 printf('res1=%f\n', res1);
 

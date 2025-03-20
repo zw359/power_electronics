@@ -17,8 +17,8 @@ Kx= Omega1/Omega0;
 Fr = 1/(2*%pi*sqrt(Lr*Cr));
 
 Fs = Fr;
-Fs = 0.9*Fr;
-Fs = 90E3;
+//Fs = 0.9*Fr;
+//Fs = 90E3;
 //Fs = Fr;
 
 //F = Fs/Fr;
