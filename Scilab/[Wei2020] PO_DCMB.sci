@@ -13,16 +13,16 @@ Rload = Vo^2/Po;
 N = Vin/(2*Vo);
 N = 3.75;
 
+//three parameters given
+Fs=70E3;
+Cr =60E-9;
+K = 10;
 
 Eo =Vo^2/(Rload*Fs);
 Qi =Eo/Vin;
 Vcr_0= (Vin - Qi/Cr)/2;
 Vcr_0_1 = (Cr*Rload*Vin^2*Fs-Vo^2)/(2*Rload*Fs*Cr*Vin);
 
-//three parameters given
-Fs=70E3;
-Cr =60E-9;
-K = 7.8;
 
 // relation between Cr and theta 
 // use "x" as theta for easy input
