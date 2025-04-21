@@ -2,13 +2,13 @@
 // DCMB mode solver
 
 // circuit parameters
-Vin=280;
-Rload = 1;
-N = 16;
+Vin = 390;
+N =4;
+Rload = 8;
+Cr = 16.4E-9;
+Lr = 35E-6;
+Lm = 105E-6;
 
-Cr =25E-9;
-Lr = 47.0212E-6
-Lm = 175.7023E-6;
 
 Omega0= 1/sqrt(Lr*Cr);
 Omega1= 1/sqrt((Lr+Lm)*Cr);
@@ -18,7 +18,7 @@ Fr = 1/(2*%pi*sqrt(Lr*Cr));
 
 Fs = Fr;
 Fs = 0.9*Fr;
-Fs = 90E3;
+Fs = 152E3;
 //Fs = Fr;
 
 F = Fs/Fr;

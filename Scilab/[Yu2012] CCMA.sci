@@ -4,19 +4,18 @@
 // mm2_0 >1
 // mm2_alpha >1
 
-Vin=280;
-Rload = 0.4;
-N = 16;
-
-Cr = 25E-9;
-Lr = 47.0212E-6
-Lm = 175.7023E-6;
+Vin = 390;
+N =4;
+Rload = 40;
+Cr = 16.4E-9;
+Lr = 35E-6;
+Lm = 105E-6;
 
 Fr = 1/(2*%pi*sqrt(Lr*Cr));
-Fs = 180E3;
+Fs = 300E3;
 
 F = Fs/Fr;
-F=1.2
+
 Lambda = Lr/Lm;
 Gamma = %pi/F;
 
@@ -90,7 +89,7 @@ CCMA_NP =%F;
 if (I_lr_0_d < I_lm_0_d ) & (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(5)>0) & (xsol1(6)>0)  &  (xsol1(6)<Gamma) & (mm2_alpha >1) then
     CCMA_NP = %T;
 end
-printf('CCMA_NP mode check %s \n', CCMA_NP);
+//printf('CCMA_NP mode check %s \n', CCMA_NP);
 printf('CCM mode check \n')
 printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n')
 printf('%f \t %f \t %f\n', abs(mm2_0), abs(mm2_alpha), abs(mm2_gamma));

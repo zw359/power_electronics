@@ -88,11 +88,11 @@ y = pri_current(x);
 clf; plot(x,y)
 
 
-// primay current "P"section
+// primay current "P"section. [Wei2020] equation 5
 function y = pri_current1(t)
      y= (Cr * Wr*(-k1*sin(Wr*t) + k2*cos(Wr*t)))^2 ;
 endfunction
-// primary current "0" section
+// primary current "0" section. [Wei 2020] equation 31
 function y = pri_current2(t)
      y= (Cr * Wm *(-k3*sin(Wm*(t-theta/Wr)) + k4*cos(Wm*(t-theta/Wr))))^2;
 endfunction

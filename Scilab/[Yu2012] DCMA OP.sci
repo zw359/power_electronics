@@ -12,6 +12,15 @@ Cr = 25E-9;
 Lr = 47.0212E-6
 Lm = 175.7023E-6;
 
+
+Vin = 390;
+Rload = 8;
+N =4;
+
+Cr = 16.4E-9;
+Lr = 35E-6;
+Lm = 105E-6;
+
 Omega0= 1/sqrt(Lr*Cr);
 Omega1= 1/sqrt((Lr+Lm)*Cr);
 Kx= Omega1/Omega0; 
@@ -19,7 +28,7 @@ Kx= Omega1/Omega0;
 Fr = 1/(2*%pi*sqrt(Lr*Cr));
 
 Fs = Fr;
-Fs = 180E3;
+Fs = 152E3;
 //Fs = Fr;
 
 F = Fs/Fr;
@@ -135,7 +144,7 @@ if (I_lr_alpha_d > I_lm_alpha_d ) & (xsol1(6) == xsol1(9)) & (xsol1(11)>0) & (xs
     DCMA_OP = %T;
 end
 
-printf('DCMA_OP mode check %s\n', DCMA_OP)
+//printf('DCMA_OP mode check %s\n', DCMA_OP)
 printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n')
 printf('%f \t %f \t %f\n', abs(mm2_0), abs(mm2_alpha), abs(mm2_gamma));
 

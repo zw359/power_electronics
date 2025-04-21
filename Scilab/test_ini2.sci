@@ -34,21 +34,23 @@ Fn = 0.5
 //alpha_0=Gamma *0.3 // critial alpha
 //beta1_0=Gamma *0.6  // critical beta  x15_0 > x14_0
 
-x1_0=0
-x2_0=0
-x3_0=0
-x4_0=0
-x5_0=0
-x6_0=0
-x7_0=0
-x8_0=0
-x9_0=0
-x10_0=0
-x11_0=0
-x12_0=0
+// The initial condisions are reserved for 3-section modes
+// there four time values: 0, alpha, beta, gamma
+x1_0=0;  // mc(0)
+x2_0=0;  // mc(alpha)
+x3_0=0;  // mc(beta)
+x4_0=0;  // mc(gamma)
+x5_0=0;  // iLr(0)
+x6_0=0;  // iLr(alpha)
+x7_0=0;  // iLr(beta)
+x8_0=0;  // iLr(gamma)
+x9_0=0;  // iLm(0)
+x10_0=0; // iLm(alpha)
+x11_0=0; // iLm(beta)
+x12_0=0; // iLm(gamma)
 x13_0= 1.2 // M <1 
-x14_0=%pi *0.3 // critial alpha
-x15_0=%pi *0.6  // critical beta  x15_0 > x14_0
+x14_0=%pi*0.3 // critial alpha
+x15_0=%pi*0.6  // critical beta  x15_0 > x14_0
 
 x0 = [x1_0; x2_0; x3_0; x4_0; x5_0; x6_0; x7_0; x8_0; x9_0; x10_0; x11_0; x12_0; x13_0; x14_0; x15_0];
 

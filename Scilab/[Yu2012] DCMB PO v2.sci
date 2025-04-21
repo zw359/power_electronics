@@ -10,13 +10,26 @@ Cr =25E-9;
 Lr = 47.0212E-6
 Lm = 175.7023E-6;
 
+
+Vin = 390;
+Rload = 8;
+N =4;
+
+Cr = 16.4E-9;
+Lr = 35E-6;
+Lm = 105E-6;
+
+
+
+
+
 Omega0= 1/sqrt(Lr*Cr);
 Omega1= 1/sqrt((Lr+Lm)*Cr);
 Kx= Omega1/Omega0; 
 
 Fr = 1/(2*%pi*sqrt(Lr*Cr));
 
-Fs = Fr;
+Fs = 152E3;
 //Fs = 0.9*Fr;
 //Fs = 90E3;
 //Fs = Fr;

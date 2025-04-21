@@ -13,9 +13,12 @@ Lm = 175.7023E-6;
 
 // [Yu2012] desing option 3 parameter
 // PN mode
-//Cr = 8E-9;
-//Lr = 274.6931E-6
-//Lm = 114.9072E-6;
+Vin = 390;
+N =4;
+Rload = 2;
+Cr = 16.4E-9;
+Lr = 35E-6;
+Lm = 105E-6;
 
 Omega0= 1/sqrt(Lr*Cr);
 Omega1= 1/sqrt((Lr+Lm)*Cr);
@@ -24,11 +27,11 @@ Kx= Omega1/Omega0;
 Fr = 1/(2*%pi*sqrt(Lr*Cr));
 
 Fs = Fr;
-Fs = 90E3;
+Fs = 152E3;
 //Fs = Fr;
 
 F = Fs/Fr;
-F = 1.46;
+//F = 1.46;
 Lambda = Lr/Lm;
 Gamma = %pi/F;
 
@@ -139,7 +142,7 @@ if (I_lr_alpha_d < I_lm_alpha_d ) & ( I_lr_0_d > I_lm_0_d) &(mm2_alpha>1)  & (in
    CCMB_PN = %T;
 end
 
-printf('CCMB_PN mode check %s \n' , CCMB_PN)
+//printf('CCMB_PN mode check %s \n' , CCMB_PN)
 printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n')
 printf('%f \t %f \t %f\n', abs(mm2_0), abs(mm2_alpha), abs(mm2_gamma));
 

@@ -14,7 +14,8 @@ Lambda = Lr/Lm;
 Gamma = %pi/Fn;
 Zbase = sqrt(Lr/Cr);
 rL= N^2*Rload/Zbase;
-// general variables 
+
+// general variables for 3-section operation
 // use the direct equations
 // mc(0)        x(1)
 // mc(alpha)    x(2)
@@ -30,7 +31,7 @@ rL= N^2*Rload/Zbase;
 // iLm(gamma)   x(12)
 // M            x(13)
 // alpha        x(14)
-// beta         x(15)
+// Beta         x(15)
 
 //  mc(alpha)   N mode  0-- alpha
 func1 = 'res(1) = -x(2) + (x(1)-1/x(13)-1).*cos(x(14)) + x(5).*sin(x(14)) +1/x(13) +1';
@@ -64,7 +65,8 @@ func14 = 'res(14) = -x(3)+ 1/x(13) - Lambda - 1';
 //equation iout balance
 func15 = 'res(15) = ( x(9).*(x(14))- 0.5*Lambda*x(14).^2 - (-x(1)+1/x(13)+1).*(1-cos(x(14))) - x(5).* sin(x(14))  + (-x(3)+1/x(13)-1).* (1-cos(Gamma-x(15))) + x(7).*sin(Gamma-x(15)) - x(11) .* (Gamma-x(15)) -0.5 * Lambda *(Gamma - x(15)).^2    ) * rL -Gamma'; 
 deff('res=DCMA2_NOP_mode(x)',[func1; func2; func3; func4; func5; func6; func7; func8; func9; func10; func11; func12; func13; func14; func15]);
-/*
+
+/* Initial conditions disabled here. they will come as input variables
 x1_0=0
 x2_0=0
 x3_0=0
@@ -107,11 +109,16 @@ Vo = Vbase/N;
 Vc_0 = xsol1(1) * Vbase;
 Vc_alpha = xsol1(2) * Vbase;
 
+// ====== detect the operation modes ===========
+//  "O" mode -->  mm2 < 1,  
+//  nomalized output voltage m2  = 1
 mm2_0 = abs((-mc_0 + 1/M )/(1+Lambda));
-mm2_alpha = abs((-mc_alpha +1/M)/(1+Lambda));
+mm2_alpha = abs((-mc_alpha +1/M)/(1+Lambda)); //"O" mode
 mm2_beta = abs((-mc_beta +1/M)/(1+Lambda));
 mm2_gamma = abs((-mc_gamma +1/M)/(1+Lambda));
 
+// the above methods [Yu2012] don't work reliably
+// use the methods [Wei2021]
 // take the point half way between 0 and alpha
 dt=0.5;
 //  iLr(alpha)  N mode  0-- alpha
@@ -120,7 +127,7 @@ I_lr_0_d = (-xsol1(1) +1/xsol1(13) +1 ) .* sin(xsol1(14)*dt) + xsol1(5) .*cos(xs
 I_lm_0_d = xsol1(9) - Lambda * xsol1(14)*dt;
 
 DCMA2_NOP =%F;
-if (I_lr_0_d < I_lm_0_d ) & (xsol1(14)>0) & (xsol1(15)>xsol1(14)) &  (xsol1(15)<Gamma) & (xsol1(13)>0) & (mm2_alpha <1) then
+if (I_lr_0_d < I_lm_0_d ) & (alpha>0) & (Beta>alpha) &  (Beta<Gamma) & (mm2_alpha <1) then
     DCMA2_NOP = %T;
 end
 

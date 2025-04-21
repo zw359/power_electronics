@@ -103,8 +103,8 @@ if  (I_lr_0_d > I_lm_0_d) & (mm2_alpha<1) & (mm2_0 >1) & (mm2_gamma <=1) & (xsol
     DCMB_PO =%T
 end
 
-printf('DCM_PO  mode check %s \n', DCMB_PO)
-printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n')
+printf('DCM_PO  mode check =',DCMB_PO);
+printf('|mm2_0| \t |mm2_alpha| \t |mm2_gamma|\n');
 printf('%f \t %f \t %f\n', abs(mm2_0), abs(mm2_alpha), abs(mm2_gamma));
 
 printf('x1_0=%f\n', xsol1(1));
